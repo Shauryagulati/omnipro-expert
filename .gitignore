@@ -1,0 +1,21 @@
+# secrets
+.env
+.env.local
+.env*.local
+
+# private working artifacts — never committed
+docs/superpowers/
+_notes/
+*.local.md
+
+# dependencies / build output
+node_modules/
+.next/
+dist/
+__pycache__/
+*.pyc
+.venv/
+.uv/
+
+# OS noise
+.DS_Store
