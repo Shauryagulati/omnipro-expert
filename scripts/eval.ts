@@ -18,6 +18,9 @@ interface Expect {
   visual?: boolean;
   widget?: string;
   asksBack?: boolean;
+  /** Troubleshooting questions: a short diagnostic clarifying question is as
+   *  correct as a full answer (fault trees differ by process/symptom). */
+  triageOk?: boolean;
 }
 
 interface Question {
@@ -27,10 +30,18 @@ interface Question {
   expect: Expect;
 }
 
-const CITE = /\[(owner-manual|quick-start-guide|selection-chart) p\.?\s*\d+\]/;
+// Tolerates multi-page brackets like [owner-manual p.37, p.40].
+const CITE = /\[(owner-manual|quick-start-guide|selection-chart) p\.?\s*\d+/;
 
 function judge(r: AgentResult, e: Expect): string[] {
   const errs: string[] = [];
+  if (e.triageOk && /\?/.test(r.text) && r.text.length < 900) {
+    // Accepted shape: concise diagnostic question instead of a full answer.
+    for (const rx of e.notRegex ?? []) {
+      if (new RegExp(rx, "i").test(r.text)) errs.push(`forbidden /${rx}/ present`);
+    }
+    return errs;
+  }
   // All patterns case-insensitive; JS has no (?i) inline flag.
   for (const rx of [...(e.regex ?? []), ...(e.regex2 ?? [])]) {
     if (!new RegExp(rx, "i").test(r.text)) errs.push(`missing /${rx}/`);

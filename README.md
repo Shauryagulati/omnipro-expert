@@ -1,92 +1,99 @@
-# Prox Founding Engineer Challenge
+# OmniPro Expert
 
-<img src="product.webp" alt="Vulcan OmniPro 220" width="400" /> <img src="product-inside.webp" alt="Vulcan OmniPro 220 — inside panel" width="400" />
+**A knowledge-graph-grounded multimodal agent for the [Vulcan OmniPro 220](https://www.harborfreight.com/omnipro-220-industrial-multiprocess-welder-with-120240v-input-57812.html) multiprocess welder** — built on the Claude Agent SDK for the [Prox founding-engineer challenge](CHALLENGE.md).
 
-## The Product
+Ask it anything a new owner would ask. It answers like a competent friend in your garage — grounded in the actual documentation, **cited to the page**, showing you the **real manual diagrams**, rendering **interactive widgets** when numbers or decisions are involved, and speaking out loud if you want it to. And you can watch it think: an **interactive knowledge-graph view** shows exactly which nodes light up as it reasons.
 
-The [Vulcan OmniPro 220](https://www.harborfreight.com/omnipro-220-industrial-multiprocess-welder-with-120240v-input-57812.html) is a multiprocess welding system sold by Harbor Freight. It supports four welding processes (MIG, Flux-Cored, TIG, and Stick), runs on both 120V and 240V input, and has an LCD-based synergic control system.
+<img src="product.webp" alt="Vulcan OmniPro 220" width="380" /> <img src="product-inside.webp" alt="inside panel" width="380" />
 
-Its owner's manual is 48 pages of dense technical content. Duty cycle matrices across multiple voltages and amperages, polarity setup procedures that differ per welding process, wire feed mechanisms with specific tensioner calibrations, wiring schematics, troubleshooting matrices, weld diagnosis diagrams, and a full parts list.
-
-This is exactly the kind of product Prox exists for. Nobody knows how to use this machine straight out of the box but has time to read 48 page manual, but a complicated machine needs expert-level support.
-
-Additional video: https://www.youtube.com/watch?v=kxGDoGcnhBw
-
-## Your Job
-
-Build a multimodal reasoning agent for the Vulcan OmniPro 220 using the Claude Agent SDK. The agent must be able to answer deep technical questions about this product accurately, helpfully, and not just in text.
-
-The manuals are in the `files/` directory.
-
-**There is no limit to how far you can go.** You can integrate voice. You can build a full interactive experience. Sky is the limit. The more ambitious and polished, the better.
-
-## What We're Testing
-
-### 1. Deep Technical Accuracy
-
-Your agent needs to answer questions like these correctly:
-
-- "What's the duty cycle for MIG welding at 200A on 240V?"
-- "I'm getting porosity in my flux-cored welds. What should I check?"
-- "What polarity setup do I need for TIG welding? Which socket does the ground clamp go in?"
-
-We will test with questions that require cross-referencing multiple manual sections, understanding visual content (diagrams, schematics, charts), and handling ambiguous questions that need clarification from the user.
-
-### 2. Multimodal Responses
-
-This is the most important part. Your agent must not be text-only.
-
-- If someone asks about polarity setup, the agent should draw or show a diagram of which cable goes in which socket, not just describe it.
-- If the answer relates to a specific image in the manual (the wire feed mechanism, the front panel controls, the weld diagnosis examples), the agent should surface that image.
-- If a question is complex enough, the agent should generate interactive content: a duty cycle calculator, a troubleshooting flowchart, a settings configurator that takes process + material + thickness and outputs recommended wire speed and voltage.
-
-When something is too cognitively hard to explain in words, the agent should draw it. Real-time diagrams, interactive schematics, visual walkthroughs generated through code.
-
-For your agent to handle these responses well you need to reverse engineer Claude artifacts. Here are two places where you can start:
-- https://claude.ai/artifacts (see how Claude renders interactive artifacts in chat)
-- https://www.reidbarber.com/blog/reverse-engineering-claude-artifacts
-
-### 3. Tone and Helpfulness
-
-Imagine your user just bought this welder and is standing in their garage trying to set it up. They're not an idiot, but they're not a professional welder either.
-
-### 4. Knowledge Extraction Quality
-
-The manual has a mix of text, tables, labeled diagrams, schematics, and decision matrices. Some critical information exists only in images (the welding process selection chart, the weld diagnosis photos, the wiring schematic). We want to see that your agent understands and presents the visual content, not just the text.
-
-## Tech Requirements
-
-- Use the [Anthropic Claude Agent SDK](https://docs.anthropic.com) as the foundation for your agent.
-- The project must run locally with a single API key provided via `.env`.
-- You are responsible for your own API costs during development.
-
-## How to Present Your Work
-
-**This matters.** Your submission is not just the code — it's how you present it.
-
-- **Build a frontend.** The best way for us to evaluate your agent is if it has a clean, simple UI we can run immediately. This is realistically the only way to properly demo an agent like this.
-- **Hosting is a plus.** If you host it somewhere we can access without cloning, that's a strong signal. Not required, but it removes friction and shows initiative.
-- **Write a clear README.** Explain how your agent works, what design decisions you made, how knowledge is extracted and represented, and how to run it. Your documentation will be evaluated — we want to see how you think and communicate, not just how you code.
-- **Video walkthrough is a huge plus.** Record yourself demoing the agent and explaining your approach. Walk through the hard questions, show how it handles multimodal responses, explain your architecture. This gives us a much richer picture of your work than code alone.
-
-We should be running your agent within 2 minutes of cloning your repo:
+## Run it in under 2 minutes
 
 ```bash
-git clone <your-fork>
-cd <your-fork>
-cp .env.example .env   # we plug in our own Anthropic API key
-# your install command (npm install, uv install, etc.)
-# your run command (npm run dev, python app.py, etc.)
+git clone <this-fork> && cd omnipro-expert
+cp .env.example .env      # paste your ANTHROPIC_API_KEY
+npm install               # one runtime, ~1 min
+npm run dev               # → http://localhost:3000
 ```
 
-If it takes longer than that to set up, that's a problem.
+No database, no Python, no model downloads, no ingestion step — the knowledge graph and every manual page/figure image are **precomputed and committed**. Your key is used only to run the agent.
 
-## What to Submit
+Try these:
+- *"What's the duty cycle for MIG welding at 200A on 240V?"* — exact answer + an interactive calculator; drag the slider.
+- *"I'm getting porosity in my flux-cored welds."* — an interactive troubleshooting checklist, each step cited.
+- *"What polarity for TIG? Which socket does the ground clamp go in?"* — safety note first, then a **drawn cable-hookup diagram** plus the actual manual figure.
+- *"Can I TIG weld aluminum?"* — an honest **no** (DC-only machine), with the documented alternative.
+- *"What's my duty cycle?"* — it asks which process and voltage instead of guessing.
+- Click **◉ knowledge graph** in the header, then ask anything — the nodes it uses glow amber.
+- Click 🎙 to ask by voice; toggle 🔊 to have answers spoken as they stream.
 
-1. Fork this repo.
-2. Build your solution.
-3. Submit your fork URL through the form at [useprox.com/join/challenge](https://useprox.com/join/challenge).
+## Why a knowledge graph (and deliberately no vector database)
 
-## What Happens Next
+The OmniPro 220's documentation is 51 pages where the dangerous questions are *structured*: duty cycle differs by **process and input voltage**; flux-cored polarity is the **inverse** of MIG; aluminum TIG needs AC output the machine doesn't have. Embedding chunks and ranking by cosine similarity is exactly how you mix the 120V and 240V table rows — plausible text, wrong amps.
 
-We review submissions on a rolling basis and respond to every single one within a few days. Good luck.
+So the pipeline compiles the docs into a **typed property graph** (576 nodes, ~1,400 edges):
+
+- **Node types:** `spec`, `procedure`, `failure_mode`, `safety_warning`, `setting`, `component`, `part`, `process`, `figure`, `page`, `video_moment`
+- **Edge types:** `causes`, `resolved_by`, `requires`, `differs_by`, `incompatible_with`, `depicted_in`, `documented_on`, `demonstrated_in`, `applies_to`, `part_of`
+- **Grounding invariant:** every node carries `sources: [{doc, page, figure_id}]` — *enforced by schema*. A fact without a page reference cannot exist in this system, so citation is guaranteed by construction, not by prompting.
+
+Retrieval is deterministic: alias-aware keyword search finds entry nodes (a build-time LLM pass gave every node the layman vocabulary — "stinger", "the plus plug"), then **typed edges do the semantic work**. "Porosity in flux-cored welds" is answered by walking `failure_mode:porosity → resolved_by → check-polarity → differs_by process → flux-cored inversion → depicted_in → the quick-start diagram`. That's a path, not a lookup — and you can watch it happen in the graph view.
+
+At Prox scale (thousands of manuals, open vocabulary) I'd add a semantic entry-point layer *on top* — the multi-product layout (`data/products/<slug>/`) is where it would slot in. At 51 pages, determinism beats similarity.
+
+## Architecture
+
+```
+OFFLINE (Python, pipeline/ — runs once, outputs committed)      RUNTIME (TypeScript — what you just ran)
+┌────────────────────────────────────────┐                     ┌────────────────────────────────────────────┐
+│ render:  pages → PNG; vector-drawing   │   graph.json        │ Next.js + Claude Agent SDK                 │
+│          cluster detection for figures │   page PNGs         │  /api/chat: agent loop, streaming NDJSON   │
+│ extract: Claude vision → tables,       │   figure crops      │  tools: search_graph · traverse ·          │
+│          figures, key facts (per page) │  ────────────────▶  │   get_figure · get_page · show_widget ·    │
+│ graph:   LLM proposals + deterministic │                     │   generate_artifact                        │
+│          merge + alias enrichment      │                     │  UI: chat + citation chips + widgets +     │
+│ video:   walkthrough → video_moments   │                     │   sandboxed artifacts + graph view + voice │
+│ verify:  12-landmark gate              │                     │  MCP server: same graph, any MCP client    │
+└────────────────────────────────────────┘                     └────────────────────────────────────────────┘
+```
+
+**The agent can only know what the graph knows.** Its built-in tools (file access, bash, web) are disabled; the system prompt forbids stating any spec without retrieval and requires `[doc p.N]` citations, which the UI turns into chips that open the actual page image. When something isn't in the docs, it says so — no general-knowledge filler.
+
+**Multimodal output is tool-driven, not text-parsed.** Five curated widgets (duty-cycle calculator, polarity diagram drawn on the real front-panel layout, troubleshooting checklist, settings configurator, process selector) take **zod-validated props** — the model can't render an invented number; validation errors bounce back for the model to fix. For shapes the widgets don't cover, `generate_artifact` accepts self-contained HTML that must pass a static validator (no external resources, no network calls, size cap) before rendering in a sandboxed iframe — a failed check returns the errors to the model for retry, so a broken render never reaches you.
+
+**Honesty over completeness, one concrete example:** the manual never mentions zinc. An agent that warns about "zinc fumes" when asked about galvanized steel is *hallucinating* — plausibly and dangerously. This one composes what the docs actually contain: the general fume-safety warning (owner-manual p.3) and galvanized steel's flux-cored suitability (selection chart). The landmark gate in the pipeline encodes exactly this distinction.
+
+## Evals
+
+`npm run eval` runs 30 questions through the real agent across seven tiers — the challenge's sample questions, single-fact retrieval, **six hallucination traps**, multi-hop troubleshooting, three questions that must be answered with a clarifying question, three that must be declined, and visual-output checks.
+
+<!-- EVAL_RESULTS -->
+
+`npm run smoke` is the 2-minute version (5 questions).
+
+## The extras
+
+- **Interactive knowledge graph** (header ◉): force-directed canvas of all 576 nodes, filter by type, click for data + sources, and live amber glow on the nodes each answer touched.
+- **Voice** (🎙/🔊): Web Speech in and out — answers are spoken sentence-by-sentence *as they stream*, and talking or typing interrupts playback. Zero extra keys or downloads; `src/lib/speech.ts` is the documented seam where a hosted TTS/STT or SIP/telephony stack would plug in.
+- **Video moments:** the linked walkthrough video is part of the graph — 8 timestamped `video_moment` nodes edge-linked to the procedures they demonstrate; the agent offers `▶ watch` links that jump to the exact second.
+- **MCP connector:** `npm run mcp` exposes the graph to Claude Desktop (or any MCP client) over stdio — the same "meet users in the tools they already use" deployment Prox ships. Config snippet in `scripts/mcp-server.ts`.
+
+## Knowledge pipeline
+
+Everything above sits on the offline pipeline in [`pipeline/`](pipeline/README.md) — page rendering with vector-drawing figure detection (this manual's diagrams are line art, not raster images), cell-exact vision extraction, chunked+cached graph construction, and the 12-landmark verification gate. You never need to run it; its outputs are committed. `pipeline/README.md` has the full design.
+
+## Cost notes
+
+The agent defaults to `claude-sonnet-5` (override with `CLAUDE_MODEL` in `.env`). The system prompt + node catalog is a stable prefix, so the Agent SDK's prompt caching makes follow-up questions in a session substantially cheaper and faster than the first. Typical question: a few cents.
+
+## Project layout
+
+| Path | What |
+|---|---|
+| `src/agent/` | System prompt, MCP tool server, artifact validator, agent loop |
+| `src/lib/graph.ts` | Graph load / deterministic search / typed traversal |
+| `src/components/` | Chat, citation chips, page modal, widgets, graph view, voice |
+| `src/app/api/` | Streaming chat route, graph API |
+| `data/products/vulcan-omnipro-220/` | graph.json, per-page extraction, video moments |
+| `public/products/vulcan-omnipro-220/` | Page renders (150dpi), figure crops (300dpi) |
+| `pipeline/` | Offline Python pipeline (see its README) |
+| `evals/` + `scripts/` | Eval suite, smoke test, MCP server |
