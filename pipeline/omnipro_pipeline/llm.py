@@ -58,13 +58,14 @@ def extract_structured(
     user_blocks: list,
     schema_model: type[BaseModel],
     max_retries: int = 2,
+    max_tokens: int = 8192,
 ) -> BaseModel:
     if provider() == "anthropic":
-        return _via_anthropic(system, user_blocks, schema_model, max_retries)
-    return _via_openrouter(system, user_blocks, schema_model, max_retries)
+        return _via_anthropic(system, user_blocks, schema_model, max_retries, max_tokens)
+    return _via_openrouter(system, user_blocks, schema_model, max_retries, max_tokens)
 
 
-def _via_anthropic(system, user_blocks, schema_model, max_retries):
+def _via_anthropic(system, user_blocks, schema_model, max_retries, max_tokens=8192):
     from anthropic import Anthropic
 
     client = Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
@@ -78,7 +79,7 @@ def _via_anthropic(system, user_blocks, schema_model, max_retries):
         resp = _with_connection_retries(
             lambda: client.messages.create(
                 model=ANTHROPIC_MODEL,
-                max_tokens=8192,
+                max_tokens=max_tokens,
                 system=system,
                 messages=messages,
                 tools=[tool],
@@ -124,7 +125,7 @@ def _to_openai_content(user_blocks: list) -> list:
     return content
 
 
-def _via_openrouter(system, user_blocks, schema_model, max_retries):
+def _via_openrouter(system, user_blocks, schema_model, max_retries, max_tokens=8192):
     from openai import OpenAI
 
     client = OpenAI(
@@ -147,7 +148,7 @@ def _via_openrouter(system, user_blocks, schema_model, max_retries):
         resp = _with_connection_retries(
             lambda: client.chat.completions.create(
                 model=OPENROUTER_MODEL,
-                max_tokens=8192,
+                max_tokens=max_tokens,
                 messages=messages,
                 tools=[tool],
                 tool_choice={"type": "function", "function": {"name": "emit"}},

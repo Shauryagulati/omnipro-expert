@@ -7,6 +7,7 @@ domain node gets auto-grounding edges to its source pages/figures.
 """
 
 import re
+from pathlib import Path
 
 from pydantic import BaseModel
 
@@ -154,13 +155,25 @@ safety_warning, part) and typed edges. Rules:
   process:stick, product:vulcan-omnipro-220 and any node you propose in THIS batch."""
 
 
+CACHE_DIR = Path(__file__).resolve().parents[1] / ".cache" / "proposals"
+CHUNK_PAGES = 5  # bigger batches overflow the output budget on dense sections
+
+
 def propose_section(name: str, pages: list[PageExtraction]) -> GraphProposal:
+    cache_file = CACHE_DIR / f"{name.replace('/', '_')}.json"
+    if cache_file.exists():
+        print(f"  (cached) {name}", flush=True)
+        return GraphProposal.model_validate_json(cache_file.read_text())
     body = "\n\n".join(p.model_dump_json() for p in pages)
-    return extract_structured(
+    prop = extract_structured(
         PROPOSE_SYSTEM,
         [{"type": "text", "text": f"Section: {name}\n\nPages:\n{body}"}],
         GraphProposal,
+        max_tokens=16384,
     )
+    cache_file.parent.mkdir(parents=True, exist_ok=True)
+    cache_file.write_text(prop.model_dump_json())
+    return prop
 
 
 class AliasMap(BaseModel):
@@ -191,11 +204,12 @@ def main() -> None:
     for doc, sections in SECTIONS.items():
         for name, page_range in sections:
             batch = [pages[(doc, n)] for n in page_range if (doc, n) in pages]
-            if not batch:
-                continue
-            prop = propose_section(f"{doc}/{name}", batch)
-            print(f"{doc}/{name}: {len(prop.nodes)} nodes, {len(prop.edges)} edges", flush=True)
-            proposals.append(prop)
+            for i in range(0, len(batch), CHUNK_PAGES):
+                chunk = batch[i : i + CHUNK_PAGES]
+                label = f"{doc}/{name}" + (f"-{i // CHUNK_PAGES + 1}" if len(batch) > CHUNK_PAGES else "")
+                prop = propose_section(label, chunk)
+                print(f"{label}: {len(prop.nodes)} nodes, {len(prop.edges)} edges", flush=True)
+                proposals.append(prop)
     graph = merge(proposals, base_nodes())
     graph = enrich_aliases(graph)
     GRAPH_PATH.write_text(graph.model_dump_json(indent=2))

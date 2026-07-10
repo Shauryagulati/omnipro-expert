@@ -8,6 +8,9 @@ docs/superpowers/
 _notes/
 *.local.md
 
+# pipeline LLM-call cache (local resume convenience)
+.cache/
+
 # dependencies / build output
 node_modules/
 .next/
