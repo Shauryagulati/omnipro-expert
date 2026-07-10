@@ -1,6 +1,13 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import {
+  createRecognizer,
+  drainSentences,
+  speak,
+  speechSupported,
+  stopSpeaking,
+} from "@/lib/speech";
 import GraphView from "./GraphView";
 import Message, { type ChatMsg } from "./Message";
 import PageModal, { type PageRef } from "./PageModal";
@@ -27,7 +34,29 @@ export default function Chat() {
   const [modal, setModal] = useState<PageRef | null>(null);
   const [graphOpen, setGraphOpen] = useState(false);
   const [activeNodes, setActiveNodes] = useState<string[]>([]);
+  const [voiceOn, setVoiceOn] = useState(false);
+  const [listening, setListening] = useState(false);
+  const voiceOnRef = useRef(false);
   const bottomRef = useRef<HTMLDivElement>(null);
+  const support = speechSupported();
+
+  const startListening = () => {
+    if (!support.stt || listening || busy) return;
+    stopSpeaking(); // barge-in: talking interrupts the answer
+    setListening(true);
+    const rec = createRecognizer(
+      (text) => send(text),
+      () => setListening(false),
+    );
+    rec.start();
+  };
+
+  const toggleVoice = () => {
+    const next = !voiceOn;
+    setVoiceOn(next);
+    voiceOnRef.current = next;
+    if (!next) stopSpeaking();
+  };
 
   useEffect(() => {
     bottomRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -46,6 +75,14 @@ export default function Chat() {
     const update = () => setMessages([...history, { ...assistant }]);
     const touched: string[] = [];
     setActiveNodes([]);
+    let speechBuffer = "";
+    const speakDelta = (delta: string) => {
+      if (!voiceOnRef.current) return;
+      speechBuffer += delta;
+      const [sentences, rest] = drainSentences(speechBuffer);
+      speechBuffer = rest;
+      sentences.forEach(speak);
+    };
 
     try {
       const res = await fetch("/api/chat", {
@@ -72,6 +109,7 @@ export default function Chat() {
           switch (event.type) {
             case "text":
               assistant.content += event.delta;
+              speakDelta(event.delta);
               break;
             case "tool_call": {
               const label = TOOL_LABELS[event.name];
@@ -118,6 +156,7 @@ export default function Chat() {
       assistant.content += `\n\n> ⚠️ ${err instanceof Error ? err.message : String(err)}`;
       update();
     } finally {
+      if (voiceOnRef.current && speechBuffer.trim()) speak(speechBuffer);
       setBusy(false);
     }
   }
@@ -185,10 +224,33 @@ export default function Chat() {
       >
         <input
           value={input}
-          onChange={(e) => setInput(e.target.value)}
-          placeholder="e.g. what wire size for 1/4 inch steel?"
+          onChange={(e) => {
+            setInput(e.target.value);
+            stopSpeaking(); // typing interrupts the answer
+          }}
+          placeholder={listening ? "listening…" : "e.g. what wire size for 1/4 inch steel?"}
           className="flex-1 rounded-lg border border-zinc-800 bg-zinc-900 px-4 py-2.5 text-[15px] text-zinc-100 placeholder-zinc-600 outline-none focus:border-amber-700"
         />
+        {support.stt && (
+          <button
+            type="button"
+            onClick={startListening}
+            title="ask by voice"
+            className={`rounded-lg border px-3 text-lg transition ${listening ? "animate-pulse border-red-700 bg-red-950/50" : "border-zinc-800 hover:border-zinc-600"}`}
+          >
+            🎙
+          </button>
+        )}
+        {support.tts && (
+          <button
+            type="button"
+            onClick={toggleVoice}
+            title="speak answers aloud"
+            className={`rounded-lg border px-3 text-lg transition ${voiceOn ? "border-amber-600 bg-amber-950/40" : "border-zinc-800 opacity-50 hover:border-zinc-600 hover:opacity-100"}`}
+          >
+            🔊
+          </button>
+        )}
         <button
           type="submit"
           disabled={busy || !input.trim()}
