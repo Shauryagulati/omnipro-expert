@@ -1,0 +1,362 @@
+{
+ "nodes": [
+  {
+   "id": "video_moment:timed-flux-cored-setup-from-scratch",
+   "type": "video_moment",
+   "name": "Timed flux-cored setup from scratch",
+   "summary": "Starting with a new spool not installed and all leads disconnected, the presenter times himself setting up the OmniPro 220 for flux-cored welding, taking 4.5 minutes total including wire loading and lead connections.",
+   "aliases": [],
+   "data": {
+    "video_id": "kxGDoGcnhBw",
+    "timestamp_s": 0,
+    "label": "0:00",
+    "url": "https://youtu.be/kxGDoGcnhBw?t=0"
+   },
+   "sources": [
+    {
+     "doc": "video",
+     "page": null,
+     "figure_id": null,
+     "bbox": null,
+     "timestamp": 0.0
+    }
+   ]
+  },
+  {
+   "id": "video_moment:flux-cored-test-welds-on-plate-and-coupons",
+   "type": "video_moment",
+   "name": "Flux-cored test welds on plate and coupons",
+   "summary": "A flat horizontal weld on 3/16 inch plate and a fillet weld on 1/8 inch coupons are performed using .035 Vulcan flux-cored wire with the synergic auto settings, both turning out well.",
+   "aliases": [],
+   "data": {
+    "video_id": "kxGDoGcnhBw",
+    "timestamp_s": 66,
+    "label": "1:06",
+    "url": "https://youtu.be/kxGDoGcnhBw?t=66"
+   },
+   "sources": [
+    {
+     "doc": "video",
+     "page": null,
+     "figure_id": null,
+     "bbox": null,
+     "timestamp": 66.0
+    }
+   ]
+  },
+  {
+   "id": "video_moment:switching-feed-roller-and-polarity-for-mig",
+   "type": "video_moment",
+   "name": "Switching feed roller and polarity for MIG",
+   "summary": "The presenter demonstrates switching the feed roller from knurled to V-groove, connecting shielding gas (100% CO2), and swapping the leads to DCEP polarity for solid core MIG wire setup, noting it took about 5.5 minutes total.",
+   "aliases": [],
+   "data": {
+    "video_id": "kxGDoGcnhBw",
+    "timestamp_s": 114,
+    "label": "1:54",
+    "url": "https://youtu.be/kxGDoGcnhBw?t=114"
+   },
+   "sources": [
+    {
+     "doc": "video",
+     "page": null,
+     "figure_id": null,
+     "bbox": null,
+     "timestamp": 114.0
+    }
+   ]
+  },
+  {
+   "id": "video_moment:mig-synergic-settings-evaluation",
+   "type": "video_moment",
+   "name": "MIG synergic settings evaluation",
+   "summary": "The presenter confirms that the synergetic/auto weld settings produced good results for the MIG welds using .035 solid core Vulcan wire.",
+   "aliases": [],
+   "data": {
+    "video_id": "kxGDoGcnhBw",
+    "timestamp_s": 161,
+    "label": "2:41",
+    "url": "https://youtu.be/kxGDoGcnhBw?t=161"
+   },
+   "sources": [
+    {
+     "doc": "video",
+     "page": null,
+     "figure_id": null,
+     "bbox": null,
+     "timestamp": 161.0
+    }
+   ]
+  },
+  {
+   "id": "video_moment:quick-stick-welding-setup",
+   "type": "video_moment",
+   "name": "Quick stick welding setup",
+   "summary": "Stick welding setup is shown to be the fastest, requiring only connecting the ground clamp and electrode holder in about 30 seconds, with the machine prompting for 60 or 70 series rod selection.",
+   "aliases": [],
+   "data": {
+    "video_id": "kxGDoGcnhBw",
+    "timestamp_s": 161,
+    "label": "2:41",
+    "url": "https://youtu.be/kxGDoGcnhBw?t=161"
+   },
+   "sources": [
+    {
+     "doc": "video",
+     "page": null,
+     "figure_id": null,
+     "bbox": null,
+     "timestamp": 161.0
+    }
+   ]
+  },
+  {
+   "id": "video_moment:stick-welds-on-plate-and-t-joint-coupon",
+   "type": "video_moment",
+   "name": "Stick welds on plate and t-joint coupon",
+   "summary": "Using 7018 1/8 inch rod, a weld is demonstrated on 3/16 inch flat plate followed by a fillet weld on a t-joint using eighth inch coupons.",
+   "aliases": [],
+   "data": {
+    "video_id": "kxGDoGcnhBw",
+    "timestamp_s": 210,
+    "label": "3:30",
+    "url": "https://youtu.be/kxGDoGcnhBw?t=210"
+   },
+   "sources": [
+    {
+     "doc": "video",
+     "page": null,
+     "figure_id": null,
+     "bbox": null,
+     "timestamp": 210.0
+    }
+   ]
+  },
+  {
+   "id": "video_moment:tig-setup-with-foot-pedal-and-lift-arc-start",
+   "type": "video_moment",
+   "name": "TIG setup with foot pedal and lift-arc start",
+   "summary": "The presenter sets up TIG welding with a foot pedal for amperage control, explaining that without high-frequency start, the lift-arc method is used: touching tungsten to the workpiece, stepping the pedal, then lifting to strike the arc; total setup including torch, tungsten grinding and gas hookup took about 8 minutes.",
+   "aliases": [],
+   "data": {
+    "video_id": "kxGDoGcnhBw",
+    "timestamp_s": 257,
+    "label": "4:17",
+    "url": "https://youtu.be/kxGDoGcnhBw?t=257"
+   },
+   "sources": [
+    {
+     "doc": "video",
+     "page": null,
+     "figure_id": null,
+     "bbox": null,
+     "timestamp": 257.0
+    }
+   ]
+  },
+  {
+   "id": "video_moment:tig-welds-on-coupons-evaluation",
+   "type": "video_moment",
+   "name": "TIG welds on coupons evaluation",
+   "summary": "TIG test welds performed on 1/8 inch coupons show the machine's preset auto settings work reasonably well, placing the OmniPro's TIG performance in the middle of the spectrum compared to other machines.",
+   "aliases": [],
+   "data": {
+    "video_id": "kxGDoGcnhBw",
+    "timestamp_s": 313,
+    "label": "5:13",
+    "url": "https://youtu.be/kxGDoGcnhBw?t=313"
+   },
+   "sources": [
+    {
+     "doc": "video",
+     "page": null,
+     "figure_id": null,
+     "bbox": null,
+     "timestamp": 313.0
+    }
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "source": "process:flux-cored",
+   "target": "video_moment:timed-flux-cored-setup-from-scratch",
+   "type": "demonstrated_in",
+   "note": null
+  },
+  {
+   "source": "procedure:wire-spool-installation-1-2lb",
+   "target": "video_moment:timed-flux-cored-setup-from-scratch",
+   "type": "demonstrated_in",
+   "note": null
+  },
+  {
+   "source": "procedure:dcen-flux-cored-setup",
+   "target": "video_moment:timed-flux-cored-setup-from-scratch",
+   "type": "demonstrated_in",
+   "note": null
+  },
+  {
+   "source": "setting:auto-weld-settings",
+   "target": "video_moment:timed-flux-cored-setup-from-scratch",
+   "type": "demonstrated_in",
+   "note": null
+  },
+  {
+   "source": "process:flux-cored",
+   "target": "video_moment:flux-cored-test-welds-on-plate-and-coupons",
+   "type": "demonstrated_in",
+   "note": null
+  },
+  {
+   "source": "process:flux-cored-welding",
+   "target": "video_moment:flux-cored-test-welds-on-plate-and-coupons",
+   "type": "demonstrated_in",
+   "note": null
+  },
+  {
+   "source": "setting:wire-diameter-material-thickness",
+   "target": "video_moment:flux-cored-test-welds-on-plate-and-coupons",
+   "type": "demonstrated_in",
+   "note": null
+  },
+  {
+   "source": "procedure:practice-welds",
+   "target": "video_moment:flux-cored-test-welds-on-plate-and-coupons",
+   "type": "demonstrated_in",
+   "note": null
+  },
+  {
+   "source": "procedure:feed-roller-selection",
+   "target": "video_moment:switching-feed-roller-and-polarity-for-mig",
+   "type": "demonstrated_in",
+   "note": null
+  },
+  {
+   "source": "procedure:dcep-solid-core-setup",
+   "target": "video_moment:switching-feed-roller-and-polarity-for-mig",
+   "type": "demonstrated_in",
+   "note": null
+  },
+  {
+   "source": "procedure:gas-cylinder-regulator-setup",
+   "target": "video_moment:switching-feed-roller-and-polarity-for-mig",
+   "type": "demonstrated_in",
+   "note": null
+  },
+  {
+   "source": "process:mig",
+   "target": "video_moment:switching-feed-roller-and-polarity-for-mig",
+   "type": "demonstrated_in",
+   "note": null
+  },
+  {
+   "source": "setting:polarity-mig-dcep",
+   "target": "video_moment:switching-feed-roller-and-polarity-for-mig",
+   "type": "demonstrated_in",
+   "note": null
+  },
+  {
+   "source": "process:mig-welding-process",
+   "target": "video_moment:mig-synergic-settings-evaluation",
+   "type": "demonstrated_in",
+   "note": null
+  },
+  {
+   "source": "setting:auto-weld-settings",
+   "target": "video_moment:mig-synergic-settings-evaluation",
+   "type": "demonstrated_in",
+   "note": null
+  },
+  {
+   "source": "procedure:stick-connect-cables",
+   "target": "video_moment:quick-stick-welding-setup",
+   "type": "demonstrated_in",
+   "note": null
+  },
+  {
+   "source": "procedure:stick-setup-startup",
+   "target": "video_moment:quick-stick-welding-setup",
+   "type": "demonstrated_in",
+   "note": null
+  },
+  {
+   "source": "setting:stick-electrode-type",
+   "target": "video_moment:quick-stick-welding-setup",
+   "type": "demonstrated_in",
+   "note": null
+  },
+  {
+   "source": "component:ground-clamp",
+   "target": "video_moment:quick-stick-welding-setup",
+   "type": "demonstrated_in",
+   "note": null
+  },
+  {
+   "source": "process:stick",
+   "target": "video_moment:stick-welds-on-plate-and-t-joint-coupon",
+   "type": "demonstrated_in",
+   "note": null
+  },
+  {
+   "source": "procedure:stick-arc-ignition-technique",
+   "target": "video_moment:stick-welds-on-plate-and-t-joint-coupon",
+   "type": "demonstrated_in",
+   "note": null
+  },
+  {
+   "source": "setting:stick-auto-weld-amperage",
+   "target": "video_moment:stick-welds-on-plate-and-t-joint-coupon",
+   "type": "demonstrated_in",
+   "note": null
+  },
+  {
+   "source": "procedure:tig-setup-startup",
+   "target": "video_moment:tig-setup-with-foot-pedal-and-lift-arc-start",
+   "type": "demonstrated_in",
+   "note": null
+  },
+  {
+   "source": "procedure:assemble-tig-torch",
+   "target": "video_moment:tig-setup-with-foot-pedal-and-lift-arc-start",
+   "type": "demonstrated_in",
+   "note": null
+  },
+  {
+   "source": "procedure:sharpen-tungsten-electrode",
+   "target": "video_moment:tig-setup-with-foot-pedal-and-lift-arc-start",
+   "type": "demonstrated_in",
+   "note": null
+  },
+  {
+   "source": "component:foot-pedal-connection",
+   "target": "video_moment:tig-setup-with-foot-pedal-and-lift-arc-start",
+   "type": "demonstrated_in",
+   "note": null
+  },
+  {
+   "source": "process:dc-tig",
+   "target": "video_moment:tig-setup-with-foot-pedal-and-lift-arc-start",
+   "type": "demonstrated_in",
+   "note": null
+  },
+  {
+   "source": "process:dc-tig",
+   "target": "video_moment:tig-welds-on-coupons-evaluation",
+   "type": "demonstrated_in",
+   "note": null
+  },
+  {
+   "source": "setting:tig-auto-weld-amperage",
+   "target": "video_moment:tig-welds-on-coupons-evaluation",
+   "type": "demonstrated_in",
+   "note": null
+  },
+  {
+   "source": "procedure:practice-welds",
+   "target": "video_moment:tig-welds-on-coupons-evaluation",
+   "type": "demonstrated_in",
+   "note": null
+  }
+ ]
+}

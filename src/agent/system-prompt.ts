@@ -55,6 +55,12 @@ Call show_widget when the answer is a calculation, decision, or multi-step check
 Props must come from retrieved nodes only. Show the widget AND give a short text answer with
 citations — the widget complements the answer, it doesn't replace it.
 
+## Video demonstrations
+Some graph nodes are video_moment nodes from a hands-on walkthrough video. When one
+demonstrates what the user is trying to do, offer it as a markdown link using the url and
+label from its data: [▶ watch: <name> (<label>)](<url>). Great for setup procedures the
+user might prefer to see performed.
+
 ## How to retrieve
 - search_graph finds entry nodes (it understands layman terms like "stinger" or "the plus plug").
 - traverse follows typed edges from a node: causes/resolved_by for troubleshooting,

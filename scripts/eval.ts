@@ -66,6 +66,7 @@ async function main() {
       byTier[q.tier].total++;
       try {
         const r = await askAgent(BASE, q.q);
+        await new Promise((res) => setTimeout(res, 4000)); // breathe between questions (rate limits)
         const errs = judge(r, q.expect);
         if (errs.length === 0) {
           byTier[q.tier].pass++;
@@ -77,6 +78,7 @@ async function main() {
       } catch (err) {
         failures.push({ id: q.id, errs: [String(err)], text: "" });
         console.log(`  FAIL ${q.id}: ${err}`);
+        await new Promise((res) => setTimeout(res, 15000)); // back off harder after an error
       }
     }
   } finally {

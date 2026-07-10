@@ -6,6 +6,7 @@ enrichment pass. Edges referencing unknown nodes are dropped loudly, and every
 domain node gets auto-grounding edges to its source pages/figures.
 """
 
+import json
 import re
 from pathlib import Path
 
@@ -227,6 +228,12 @@ def main() -> None:
                 prop = propose_section(label, chunk)
                 print(f"{label}: {len(prop.nodes)} nodes, {len(prop.edges)} edges", flush=True)
                 proposals.append(prop)
+    moments_path = DATA_DIR.parent / "video_moments.json"
+    if moments_path.exists():
+        m = json.loads(moments_path.read_text())
+        proposals.append(GraphProposal.model_validate(m))
+        print(f"video moments: {len(m['nodes'])} nodes, {len(m['edges'])} edges", flush=True)
+
     graph = merge(proposals, base_nodes())
     graph = enrich_aliases(graph)
     GRAPH_PATH.write_text(graph.model_dump_json(indent=2))
