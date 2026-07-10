@@ -31,11 +31,12 @@ const CITE = /\[(owner-manual|quick-start-guide|selection-chart) p\.?\s*\d+\]/;
 
 function judge(r: AgentResult, e: Expect): string[] {
   const errs: string[] = [];
+  // All patterns case-insensitive; JS has no (?i) inline flag.
   for (const rx of [...(e.regex ?? []), ...(e.regex2 ?? [])]) {
-    if (!new RegExp(rx).test(r.text)) errs.push(`missing /${rx}/`);
+    if (!new RegExp(rx, "i").test(r.text)) errs.push(`missing /${rx}/`);
   }
   for (const rx of e.notRegex ?? []) {
-    if (new RegExp(rx).test(r.text)) errs.push(`forbidden /${rx}/ present`);
+    if (new RegExp(rx, "i").test(r.text)) errs.push(`forbidden /${rx}/ present`);
   }
   if (e.citation && !CITE.test(r.text)) errs.push("no citation");
   if (e.visual && r.figures.length === 0 && r.widgets.length === 0 && r.pages === 0)
@@ -78,7 +79,7 @@ async function main() {
       } catch (err) {
         failures.push({ id: q.id, errs: [String(err)], text: "" });
         console.log(`  FAIL ${q.id}: ${err}`);
-        await new Promise((res) => setTimeout(res, 15000)); // back off harder after an error
+        await new Promise((res) => setTimeout(res, 8000)); // back off after an error
       }
     }
   } finally {
