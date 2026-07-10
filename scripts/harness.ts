@@ -58,5 +58,9 @@ export async function startServer(port: number): Promise<ChildProcess> {
 }
 
 export function stopServer(server: ChildProcess): void {
-  if (server.pid) process.kill(-server.pid, "SIGTERM");
+  try {
+    if (server.pid) process.kill(-server.pid, "SIGTERM");
+  } catch {
+    // already gone — nothing to stop
+  }
 }
