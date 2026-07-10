@@ -66,7 +66,19 @@ OFFLINE (Python, pipeline/ — runs once, outputs committed)      RUNTIME (TypeS
 
 `npm run eval` runs 30 questions through the real agent across seven tiers — the challenge's sample questions, single-fact retrieval, **six hallucination traps**, multi-hop troubleshooting, three questions that must be answered with a clarifying question, three that must be declined, and visual-output checks.
 
-<!-- EVAL_RESULTS -->
+Latest full run — **30/31 (97%)**:
+
+| tier | what it tests | score |
+|---|---|---|
+| sample | the challenge README's own questions | 3/3 |
+| fact | single-value retrieval (duty cycles, OCV, wire sizes…) | 8/8 |
+| **trap** | **hallucination bait** (DC-only aluminum, inverted flux polarity, gasless flux, 120V limits…) | **6/6** |
+| multihop | troubleshooting requiring edge traversal | 4/4 |
+| ambiguous | must ask a clarifying question, not guess | 3/3 |
+| scope | must decline (other machines, safety bypasses, legal advice) | 3/3 |
+| visual | must show the right figure/widget | 3/4 |
+
+The one miss, for honesty: asked how to set wire-feed tension, the agent gave the exact documented settings (3–5 solid / 2–3 flux-cored, cited, correctly split by wire type) but didn't surface the tensioner diagram alongside. Right facts, missed a show — kept as a failure rather than tuned away.
 
 `npm run smoke` is the 2-minute version (5 questions).
 
