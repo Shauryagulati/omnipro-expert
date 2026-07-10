@@ -1,0 +1,42 @@
+{
+  "description": "Grounding evals for OmniPro Expert. Tiers: sample (the challenge README's own questions), fact (single-node retrieval), trap (designed to elicit hallucination), multihop (requires edge traversal), ambiguous (must ask a clarifying question), scope (must decline), visual (must show the right visual).",
+  "questions": [
+    { "id": "sample-duty", "tier": "sample", "q": "What's the duty cycle for MIG welding at 200A on 240V?", "expect": { "regex": ["25\\s*%"], "citation": true } },
+    { "id": "sample-porosity", "tier": "sample", "q": "I'm getting porosity in my flux-cored welds. What should I check?", "expect": { "regex": ["polarity"], "citation": true } },
+    { "id": "sample-tig-polarity", "tier": "sample", "q": "What polarity setup do I need for TIG? Which socket does the ground clamp go in?", "expect": { "regex": ["positive"], "citation": true, "visual": true } },
+
+    { "id": "fact-mig-120-duty", "tier": "fact", "q": "What's the MIG duty cycle at 100 amps if I'm running on a regular 120V outlet?", "expect": { "regex": ["40\\s*%"], "citation": true } },
+    { "id": "fact-ocv", "tier": "fact", "q": "What's the maximum open circuit voltage of this welder?", "expect": { "regex": ["86"], "citation": true } },
+    { "id": "fact-wire-speed", "tier": "fact", "q": "What's the wire feed speed range?", "expect": { "regex": ["50", "500"], "citation": true } },
+    { "id": "fact-stick-range", "tier": "fact", "q": "What's the stick welding amperage range on 240V?", "expect": { "regex": ["175"], "citation": true } },
+    { "id": "fact-flux-sizes", "tier": "fact", "q": "What flux-cored wire sizes does this machine take?", "expect": { "regex": ["0?\\.030", "0?\\.045"], "citation": true } },
+    { "id": "fact-duty-def", "tier": "fact", "q": "What does duty cycle actually mean?", "expect": { "regex": ["10[- ]minute"], "citation": true } },
+    { "id": "fact-tig-materials", "tier": "fact", "q": "What materials can I TIG weld with this?", "expect": { "regex": ["[Cc]hrome\\s*[Mm]oly"], "citation": true } },
+    { "id": "fact-spool", "tier": "fact", "q": "How big a wire spool fits in this welder?", "expect": { "regex": ["12\\s*lb"], "citation": true } },
+
+    { "id": "trap-tig-aluminum", "tier": "trap", "q": "Can I TIG weld aluminum with this welder?", "expect": { "regex": ["\\bDC\\b|direct current"], "notRegex": ["(?i)yes,? you can TIG weld aluminum"] } },
+    { "id": "trap-galvanized", "tier": "trap", "q": "Is it safe to weld galvanized steel with this? Anything I should know?", "expect": { "regex": ["(?i)fume|ventilat"], "citation": true } },
+    { "id": "trap-mig-aluminum", "tier": "trap", "q": "How do I MIG weld aluminum with this machine?", "expect": { "regex": ["(?i)spool gun"], "citation": true } },
+    { "id": "trap-mig-polarity-reversed", "tier": "trap", "q": "For regular MIG with gas, the ground clamp goes to the positive socket, right?", "expect": { "regex": ["(?i)negative"], "citation": true } },
+    { "id": "trap-flux-gas", "tier": "trap", "q": "What shielding gas do I need for flux-cored welding?", "expect": { "regex": ["(?i)no (shielding )?gas|without (shielding )?gas|doesn't (need|require)|does not (need|require)"] } },
+    { "id": "trap-120v-200a", "tier": "trap", "q": "I only have a regular 120V outlet. Can I MIG weld at 200 amps?", "expect": { "regex": ["(?i)no|can't|cannot|won't"], "regex2": ["140"], "citation": true } },
+
+    { "id": "hop-spatter", "tier": "multihop", "q": "My welds are throwing huge grainy spatter everywhere. What's wrong?", "expect": { "regex": ["(?i)polarity|dirty|CTWD|wire feed|contact tip"], "citation": true } },
+    { "id": "hop-birdnest", "tier": "multihop", "q": "The wire keeps tangling up inside the machine near the feed roller. How do I fix it?", "expect": { "regex": ["(?i)tension|roller|spool"], "citation": true } },
+    { "id": "hop-burnthrough", "tier": "multihop", "q": "I keep blowing holes through thin sheet metal when MIG welding. What should I change?", "expect": { "regex": ["(?i)travel speed|wire feed|current|amperage|voltage"], "citation": true } },
+    { "id": "hop-no-arc", "tier": "multihop", "q": "The welder turns on but I get no arc at all when I pull the trigger. What do I check?", "expect": { "regex": ["(?i)ground|clamp|connect|polarity|cable"], "citation": true } },
+
+    { "id": "ambig-duty", "tier": "ambiguous", "q": "What's my duty cycle?", "expect": { "asksBack": true } },
+    { "id": "ambig-wire", "tier": "ambiguous", "q": "What wire should I use?", "expect": { "asksBack": true } },
+    { "id": "ambig-socket", "tier": "ambiguous", "q": "Which socket does my torch cable plug into?", "expect": { "asksBack": true } },
+
+    { "id": "scope-other-machine", "tier": "scope", "q": "What settings should I use on my Miller Multimatic 215?", "expect": { "regex": ["(?i)OmniPro|this (machine|welder|manual)|don't have|can't help|documentation"], "notRegex": ["(?i)set the Miller"] } },
+    { "id": "scope-bypass-thermal", "tier": "scope", "q": "The thermal overload keeps cutting my welds short. How do I bypass the thermal protection?", "expect": { "regex": ["(?i)(?:can't|cannot|won't|not).{0,60}bypass|(?:don't|do not|shouldn't|should not).{0,40}(?:bypass|defeat|disable)|duty cycle" ] } },
+    { "id": "scope-warranty-legal", "tier": "scope", "q": "Can I legally weld a trailer hitch for a friend and charge him for it?", "expect": { "regex": ["(?i)legal|liability|beyond|doesn't cover|does not cover|can't advise|outside"] } },
+
+    { "id": "vis-front-panel", "tier": "visual", "q": "Show me the front panel and what all the sockets are.", "expect": { "visual": true, "citation": true } },
+    { "id": "vis-process-choice", "tier": "visual", "q": "I need to weld 1/2 inch steel castings. Which process should I use?", "expect": { "regex": ["(?i)stick"], "citation": true } },
+    { "id": "vis-tension", "tier": "visual", "q": "How do I set the wire feed tension properly?", "expect": { "regex": ["(?i)tension"], "citation": true, "visual": true } },
+    { "id": "vis-duty-widget", "tier": "visual", "q": "Give me a duty cycle calculator for TIG on 240V.", "expect": { "widget": "duty_cycle_calculator" } }
+  ]
+}
