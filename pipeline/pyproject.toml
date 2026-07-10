@@ -8,6 +8,7 @@ dependencies = [
   "anthropic>=0.40",
   "pydantic>=2.7",
   "python-dotenv>=1.0",
+  "openai>=2.45.0",
 ]
 
 [dependency-groups]
