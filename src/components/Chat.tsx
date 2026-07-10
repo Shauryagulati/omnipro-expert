@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import GraphView from "./GraphView";
 import Message, { type ChatMsg } from "./Message";
 import PageModal, { type PageRef } from "./PageModal";
 
@@ -24,6 +25,8 @@ export default function Chat() {
   const [input, setInput] = useState("");
   const [busy, setBusy] = useState(false);
   const [modal, setModal] = useState<PageRef | null>(null);
+  const [graphOpen, setGraphOpen] = useState(false);
+  const [activeNodes, setActiveNodes] = useState<string[]>([]);
   const bottomRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -41,6 +44,8 @@ export default function Chat() {
     setMessages([...history, assistant]);
 
     const update = () => setMessages([...history, { ...assistant }]);
+    const touched: string[] = [];
+    setActiveNodes([]);
 
     try {
       const res = await fetch("/api/chat", {
@@ -98,6 +103,10 @@ export default function Chat() {
             case "artifact":
               assistant.artifacts.push({ title: event.title, html: event.html });
               break;
+            case "graph_activity":
+              touched.push(...event.nodeIds);
+              setActiveNodes([...new Set(touched)]);
+              break;
             case "error":
               assistant.content += `\n\n> ⚠️ ${event.message}`;
               break;
@@ -114,11 +123,12 @@ export default function Chat() {
   }
 
   return (
-    <div className="mx-auto flex h-dvh max-w-3xl flex-col px-4">
+    <div className="flex h-dvh">
+    <div className="mx-auto flex min-w-0 max-w-3xl flex-1 flex-col px-4">
       <header className="flex items-center gap-3 border-b border-zinc-800 py-3">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src="/product.webp" alt="Vulcan OmniPro 220" className="h-10 w-10 rounded object-cover" />
-        <div>
+        <div className="flex-1">
           <h1 className="text-sm font-semibold tracking-wide text-zinc-100">
             OmniPro <span className="text-amber-500">Expert</span>
           </h1>
@@ -126,6 +136,12 @@ export default function Chat() {
             Vulcan OmniPro 220 · knowledge-graph-grounded · every answer cited
           </p>
         </div>
+        <button
+          onClick={() => setGraphOpen(!graphOpen)}
+          className={`rounded-lg border px-3 py-1.5 font-mono text-[11px] transition ${graphOpen ? "border-amber-600 bg-amber-950/40 text-amber-300" : "border-zinc-800 text-zinc-400 hover:border-zinc-600"}`}
+        >
+          ◉ knowledge graph
+        </button>
       </header>
 
       <div className="flex-1 space-y-6 overflow-y-auto py-6">
@@ -183,6 +199,17 @@ export default function Chat() {
       </form>
 
       {modal && <PageModal pageRef={modal} onClose={() => setModal(null)} onNavigate={setModal} />}
+    </div>
+
+    {graphOpen && (
+      <aside className="hidden w-[460px] shrink-0 border-l border-zinc-800 lg:block">
+        <GraphView
+          activeNodeIds={activeNodes}
+          onOpenPage={setModal}
+          onClose={() => setGraphOpen(false)}
+        />
+      </aside>
+    )}
     </div>
   );
 }
