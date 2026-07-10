@@ -70,9 +70,17 @@ LANDMARKS = [
         "Aluminum TIG incompatibility captured",
         lambda g: any(e.type == "incompatible_with" for e in g.edges),
     ),
+    # NOTE: the manual never says "zinc" — asserting a zinc-specific warning would
+    # demand a hallucination. What the corpus actually supports: a general fume
+    # safety warning (owner-manual p3) + galvanized steel as a flux-cored
+    # application (selection chart). The agent must compose these, not invent.
     (
-        "Galvanized/zinc fume safety warning node",
-        lambda g: has_node(g, "zinc") or has_node(g, "galvanized"),
+        "Fume safety warning node exists (p3)",
+        lambda g: has_node(g, "fume", type="safety_warning"),
+    ),
+    (
+        "Galvanized steel captured as flux-cored application (selection chart)",
+        lambda g: has_node(g, "galvani"),
     ),
     (
         "Front panel figure node exists (p8)",

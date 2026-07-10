@@ -160,7 +160,10 @@ safety_warning, part) and typed edges. Rules:
 - Use incompatible_with for things this machine cannot do (e.g. aluminum TIG needs AC; this
   machine is DC-only). Use differs_by for process/voltage variations (flux-cored polarity
   differs from MIG). Edges may reference process:mig, process:flux-cored, process:tig,
-  process:stick, product:vulcan-omnipro-220 and any node you propose in THIS batch."""
+  process:stick, product:vulcan-omnipro-220 and any node you propose in THIS batch.
+- Capture EVERY row of decision matrices/charts, including typical applications per process
+  (e.g. galvanized steel, pipe and tubing) — users ask 'can I weld X?' and the answer must
+  be a node, not a gap."""
 
 
 CACHE_DIR = Path(__file__).resolve().parents[1] / ".cache" / "proposals"
