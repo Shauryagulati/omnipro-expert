@@ -95,10 +95,18 @@ def merge(proposals: list[GraphProposal], base: list[GraphNode]) -> Graph:
             else:
                 by_id[n.id] = n
 
+    def normalize_ref(ref: str) -> str:
+        # Proposals sometimes hyphenate type prefixes ('safety-warning:x') or
+        # vary slug punctuation; normalize to the same form as canonical_id.
+        prefix, _, name = ref.partition(":")
+        candidate = canonical_id(prefix.replace("-", "_"), name)
+        return candidate if candidate in by_id else ref
+
     edges: list[GraphEdge] = []
     seen: set[tuple] = set()
     for prop in proposals:
         for e in prop.edges:
+            e.source, e.target = normalize_ref(e.source), normalize_ref(e.target)
             key = (e.source, e.target, e.type)
             if e.source in by_id and e.target in by_id and key not in seen:
                 seen.add(key)
@@ -180,21 +188,27 @@ class AliasMap(BaseModel):
     aliases: dict[str, list[str]]
 
 
+ALIAS_BATCH = 50  # whole-graph alias calls overflow the output budget
+
+
 def enrich_aliases(graph: Graph) -> Graph:
-    listing = "\n".join(
-        f"{n.id}: {n.name} — {n.summary[:80]}"
-        for n in graph.nodes
-        if n.type not in ("page", "figure")
-    )
-    result = extract_structured(
-        "For each node id, list 2-5 layman synonyms a garage DIYer might say ('stinger' for "
-        "electrode holder, 'wire speed knob', 'the plus plug'). Return {aliases: {node_id: [...]}}.",
-        [{"type": "text", "text": listing}],
-        AliasMap,
-    )
+    domain = [n for n in graph.nodes if n.type not in ("page", "figure")]
+    merged: dict[str, list[str]] = {}
+    for i in range(0, len(domain), ALIAS_BATCH):
+        batch = domain[i : i + ALIAS_BATCH]
+        listing = "\n".join(f"{n.id}: {n.name} — {n.summary[:80]}" for n in batch)
+        result = extract_structured(
+            "For each node id, list 2-5 layman synonyms a garage DIYer might say ('stinger' for "
+            "electrode holder, 'wire speed knob', 'the plus plug'). "
+            "Return {aliases: {node_id: [...]}} covering every listed id.",
+            [{"type": "text", "text": listing}],
+            AliasMap,
+        )
+        merged.update(result.aliases)
+        print(f"  aliases {i + len(batch)}/{len(domain)}", flush=True)
     for n in graph.nodes:
-        if n.id in result.aliases:
-            n.aliases = sorted(set(n.aliases) | set(result.aliases[n.id]))
+        if n.id in merged:
+            n.aliases = sorted(set(n.aliases) | set(merged[n.id]))
     return graph
 
 

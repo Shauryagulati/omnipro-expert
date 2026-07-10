@@ -48,6 +48,26 @@ def test_merge_drops_edges_to_missing_nodes():
     assert all(e.type == "documented_on" for e in g.edges)  # only auto-grounding survives
 
 
+def test_merge_normalizes_hyphenated_type_prefixes_in_edges():
+    a = GraphProposal(
+        nodes=[
+            mknode("safety_warning:zinc-fumes", "Zinc Fumes", type="safety_warning"),
+            mknode("procedure:weld-galvanized", "Weld Galvanized", type="procedure"),
+        ],
+        edges=[
+            GraphEdge(
+                source="safety-warning:zinc-fumes",  # hyphenated prefix, as LLMs emit
+                target="procedure:weld-galvanized",
+                type="applies_to",
+            )
+        ],
+    )
+    g = merge([a], base=[])
+    assert any(
+        e.type == "applies_to" and e.source == "safety_warning:zinc-fumes" for e in g.edges
+    )
+
+
 def test_base_nodes_include_pages_and_processes():
     nodes = base_nodes()
     ids = {n.id for n in nodes}
