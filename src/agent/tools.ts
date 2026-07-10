@@ -2,6 +2,7 @@ import { createSdkMcpServer, tool } from "@anthropic-ai/claude-agent-sdk";
 import { z } from "zod";
 import { figureUrl, getNode, loadGraph, neighbors, pageUrl, searchGraph } from "@/lib/graph";
 import type { EdgeType, GraphNode } from "@/lib/types";
+import { validateArtifact } from "./artifact";
 import { widgetSchemas, type WidgetType } from "./widget-schemas";
 
 // UI events pushed from inside tool handlers (figures, pages) so the client
@@ -10,6 +11,7 @@ export type UiEvent =
   | { type: "figure"; figureId: string; caption: string; url: string; doc: string; page: number }
   | { type: "page"; doc: string; page: number; url: string; summary: string }
   | { type: "widget"; widget: string; props: unknown }
+  | { type: "artifact"; title: string; html: string }
   | { type: "graph_activity"; nodeIds: string[] };
 
 export type UiEmit = (event: UiEvent) => void;
@@ -132,6 +134,22 @@ export function buildToolServer(emit: UiEmit) {
         },
       ),
       tool(
+        "generate_artifact",
+        "Render custom interactive HTML for shapes the curated widgets don't cover (e.g. a wire-feed path animation, a custom comparison). Self-contained HTML only: inline CSS/JS, no external URLs, no network calls; images only from /products/vulcan-omnipro-220/... paths or data: URIs; max 60KB. Prefer show_widget when a curated widget fits. On validation error, fix the HTML and call again.",
+        {
+          title: z.string().describe("short title shown above the artifact"),
+          html: z.string().describe("self-contained HTML (fragment or full document)"),
+        },
+        async ({ title, html }) => {
+          const check = validateArtifact(html);
+          if (!check.ok) {
+            return text({ error: `artifact rejected: ${check.errors.join("; ")}` });
+          }
+          emit({ type: "artifact", title, html });
+          return text({ shown_to_user: true, title });
+        },
+      ),
+      tool(
         "graph_stats",
         "Basic stats about the knowledge graph (for meta questions about how you work).",
         {},
@@ -150,5 +168,6 @@ export const ALLOWED_TOOLS = [
   "mcp__omnipro__get_figure",
   "mcp__omnipro__get_page",
   "mcp__omnipro__show_widget",
+  "mcp__omnipro__generate_artifact",
   "mcp__omnipro__graph_stats",
 ];

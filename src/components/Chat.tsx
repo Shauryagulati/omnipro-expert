@@ -35,9 +35,9 @@ export default function Chat() {
     setBusy(true);
     setInput("");
 
-    const userMsg: ChatMsg = { role: "user", content: text, media: [], widgets: [], toolActivity: [] };
+    const userMsg: ChatMsg = { role: "user", content: text, media: [], widgets: [], artifacts: [], toolActivity: [] };
     const history = [...messages, userMsg];
-    const assistant: ChatMsg = { role: "assistant", content: "", media: [], widgets: [], toolActivity: [] };
+    const assistant: ChatMsg = { role: "assistant", content: "", media: [], widgets: [], artifacts: [], toolActivity: [] };
     setMessages([...history, assistant]);
 
     const update = () => setMessages([...history, { ...assistant }]);
@@ -94,6 +94,9 @@ export default function Chat() {
               break;
             case "widget":
               assistant.widgets.push({ widget: event.widget, props: event.props });
+              break;
+            case "artifact":
+              assistant.artifacts.push({ title: event.title, html: event.html });
               break;
             case "error":
               assistant.content += `\n\n> ⚠️ ${event.message}`;

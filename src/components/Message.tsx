@@ -2,6 +2,7 @@
 
 import ReactMarkdown from "react-markdown";
 import type { WidgetType } from "@/agent/widget-schemas";
+import ArtifactFrame from "./ArtifactFrame";
 import type { PageRef } from "./PageModal";
 import WidgetRenderer from "./widgets";
 
@@ -18,11 +19,17 @@ export interface WidgetItem {
   props: unknown;
 }
 
+export interface ArtifactItem {
+  title: string;
+  html: string;
+}
+
 export interface ChatMsg {
   role: "user" | "assistant";
   content: string;
   media: MediaItem[];
   widgets: WidgetItem[];
+  artifacts: ArtifactItem[];
   toolActivity: string[];
 }
 
@@ -98,6 +105,9 @@ export default function Message({
           ))}
         </div>
       )}
+      {msg.artifacts.map((a, i) => (
+        <ArtifactFrame key={i} title={a.title} html={a.html} />
+      ))}
       {msg.media.length > 0 && (
         <div className="flex flex-wrap gap-3">
           {msg.media.map((m, i) => (
