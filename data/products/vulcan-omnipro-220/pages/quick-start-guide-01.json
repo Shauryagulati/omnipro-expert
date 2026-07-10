@@ -1,0 +1,40 @@
+{
+  "doc": "quick-start-guide",
+  "page": 1,
+  "summary": "Quick Start Guide (part 57812) for the VULCAN OmniPro 220 welder, showing a 6-step setup process for flux-cored wire welding: connecting cables, installing the wire spool and feeding wire, purging the gun of air, tensioning the wire feed knob, replacing consumables, and finally plugging in and setting weld parameters. Includes two safety warnings about reading the manual and keeping the torch/wire clear of grounded objects while plugged in.",
+  "text": "VULCAN OMNIPRO 220 QUICK START GUIDE 57812\n\n1. Connect cables as needed for flux wire welding - see back of guide.\n\n2. Install wire spool. Insert wire through both feed guides and clamp it into feed mechanism. See manual if changing wire size or using solid wire.\n2 lb Spool Loading — Adapter and knob required for 10-12 lb spool\nDiagram labels: Wingnut, Spacer, Spindle, 2 lb Wire Spool, Brake Pad, Welder, Feed Mechanism, feed guides, welding wire, Wire Spool\n\nWARNING: To prevent serious injury, read manual warnings and instructions before use.\n\n3. Take off nozzle and tip, plug selected cord into welder and into wall, turn welder on, and press cold wire feed switch until wire comes out.\nDiagram labels: 2\" Contact Tip, Nozzle\n\nWARNING: To prevent fire and serious injury, keep torch and wire clear of grounded objects while welder plugged in.\n\n4. Incrementally tighten wire feed tension knob clockwise until wire will bend from feed tension at 2\"-3\".\nDiagram labels: clockwise, wood block, 2\"-3\"\n\n5. Unplug welder and replace nozzle and tip.\n\n6. Hold gun clear of workpiece, then plug in welder, turn it on, and set weld thickness and other settings.\nDiagram label: HOLD GUN CLEAR\n\nBASIC WELDING INSTRUCTIONS AND WELDING TIPS ARE IN MANUAL.",
+  "tables": [],
+  "figures": [
+    {
+      "figure_id": "quick-start-guide-p01-f1",
+      "page": 1,
+      "caption": "2 lb Spool Loading",
+      "description": "Diagram showing exploded view of wire spool loading assembly with wingnut, spacer, spindle, 2 lb wire spool, and brake pad, next to the welder with feed mechanism, feed guides, welding wire, and wire spool labeled. Adapter and knob required for 10-12 lb spool.",
+      "bbox": [
+        0.0,
+        0.0,
+        419.52801513671875,
+        595.2760009765625
+      ]
+    }
+  ],
+  "key_facts": [
+    "The VULCAN OmniPro 220 Quick Start Guide part number is 57812.",
+    "2 lb wire spool loading uses a wingnut, spacer, spindle, and brake pad; an adapter and knob are required for 10-12 lb spools.",
+    "Step 3 requires removing the nozzle and tip, plugging the selected cord into the welder and wall outlet, turning the welder on, and pressing the cold wire feed switch until wire comes out.",
+    "Step 4 requires incrementally tightening the wire feed tension knob clockwise until the wire bends from feed tension at 2\"-3\" against a wood block.",
+    "Warning: To prevent serious injury, read manual warnings and instructions before use.",
+    "Warning: To prevent fire and serious injury, keep torch and wire clear of grounded objects while welder is plugged in.",
+    "Step 5 instructs to unplug the welder and replace the nozzle and tip after tensioning.",
+    "Step 6 instructs to hold the gun clear of the workpiece before plugging in, turning on, and setting weld thickness and other settings.",
+    "Basic welding instructions and welding tips are located in the full owner's manual, not this quick start guide."
+  ],
+  "topics": [
+    "wire-feed",
+    "setup",
+    "safety-warnings",
+    "spool-installation",
+    "gun-maintenance",
+    "quick-start"
+  ]
+}

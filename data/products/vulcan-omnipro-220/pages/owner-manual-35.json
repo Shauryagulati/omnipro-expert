@@ -1,0 +1,54 @@
+{
+  "doc": "owner-manual",
+  "page": 35,
+  "summary": "This page provides diagnostic guidance for wire welding related to workpiece heat control and weld penetration. It includes a diagram showing three penetration states (inadequate, proper, excess/burn-through) with corresponding methods to increase or decrease workpiece heat and penetration. A second section, \"Example Wire Weld Diagrams,\" shows six weld bead cross-sections and profiles illustrating good welds versus common defects (voltage/wire feed too low or high, travel speed too fast or slow, and CTWD too long or wrong polarity), each with correction instructions.",
+  "text": "Wire Weld Diagnosis–Workpiece Heat Control / Weld Penetration\n\nINADEQUATE PENETRATION | PROPER PENETRATION | EXCESS PENETRATION OR BURN-THROUGH\n\nNot hot enough -------- Ideal heat -------- Too hot\n\nHow to increase workpiece heat and increase penetration: (to weld THICKER workpieces properly)\na. Increase weld current\nb. Decrease travel speed\nc. Use faster wire feed\nd. Use shorter CTWD\n\nHow to reduce workpiece heat and limit penetration: (to weld THINNER workpieces properly)\ne. Decrease weld current\nf. Increase travel speed\ng. Use slower wire feed\nh. Use longer CTWD\n\nExample Wire Weld Diagrams\n\nGood Weld\n- (no defect; well-formed weld bead and penetration)\n\nVoltage Too Low or Wire Feed Too Slow\nTO CORRECT: Increase Output Voltage or Increase Wire Feed Speed\n\nVoltage Too High or Wire Feed Too Fast\nTO CORRECT: Decrease Output Voltage or Decrease Wire Feed Speed\n\nTravel Speed Too Fast\nTO CORRECT: travel slower\n\nTravel Speed Too Slow\nTO CORRECT: travel faster\n\nCTWD Too Long or Wrong Polarity\nTO CORRECT: Check Polarity and maintain less than 1/2\" CTWD\n\nItem 57812 — For technical questions, please call 1-800-444-3353. — Page 35",
+  "tables": [],
+  "figures": [
+    {
+      "figure_id": "owner-manual-p35-f1",
+      "page": 35,
+      "caption": "Wire Weld Diagnosis–Workpiece Heat Control / Weld Penetration",
+      "description": "Three cross-section diagrams of weld beads on a workpiece showing: (1) Inadequate Penetration - a shallow weld bead sitting on top with a gap/crack visible below in the base metal, labeled 'Not hot enough'; (2) Proper Penetration - a weld bead with a deep, well-fused triangular penetration profile into the base metal, labeled 'Ideal heat'; (3) Excess Penetration or Burn-Through - a weld with a large rounded penetration profile extending far into/through the base metal, labeled 'Too hot'. A double-headed arrow spans below all three from 'Not hot enough' to 'Too hot' with 'Ideal heat' in the middle. Below are two columns of corrective actions: left column (a-d) for increasing heat/penetration to weld thicker workpieces, right column (e-h) for reducing heat/penetration to weld thinner workpieces.",
+      "bbox": [
+        59.13779830932617,
+        92.50399017333984,
+        539.73779296875,
+        179.8144073486328
+      ]
+    },
+    {
+      "figure_id": "owner-manual-p35-f2",
+      "page": 35,
+      "caption": "Example Wire Weld Diagrams",
+      "description": "Six side-by-side illustrations, each showing a top-down/cross-section view of a weld bead above a corresponding side-profile cutaway showing weld ripple pattern and penetration depth. From left to right: (1) 'Good Weld' - smooth uniform bead with consistent penetration and no spatter; (2) 'Voltage Too Low or Wire Feed Too Slow' - small rounded bead sitting high with shallow, uneven penetration; correction: increase output voltage or increase wire feed speed; (3) 'Voltage Too High or Wire Feed Too Fast' - wide flat bead with excessive spatter (dots) around it and deep uneven penetration; correction: decrease output voltage or decrease wire feed speed; (4) 'Travel Speed Too Fast' - narrow bead with tight ripple pattern and shallow penetration; correction diagram shows torch moving with 'travel slower' arrow; (5) 'Travel Speed Too Slow' - wide bead with excessive buildup and wide penetration; correction diagram shows torch with 'travel faster' arrow; (6) 'CTWD Too Long or Wrong Polarity' - irregular bead with heavy spatter (dots) and inconsistent penetration; correction diagram shows torch held at an angle with arrow indicating 'Check Polarity and maintain less than 1/2\" CTWD'.",
+      "bbox": [
+        38.880001068115234,
+        286.91461181640625,
+        547.1831665039062,
+        698.6093139648438
+      ]
+    }
+  ],
+  "key_facts": [
+    "To weld thicker workpieces properly (increase heat/penetration): increase weld current, decrease travel speed, use faster wire feed, or use shorter CTWD.",
+    "To weld thinner workpieces properly (reduce heat/penetration): decrease weld current, increase travel speed, use slower wire feed, or use longer CTWD.",
+    "Inadequate penetration indicates the weld is 'not hot enough'; proper penetration is the 'ideal heat'; excess penetration/burn-through indicates the weld is 'too hot'.",
+    "Voltage too low or wire feed too slow: correct by increasing output voltage or increasing wire feed speed.",
+    "Voltage too high or wire feed too fast: correct by decreasing output voltage or decreasing wire feed speed.",
+    "Travel speed too fast: correct by traveling slower.",
+    "Travel speed too slow: correct by traveling faster.",
+    "CTWD too long or wrong polarity: correct by checking polarity and maintaining less than 1/2\" CTWD.",
+    "CTWD stands for Contact-Tip-to-Work Distance."
+  ],
+  "topics": [
+    "weld-penetration",
+    "troubleshooting",
+    "wire-feed",
+    "voltage",
+    "travel-speed",
+    "ctwd",
+    "polarity",
+    "workpiece-heat"
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "doc": "owner-manual",
+  "page": 17,
+  "summary": "This page finishes the wire drive tension check and MIG gun assembly steps (27–31), then begins the \"Optional Spool Gun Setup\" procedure (steps 1–6) describing how to connect an optional spool gun including cable connectors, gas hose, and control cable.",
+  "text": "27. To check the wire's drive tension, press and hold Trigger to feed the wire against a piece of wood from 2 to 3 inches away.\\n\\nNote: After pressing Trigger, wire will stop feeding after 3 seconds if there is no arc. Check tension for less than 3 seconds.\\n\\nIf the wire stops instead of bending, unplug the Welder, slightly tighten the Feed Tensioner clockwise, and try again. If the wire bends from the feed pressure, then the tension is set properly. Before proceeding, turn OFF the Power Switch and unplug the Power Cord from its electrical outlet.\\n28. Turn OFF the Power Switch and unplug the Power Cord from its electrical outlet.\\n29. Close the Door. Make sure Door is securely latched.\\n30. Select a Contact Tip that is compatible with the welding wire used. Slide the Contact Tip over the wire and thread it clockwise into the MIG Gun. Tighten the Contact Tip.\\n31. Replace the Nozzle and cut the wire off at 1/2\\\" from tip (1/2\\\" stickout).\\n\\nOptional Spool Gun Setup\\n1. To set up optional Spool Gun (sold separately), plug Ground Clamp Cable into Negative (–) Socket. Plug Wire Feed Power Cable into Positive (+) Socket. Twist cables clockwise all the way to lock in place.\\n2. Loosen the Knob on the Wire Feed mechanism, then insert the Spool Gun Cable Connector through the hole on the Welder front and into the socket on the Wire Feed.\\n3. Ensure Cable Connector is fully inserted and tighten the Knob securely. If Connector is not fully inserted, the gas connection will leak, preventing shielding gas from reaching the welding arc.\\nNOTICE: To prevent damage, do not overtighten the Knob.\\n4. Insert the Wire Feed Control Cable through hole on Welder front and connect to the Wire Feed Control Socket inside the machine, then tighten lock ring on the Cable plug. Note that the plug on the Cable fits into the Socket in one specific orientation only.\\n5. Connect Gas Hose on Spool Gun Cable Connector to Spool Gun Gas Outlet on front of Welder. Refer to paragraph 17 on page 14 for further shielding gas setup information.\\n6. Refer to Spool Gun manual for operational information.",
+  "tables": [],
+  "figures": [
+    {
+      "figure_id": "owner-manual-p17-f1",
+      "page": 17,
+      "caption": "Checking wire drive tension",
+      "description": "Shows the wire feed tensioner knob being incrementally turned clockwise ('Incrementally increase tension until wire bends') and the MIG gun feeding wire against a piece of wood at a distance of 2–3 inches to test drive tension.",
+      "bbox": [
+        282.939697265625,
+        44.50689697265625,
+        549.7756958007812,
+        203.4564971923828
+      ]
+    },
+    {
+      "figure_id": "owner-manual-p17-f2",
+      "page": 17,
+      "caption": "Optional Spool Gun setup and connections",
+      "description": "Illustration of the welder front panel with an optional Spool Gun connected. Labeled callouts include: Spool Gun, Spool Gun Cable Connector, Wire Feed Control Cable, Spool Gun Gas Outlet, Gas Hose, Ground Clamp Cable in Negative Socket, and Wire Feed Power Cable in Positive Socket.",
+      "bbox": [
+        36.0,
+        245.5630340576172,
+        595.2750244140625,
+        789.3160400390625
+      ]
+    }
+  ],
+  "key_facts": [
+    "To check drive tension, hold Trigger to feed wire against wood 2 to 3 inches away.",
+    "Wire stops feeding after 3 seconds if there is no arc; check tension in less than 3 seconds.",
+    "If wire stops instead of bending, tighten the Feed Tensioner clockwise and retest.",
+    "Contact Tip must be compatible with the welding wire used and threads clockwise into the MIG Gun.",
+    "After assembly, cut wire off at 1/2 inch from tip for proper stickout (1/2\" stickout).",
+    "Optional Spool Gun (sold separately) requires plugging Ground Clamp Cable into Negative (–) Socket and Wire Feed Power Cable into Positive (+) Socket, twisted clockwise to lock.",
+    "Spool Gun Cable Connector inserts through a hole on the welder front into the Wire Feed socket; the Knob must be tightened securely but not overtightened.",
+    "If the Spool Gun Cable Connector is not fully inserted, the gas connection will leak, preventing shielding gas from reaching the welding arc.",
+    "The Wire Feed Control Cable plug fits into the Wire Feed Control Socket in only one specific orientation.",
+    "Gas Hose from Spool Gun Cable Connector connects to the Spool Gun Gas Outlet on the front of the welder.",
+    "Refer to paragraph 17 on page 14 for shielding gas setup information.",
+    "Refer to the Spool Gun manual for its operational information."
+  ],
+  "topics": [
+    "wire-feed",
+    "drive-tension",
+    "mig-gun",
+    "contact-tip",
+    "spool-gun",
+    "gas-setup",
+    "assembly"
+  ]
+}

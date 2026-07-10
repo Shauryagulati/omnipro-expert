@@ -1,0 +1,54 @@
+{
+  "doc": "owner-manual",
+  "page": 18,
+  "summary": "This page introduces basic wire welding concepts, including safety warnings about protective gear and arc hazards, an overview of flux-cored, MIG, and aluminum wire welding processes, and a recommendation to practice welding on scrap material before working on actual projects. It also includes a diagram of the welder's power switch location and a warning about keeping the welding tip clear of grounded objects.",
+  "text": "Basic Wire Welding\n\nRead the ENTIRE IMPORTANT SAFETY INFORMATION section at the beginning of this manual including all text under subheadings therein before welding.\n\nWARNING\nTO PREVENT SERIOUS INJURY:\nProtective gear must be worn when using the Welder; minimum shade number 10 full face shield (or welding mask), ear protection, welding gloves, sleeves and apron, NIOSH-approved respirator, and fire resistant work clothes without pockets should be worn when welding.\nLight from the arc can cause permanent damage to the eyes and skin.\nDo not breathe arc fumes.\n\nFlux-cored wire welding is used to weld mild steel and stainless steel without shielding gas.\n\nMIG welding uses solid wire and shielding gas, and is used to weld mild steel and stainless steel. MIG welding can also be used to weld thinner workpieces than flux-cored welding can.\n\nAluminum welding can be performed with an optional Spool Gun (sold separately) using aluminum wire and shielding gas.\n\nGood welding takes a degree of skill and experience. Practice a few sample welds on scrap before welding your first project. Additional practice periods are recommended whenever you weld:\n• a different thickness of material\n• a different type of material\n• a different type of connection\n• using a different process\n\nMake practice welds on pieces of scrap to practice technique before welding anything of value.\n\nWARNING\nTO PREVENT SERIOUS INJURY, FIRE AND BURNS:\nKeep welding tip clear of grounded objects whenever unit is plugged in and turned on.\n\nPower Switch\n\nPractice your welding technique on scrap pieces before welding anything of value.\n\nPage 18\nFor technical questions, please call 1-800-444-3353.\nItem 57812",
+  "tables": [],
+  "figures": [
+    {
+      "figure_id": "owner-manual-p18-f3",
+      "page": 18,
+      "caption": "Safety icons for protective gear",
+      "description": "Four circular/triangular icons depicting: a welder wearing a full face shield with sparks (arc/eye protection), a pair of welding gloves, an ear protection headset/respirator icon, and a triangle warning icon showing a person breathing in fumes with a smoke cloud (arc fumes hazard).",
+      "bbox": [
+        443.68890380859375,
+        206.054931640625,
+        551.6889038085938,
+        314.054931640625
+      ]
+    },
+    {
+      "figure_id": "owner-manual-p18-f6",
+      "page": 18,
+      "caption": "Welder power switch and welding gun torch tip diagram",
+      "description": "Illustration of the front of the VULCAN welder unit with an arrow pointing to the 'Power Switch' button, alongside a close-up illustration of the MIG welding gun/torch tip with a spark symbol indicating electrical hazard when energized.",
+      "bbox": [
+        47.38380432128906,
+        520.1790161132812,
+        155.38400268554688,
+        599.417724609375
+      ]
+    }
+  ],
+  "key_facts": [
+    "Minimum shade number 10 full face shield or welding mask is required for welding protection.",
+    "Full protective gear includes welding gloves, sleeves and apron, NIOSH-approved respirator, ear protection, and fire resistant work clothes without pockets.",
+    "Flux-cored wire welding is used to weld mild steel and stainless steel without shielding gas.",
+    "MIG welding uses solid wire and shielding gas to weld mild steel and stainless steel, and can weld thinner workpieces than flux-cored welding.",
+    "Aluminum welding requires an optional Spool Gun (sold separately) with aluminum wire and shielding gas.",
+    "Practice welds on scrap material are recommended before starting a new project, changing material thickness/type, changing connection type, or switching processes.",
+    "Keep the welding tip clear of grounded objects whenever the unit is plugged in and turned on to prevent serious injury, fire, and burns.",
+    "The welder has a Power Switch located on the front panel."
+  ],
+  "topics": [
+    "wire-welding",
+    "safety",
+    "flux-cored",
+    "mig-welding",
+    "aluminum-welding",
+    "spool-gun",
+    "protective-gear",
+    "practice-welding",
+    "power-switch"
+  ]
+}

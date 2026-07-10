@@ -1,0 +1,41 @@
+{
+  "doc": "owner-manual",
+  "page": 8,
+  "summary": "This page illustrates the Front Panel Controls of the Vulcan OmniPro 220 welding machine, with a labeled diagram identifying each control, socket, and interface element on the front of the unit, plus a note about the optional Spool Gun gas hose connection.",
+  "text": "Controls\\nFront Panel Controls\\n\\n[Diagram of the Vulcan OmniPro 220 front panel with callout labels: Home Button, Back Button, Control Knob, LCD Display, Left Knob, Right Knob, Power Switch, Storage Compartment, MIG Gun/Spool Gun Cable Socket, Spool Gun Gas Outlet, Negative Socket, Positive Socket, Wire Feed Power Cable]\\n\\nNote: When using an optional Spool Gun (sold separately), connect the Spool Gun gas hose to the Spool Gun Gas Outlet.\\n\\nPage 8   For technical questions, please call 1-800-444-3353.   Item 57812",
+  "tables": [],
+  "figures": [
+    {
+      "figure_id": "owner-manual-p08-f1",
+      "page": 8,
+      "caption": "Front Panel Controls",
+      "description": "Front view diagram of the Vulcan OmniPro 220 welding machine showing the control panel and connection sockets, with lines pointing to each labeled component: Home Button and Back Button (top corners of LCD screen), Control Knob (center push-turn dial below LCD), Left Knob and Right Knob (dials flanking Control Knob), LCD Display (screen showing welding parameters, labeled OMNIPRO 220), Power Switch (I/O rocker switch), Storage Compartment (area behind Vulcan logo grille), MIG Gun/Spool Gun Cable Socket (round socket on left side of lower panel), Spool Gun Gas Outlet (leftmost port on bottom row), Negative Socket (marked with minus sign, second port on bottom row), Wire Feed Power Cable (small round port marked '+' area between negative and positive sockets), Positive Socket (marked with plus sign, rightmost port on bottom row).",
+      "bbox": [
+        63.56669998168945,
+        203.54049682617188,
+        540.1244506835938,
+        378.20831298828125
+      ]
+    }
+  ],
+  "key_facts": [
+    "The Vulcan OmniPro 220 front panel includes a Home Button and Back Button for navigating the LCD Display.",
+    "The front panel has three knobs: a center Control Knob and flanking Left Knob and Right Knob for adjusting settings.",
+    "The Power Switch is an I/O rocker switch located on the front panel.",
+    "The front panel includes a Storage Compartment.",
+    "The MIG Gun/Spool Gun Cable Socket is located on the lower front panel for connecting MIG gun or spool gun cables.",
+    "The bottom row of sockets includes (left to right): Spool Gun Gas Outlet, Negative Socket, Wire Feed Power Cable port, and Positive Socket.",
+    "When using an optional Spool Gun (sold separately), the Spool Gun gas hose must be connected to the Spool Gun Gas Outlet.",
+    "This diagram corresponds to Item 57812."
+  ],
+  "topics": [
+    "front-panel-controls",
+    "controls",
+    "mig-gun",
+    "spool-gun",
+    "sockets",
+    "lcd-display",
+    "power-switch",
+    "wire-feed"
+  ]
+}

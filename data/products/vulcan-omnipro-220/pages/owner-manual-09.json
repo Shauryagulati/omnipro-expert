@@ -1,0 +1,35 @@
+{
+  "doc": "owner-manual",
+  "page": 9,
+  "summary": "This page shows a labeled diagram of the \"Interior Controls\" of the welding machine, viewed with the front panel/door open, identifying the wire feed system components and sockets located inside the unit.",
+  "text": "Interior Controls\\n\\n(Diagram with callouts, no additional body text)\\n\\nItem 57812 For technical questions, please call 1-800-444-3353. Page 9",
+  "tables": [],
+  "figures": [
+    {
+      "figure_id": "owner-manual-p09-f1",
+      "page": 9,
+      "caption": "Interior Controls",
+      "description": "Front-facing diagram of the welder's interior compartment (door open) showing the wire feed system. Labeled callouts include: Cold Wire Feed Switch (small switch near top center), Feed Tensioner (arm pressing on feed rollers), Idler Arm (pivoting arm on the wire feed mechanism), Wire Feed Mechanism (the assembly labeled 'VULCAN' housing the feed rollers), Wire Spool (spool mounted on left side), Spool Knob (knob securing the wire spool), Wire Inlet Liner (tube guiding wire into the feed mechanism), Feed Roller Knob (knob adjusting the feed roller), Foot Pedal Socket (round multi-pin socket at bottom left of center), and Wire Feed Control Socket (round multi-pin socket at bottom right of center).",
+      "bbox": [
+        42.1077995300293,
+        87.44559478759766,
+        530.0748901367188,
+        393.82952880859375
+      ]
+    }
+  ],
+  "key_facts": [
+    "The interior controls area includes a Wire Spool, Spool Knob, Wire Feed Mechanism, Wire Inlet Liner, Feed Tensioner, Idler Arm, Feed Roller Knob, Cold Wire Feed Switch, Foot Pedal Socket, and Wire Feed Control Socket.",
+    "The Cold Wire Feed Switch is located near the top of the interior control panel above the wire feed mechanism.",
+    "The Foot Pedal Socket and Wire Feed Control Socket are located at the bottom of the interior panel, side by side.",
+    "The Wire Spool sits on a Spool Knob on the left side of the interior compartment.",
+    "The Wire Feed Mechanism includes the Feed Tensioner, Idler Arm, and Feed Roller Knob for controlling wire feed."
+  ],
+  "topics": [
+    "wire-feed",
+    "interior-controls",
+    "spool-gun",
+    "foot-pedal",
+    "controls"
+  ]
+}

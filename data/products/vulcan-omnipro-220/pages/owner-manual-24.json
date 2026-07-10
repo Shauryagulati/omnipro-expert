@@ -1,0 +1,42 @@
+{
+  "doc": "owner-manual",
+  "page": 24,
+  "summary": "This page covers TIG/Stick Welding setup for the welder, specifically the \"TIG Setup\" and \"Connect Cables\" sections. It includes a safety warning to turn off and unplug the welder before setup, a note about preparing the welder for use, a labeled diagram showing how to connect the ground clamp cable, TIG torch cable, foot pedal, and shielding gas hose, and a 4-step numbered procedure for connecting these components.",
+  "text": "TIG/Stick Welding\nRead the ENTIRE IMPORTANT SAFETY INFORMATION section at the beginning of this manual including all text under subheadings therein before set up or use of this product.\nWARNING: TO PREVENT SERIOUS INJURY FROM ACCIDENTAL OPERATION: Turn the Power Switch off and unplug the Welder before setup.\nNote: Remove the protective foam and cardboard from the Welder before setup. Place the Welder on a level surface that can bear its weight near the work area. Leave space around the Welder for proper air flow.\n\nTIG Setup\n\nConnect Cables\n\n1. Plug Ground Clamp Cable into Positive Socket. Twist clockwise all the way to lock in place.\n2. Plug TIG Torch Cable (TIG Torch sold separately) into Negative Socket. Twist clockwise all the way to lock in place.\n3. Insert the Foot Pedal Cable (Foot Pedal sold separately) through hole on Welder front and connect to the Foot Pedal Socket inside the machine. Secure by turning collar clockwise until tight.\n4. For connecting Shielding Gas Hose, refer to Connect Shielding Gas section on next page.",
+  "tables": [],
+  "figures": [
+    {
+      "figure_id": "owner-manual-p24-f1",
+      "page": 24,
+      "caption": "TIG Setup - Connect Cables diagram",
+      "description": "Diagram of the welder front panel and associated TIG welding accessories showing cable connections. Labeled callouts include: 'Foot Pedal Socket (inside Welder)' pointing to a socket inside the welder behind the front panel; 'Foot Pedal (sold separately)' pointing to a foot pedal device on the ground; 'Foot Pedal Cable' pointing to the cable running from the foot pedal to the welder; 'Shielding Gas Hose' pointing to a hose running from the torch area; 'TIG Torch Cable in Negative Socket' pointing to the torch cable plugged into the negative socket on the welder front panel; 'Ground Clamp Cable in Positive Socket' pointing to the ground clamp cable plugged into the positive socket; 'TIG Torch (sold separately)' pointing to the TIG torch handle and tip; 'Ground Clamp' pointing to the ground clamp at the end of its cable.",
+      "bbox": [
+        73.12279510498047,
+        230.47653198242188,
+        531.1527099609375,
+        620.72412109375
+      ]
+    }
+  ],
+  "key_facts": [
+    "Turn the Power Switch off and unplug the Welder before setup to prevent serious injury from accidental operation.",
+    "Remove protective foam and cardboard from the Welder before setup.",
+    "Place the Welder on a level surface that can bear its weight near the work area with space around it for proper air flow.",
+    "Ground Clamp Cable plugs into the Positive Socket; twist clockwise all the way to lock in place.",
+    "TIG Torch (sold separately) cable plugs into the Negative Socket; twist clockwise all the way to lock in place.",
+    "Foot Pedal (sold separately) cable inserts through a hole on the Welder front and connects to the Foot Pedal Socket inside the machine; secure by turning collar clockwise until tight.",
+    "Shielding Gas Hose connection is covered in the 'Connect Shielding Gas' section on the next page.",
+    "TIG Torch and Foot Pedal are sold separately and not included with the welder."
+  ],
+  "topics": [
+    "tig-welding",
+    "stick-welding",
+    "setup",
+    "cable-connections",
+    "foot-pedal",
+    "ground-clamp",
+    "tig-torch",
+    "shielding-gas",
+    "safety-warning"
+  ]
+}

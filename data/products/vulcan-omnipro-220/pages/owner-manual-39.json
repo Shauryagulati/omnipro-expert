@@ -1,0 +1,54 @@
+{
+  "doc": "owner-manual",
+  "page": 39,
+  "summary": "This page covers stick welding troubleshooting for penetration issues (excess/burn-through, proper, and inadequate penetration), poor weld adherence with gaps, and bending at the joint. Each issue includes a profile-view diagram and a numbered list of possible causes and solutions.",
+  "text": "Stick Weld Penetration (Workpiece Heat Control)\n\nEXCESS PENETRATION OR BURN-THROUGH\nWeld droops on top and underneath or falls through entirely, making a hole.\n\nPROPER PENETRATION\nWeld is visible underneath and bulges slightly on top.\n\nINADEQUATE PENETRATION\nWeld does not contact the joint fully, just on the surface.\n\nPROFILE VIEWS\n\nPOSSIBLE CAUSES AND SOLUTIONS FOR EXCESS PENETRATION OR BURN-THROUGH\n1. Workpiece overheating: Reduce current.\n2. Welding speed too slow: Increase welding speed and ensure that welding speed is kept steady.\n\nPOSSIBLE CAUSES AND SOLUTIONS FOR INADEQUATE PENETRATION\n1. Incorrect welding technique: Keep arc on leading edge of weld puddle. Hold torch at proper angles.\n2. Insufficient weld heat: Slow down so fill material has time to melt into the weld location. Increase current.\n3. Workpieces too thick/close: Bevel thick workpieces, allow slight gap, and weld in several passes.\n4. Insufficient weld material: Increase amount of fill material.\n\nStick Weld – Weld Not Adhering Properly\nGaps present between weld and previous bead or between weld and workpiece. See areas below.\n\nPOSSIBLE CAUSES AND SOLUTIONS\nPROFILE VIEW (shows gaps circled between weld bead and workpiece)\n1. Incorrect welding technique: Place stringer bead at correct place in joint. Adjust workpiece position or weld angle to permit proper welding to bottom of piece. Keep arc on leading edge of weld puddle. Hold Electrode and fill material at proper angles.\n2. Insufficient weld heat: Increase current.\n3. Dirty workpiece: Clean workpiece down to bare metal.\n4. Insufficient weld material: Increase amount of fill material.\n5. Distance between workpieces to large: Decrease distance and increase bevel.\n\nStick Weld – Bend at Joint\n\nPOSSIBLE CAUSES AND SOLUTIONS\nPROFILE VIEW (shows weld bent at joint between two workpieces)\n1. Improper clamping: Clamp workpieces securely. Make tack welds to hold workpieces.\n2. Excessive heat: Weld a small portion and allow to cool before proceeding. Increase weld speed.",
+  "tables": [],
+  "figures": [
+    {
+      "figure_id": "owner-manual-p39-f1",
+      "page": 39,
+      "caption": "PROFILE VIEWS - Stick Weld Penetration",
+      "description": "Three side-by-side cross-section profile diagrams comparing excess penetration/burn-through (weld droops through workpiece creating a hole), proper penetration (weld bulges slightly on top and is visible underneath), and inadequate penetration (weld sits only on surface without joining the two workpieces).",
+      "bbox": [
+        215.90989685058594,
+        133.4285430908203,
+        370.36639404296875,
+        194.4075469970703
+      ]
+    },
+    {
+      "figure_id": "owner-manual-p39-f2",
+      "page": 39,
+      "caption": "PROFILE VIEW - Weld Not Adhering Properly",
+      "description": "Cross-section profile diagram showing a weld bead with circled gap areas at the top and bottom where the weld fails to fully bond with the previous bead or workpiece.",
+      "bbox": [
+        62.588600158691406,
+        482.2442321777344,
+        260.3817138671875,
+        545.6845092773438
+      ]
+    }
+  ],
+  "key_facts": [
+    "Excess penetration or burn-through causes weld to droop on top and underneath or fall through entirely, making a hole.",
+    "Proper penetration shows weld visible underneath and bulging slightly on top.",
+    "Inadequate penetration means the weld does not contact the joint fully, just the surface.",
+    "Excess penetration/burn-through fix: reduce current or increase and steady welding speed.",
+    "Inadequate penetration fixes: keep arc on leading edge of weld puddle, hold torch at proper angles, slow down to allow fill material to melt in, increase current, bevel thick workpieces with slight gap, weld in several passes, or increase fill material.",
+    "Weld not adhering properly is identified by gaps between weld and previous bead or workpiece.",
+    "Weld adherence fixes: correct stringer bead placement, adjust workpiece position/weld angle, keep arc on leading edge, proper electrode/fill angles, increase current, clean workpiece to bare metal, increase fill material, decrease distance between workpieces and increase bevel.",
+    "Bend at joint is caused by improper clamping or excessive heat.",
+    "Bend at joint fixes: clamp workpieces securely, make tack welds, weld small portions and allow cooling, increase weld speed."
+  ],
+  "topics": [
+    "stick-welding",
+    "penetration",
+    "burn-through",
+    "troubleshooting",
+    "weld-adherence",
+    "joint-bending",
+    "welding-technique",
+    "weld-heat-control"
+  ]
+}

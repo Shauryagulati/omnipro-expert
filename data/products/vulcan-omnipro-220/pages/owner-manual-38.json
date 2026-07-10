@@ -1,0 +1,57 @@
+{
+  "doc": "owner-manual",
+  "page": 38,
+  "summary": "This page covers stick (SMAW) weld diagnosis focused on workpiece heat control and weld penetration, plus a visual guide of example stick weld appearances with causes and corrections for common defects (current too low/high, weld speed too fast/slow, arc length too short/long).",
+  "text": "Stick Weld Diagnosis – Workpiece Heat Control / Weld Penetration\n\nINADEQUATE PENETRATION | PROPER PENETRATION | EXCESS PENETRATION OR BURN-THROUGH\n\nNot hot enough -------- Ideal heat -------- Too hot\n\nHow to increase workpiece heat and increase penetration: (to weld THICKER workpieces properly)\na. Increase current.\nb. Weld more slowly.\n\nHow to reduce workpiece heat and limit penetration: (to weld THINNER workpieces properly)\nc. Decrease current.\nd. Weld more quickly.\n\nExample Stick Weld Diagrams\n\nCLEAN WELDS FIRST!\nStick welds will have a coat of slag over them until cleaned.\n\nGood Weld\n\nCurrent Too Low\nTO CORRECT: Increase the current\n\nCurrent Too High\nTO CORRECT: Decrease the current\n\nWeld Speed Too Fast\nTO CORRECT: Weld slower\n\nWeld Speed Too Slow\nTO CORRECT: Weld faster\n\nArc Length Too Short\nTO CORRECT: Increase distance\n\nArc Length Too Long\nTO CORRECT: Decrease distance\n\nPage 38\nFor technical questions, please call 1-800-444-3353.\nItem 57812",
+  "tables": [],
+  "figures": [
+    {
+      "figure_id": "owner-manual-p38-f2",
+      "page": 38,
+      "caption": "Stick Weld Diagnosis – Workpiece Heat Control / Weld Penetration",
+      "description": "Cross-section diagrams of three weld penetration profiles in a workpiece cut-away: Inadequate Penetration (shallow, gapped bead sitting on surface), Proper Penetration (deep, well-fused triangular penetration), and Excess Penetration or Burn-Through (penetration extends fully through workpiece creating a hole/cup shape below). A double-headed arrow bar below spans from 'Not hot enough' (left) through 'Ideal heat' (center) to 'Too hot' (right), linking heat input to the three penetration outcomes. Text below explains how to increase workpiece heat/penetration for thicker workpieces (increase current, weld more slowly) versus how to reduce heat/penetration for thinner workpieces (decrease current, weld more quickly).",
+      "bbox": [
+        123.87257385253906,
+        396.3510437011719,
+        187.99757385253906,
+        516.1288452148438
+      ]
+    },
+    {
+      "figure_id": "owner-manual-p38-f1",
+      "page": 38,
+      "caption": "Example Stick Weld Diagrams",
+      "description": "A row of seven labeled example stick welds shown as both a cross-section bead profile illustration and an actual photograph of the weld bead surface. Panels left to right: 'Good Weld' (smooth uniform bead, no correction needed); 'Current Too Low' (small, rounded, piled-up bead; TO CORRECT: increase the current); 'Current Too High' (wide, flat, irregular bead with heavy undercut appearance; TO CORRECT: decrease the current); 'Weld Speed Too Fast' (narrow bead, illustrated with electrode angled and moving quickly indicated by arrow; TO CORRECT: weld slower); 'Weld Speed Too Slow' (wide, bulky bead, electrode shown moving slowly with arrow; TO CORRECT: weld faster); 'Arc Length Too Short' (small tight bead, electrode shown close to workpiece with upward arrow indicating short arc gap; TO CORRECT: increase distance); 'Arc Length Too Long' (spattered, irregular bead, electrode shown far from workpiece with downward arrow indicating long arc gap; TO CORRECT: decrease distance). A note above the row states 'CLEAN WELDS FIRST! Stick welds will have a coat of slag over them until cleaned.'",
+      "bbox": [
+        49.71668243408203,
+        325.56103515625,
+        570.4151000976562,
+        690.0726318359375
+      ]
+    }
+  ],
+  "key_facts": [
+    "To weld thicker workpieces properly, increase current and/or weld more slowly to increase penetration.",
+    "To weld thinner workpieces properly, decrease current and/or weld more quickly to limit penetration and avoid burn-through.",
+    "Inadequate penetration indicates the workpiece is not hot enough (weld bead sits on top without fusing into base metal).",
+    "Proper penetration occurs at ideal heat, producing a deep, well-fused weld bead.",
+    "Excess penetration or burn-through occurs when the workpiece is too hot.",
+    "Stick welds are covered with a coat of slag and must be cleaned before inspecting the weld.",
+    "Current too low produces a weld defect; correct by increasing the current.",
+    "Current too high produces a weld defect; correct by decreasing the current.",
+    "Weld speed too fast is corrected by welding slower.",
+    "Weld speed too slow is corrected by welding faster.",
+    "Arc length too short is corrected by increasing the distance between electrode and workpiece.",
+    "Arc length too long is corrected by decreasing the distance between electrode and workpiece."
+  ],
+  "topics": [
+    "stick-welding",
+    "smaw",
+    "weld-penetration",
+    "troubleshooting",
+    "arc-length",
+    "current-settings",
+    "travel-speed",
+    "weld-diagnosis"
+  ]
+}

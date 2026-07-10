@@ -1,0 +1,74 @@
+{
+  "doc": "owner-manual",
+  "page": 44,
+  "summary": "This page provides a troubleshooting table for TIG/Stick welding issues, covering four problems: welder not functioning when switched on, LCD display not lighting, weak arc strength, and unstable welding arc. Each row lists possible causes and corresponding likely solutions. An IMPORTANT safety notice at the top instructs users to shut off the welder, disconnect power, and discharge the electrode to ground before servicing. A warning icon at the bottom reminds users to follow all safety precautions when diagnosing or servicing equipment.",
+  "text": "Troubleshooting – TIG / Stick Welding\n\nIMPORTANT!\nBe CERTAIN to shut off the Welder, disconnect it from power, and discharge the electrode to ground before adjusting, cleaning, or repairing the unit.\n\n[Table: Problem / Possible Causes / Likely Solutions]\n\nFollow all safety precautions whenever diagnosing or servicing the equipment.",
+  "tables": [
+    {
+      "title": "Troubleshooting – TIG / Stick Welding",
+      "headers": [
+        "Problem",
+        "Possible Causes",
+        "Likely Solutions"
+      ],
+      "rows": [
+        [
+          "Welder Does Not Function When Switched On",
+          "1. Tripped thermal protection device.\n2. Faulty or improperly connected Trigger.\n3. Ground Clamp not attached to workpiece.\n4. Shielding Gas not connected.",
+          "1. Reduce duration or frequency of welding periods to help reduce wear on the welder. Refer to Duty Cycle (Duration of Use) on page 29.\n2. Qualified technician must check and secure/replace Trigger.\n3. Attach Ground Clamp to workpiece.\n4. Connect shielding gas to Welder."
+        ],
+        [
+          "LCD Display Does Not Light When Welder is Switched On",
+          "1. Unit is not connected to outlet properly.\n2. Outlet is unpowered.",
+          "1. Verify the voltage at the outlet and the connection to the outlet.\n2. Check circuit breaker/GFCI devices; if any are tripped, determine and remedy cause before resetting. Verify that the circuit is designed to supply the required input amperage as detailed in Specifications on page 7."
+        ],
+        [
+          "Weak Arc Strength",
+          "1. Incorrect line voltage.\n2. Improper gauge or length of cord.",
+          "1. Check the line voltage and, if insufficient, have a licensed electrician remedy the situation.\n2. Do not use an extension cord on this Welder. Use only one of the supplied power cords for this Welder or an identical replacement cord."
+        ],
+        [
+          "Welding Arc Not Stable.",
+          "1. Loose electrode cable or ground cable.\n2. Damaged electrode holder or loose connection within electrode holder.\n3. Adjust current setting.\n4. Shielding gas getting low.",
+          "1. Check to ensure that all connections are tight.\n2. Have a qualified technician inspect and repair/replace as necessary.\n3. Make sure setting matches recommended setting on chart.\n4. Replace shielding gas cylinder."
+        ]
+      ]
+    }
+  ],
+  "figures": [
+    {
+      "figure_id": "owner-manual-p44-f1",
+      "page": 44,
+      "caption": "Follow all safety precautions whenever diagnosing or servicing the equipment.",
+      "description": "A triangular warning/caution icon with an exclamation mark, accompanying the safety reminder text at the bottom of the troubleshooting table.",
+      "bbox": [
+        45.0,
+        117.5487060546875,
+        559.5306396484375,
+        493.8464050292969
+      ]
+    }
+  ],
+  "key_facts": [
+    "Before adjusting, cleaning, or repairing the unit, shut off the welder, disconnect it from power, and discharge the electrode to ground.",
+    "If the welder does not function when switched on, possible causes include a tripped thermal protection device, faulty/improperly connected trigger, ground clamp not attached to workpiece, or shielding gas not connected.",
+    "Duty Cycle (Duration of Use) information is on page 29 of the manual.",
+    "If the LCD display does not light when the welder is switched on, check that the unit is connected to the outlet properly and that the outlet is powered; also check circuit breaker/GFCI devices.",
+    "Specifications detailing required input amperage are on page 7 of the manual.",
+    "Weak arc strength can result from incorrect line voltage or improper gauge/length of extension cord; do not use an extension cord—use only the supplied power cord or an identical replacement.",
+    "An unstable welding arc can be caused by loose electrode/ground cable, damaged electrode holder, incorrect current setting, or low shielding gas; replace shielding gas cylinder if low.",
+    "Always follow all safety precautions when diagnosing or servicing the equipment."
+  ],
+  "topics": [
+    "troubleshooting",
+    "tig-welding",
+    "stick-welding",
+    "arc-stability",
+    "shielding-gas",
+    "power-cord",
+    "circuit-breaker",
+    "gfci",
+    "duty-cycle",
+    "safety"
+  ]
+}

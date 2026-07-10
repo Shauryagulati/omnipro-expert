@@ -1,0 +1,100 @@
+{
+  "doc": "owner-manual",
+  "page": 2,
+  "summary": "Page 2 of the owner's manual (Item 57812) contains the Table of Contents listing all manual sections and page numbers, a table defining the four warning symbol levels (Safety Alert, DANGER, WARNING, CAUTION, NOTICE), and the beginning of the \"Important Safety Information\" / \"General Safety\" section listing 8 general safety practices for operating the welder.",
+  "text": "Table of Contents\nSafety.........................................................................2\nSpecifications.............................................................7\nControls......................................................................8\nMIG / Flux-Cored Wire Welding..................................10\nTIG / Stick Welding.....................................................24\nWelding Tips..............................................................34\nMaintenance..............................................................41\nParts List and Diagram..............................................46\nWarranty....................................................................48\n\nWARNING SYMBOLS AND DEFINITIONS\n[Safety alert symbol]: This is the Safety alert symbol. It is used to alert you to potential personal injury hazards. Obey all Safety messages that follow this symbol to avoid possible injury or death.\nDANGER: Indicates a hazardous situation which, if not avoided, will result in death or serious injury.\nWARNING: Indicates a hazardous situation which, if not avoided, could result in death or serious injury.\nCAUTION: Indicates a hazardous situation which, if not avoided, could result in minor or moderate injury.\nNOTICE CAUTION: Addresses practices not related to personal injury.\n\nIMPORTANT SAFETY INFORMATION\nWARNING\nRead all Safety warnings and instructions.\nFailure to follow the warnings and instructions may result in electric shock, fire and/or serious injury.\nSave all warnings and instructions for future reference.\n\nGeneral Safety\nPROTECT yourself and others. Read and understand this information.\n1. Before use, read and understand manufacturer's instructions, Material Safety Data Sheets (MSDS's), employer's Safety practices, and ANSI Z49.1.\n2. Keep out of reach of children. Keep children and bystanders away while operating.\n3. Place the welder on a stable location before use. If it falls while plugged in, severe injury, electric shock, or fire may result.\n4. Do not overreach. Keep proper footing and balance at all times.\n5. Stay alert, watch what you are doing and use common sense when operating a welder. Do not use a welder while you are tired or under the influence of drugs, alcohol or medication. A moment of inattention while operating welders may result in serious personal injury.\n6. Avoid unintentional starting. Make sure you are prepared to begin work before turning on the Welder.\n7. Never leave the Welder unattended while energized. Turn power off if you have to leave.\n8. The warnings, precautions, and instructions discussed in this instruction manual cannot cover all possible conditions and situations that may occur. It must be understood by the operator that common sense and caution are factors which cannot be built into this product, but must be supplied by the operator.\n\nPage 2 | For technical questions, please call 1-800-444-3353. | Item 57812",
+  "tables": [
+    {
+      "title": "Warning Symbols and Definitions",
+      "headers": [
+        "Symbol",
+        "Definition"
+      ],
+      "rows": [
+        [
+          "Safety Alert Symbol",
+          "This is the Safety alert symbol. It is used to alert you to potential personal injury hazards. Obey all Safety messages that follow this symbol to avoid possible injury or death."
+        ],
+        [
+          "DANGER",
+          "Indicates a hazardous situation which, if not avoided, will result in death or serious injury."
+        ],
+        [
+          "WARNING",
+          "Indicates a hazardous situation which, if not avoided, could result in death or serious injury."
+        ],
+        [
+          "CAUTION",
+          "Indicates a hazardous situation which, if not avoided, could result in minor or moderate injury."
+        ],
+        [
+          "NOTICE CAUTION",
+          "Addresses practices not related to personal injury."
+        ]
+      ]
+    },
+    {
+      "title": "Table of Contents",
+      "headers": [
+        "Section",
+        "Page"
+      ],
+      "rows": [
+        [
+          "Safety",
+          "2"
+        ],
+        [
+          "Specifications",
+          "7"
+        ],
+        [
+          "Controls",
+          "8"
+        ],
+        [
+          "MIG / Flux-Cored Wire Welding",
+          "10"
+        ],
+        [
+          "TIG / Stick Welding",
+          "24"
+        ],
+        [
+          "Welding Tips",
+          "34"
+        ],
+        [
+          "Maintenance",
+          "41"
+        ],
+        [
+          "Parts List and Diagram",
+          "46"
+        ],
+        [
+          "Warranty",
+          "48"
+        ]
+      ]
+    }
+  ],
+  "figures": [],
+  "key_facts": [
+    "Manual Item number is 57812",
+    "Technical questions phone number: 1-800-444-3353",
+    "DANGER indicates a hazardous situation which, if not avoided, will result in death or serious injury",
+    "WARNING indicates a hazardous situation which, if not avoided, could result in death or serious injury",
+    "CAUTION indicates a hazardous situation which, if not avoided, could result in minor or moderate injury",
+    "NOTICE addresses practices not related to personal injury",
+    "Manual sections: Safety (p.2), Specifications (p.7), Controls (p.8), MIG/Flux-Cored Wire Welding (p.10), TIG/Stick Welding (p.24), Welding Tips (p.34), Maintenance (p.41), Parts List and Diagram (p.46), Warranty (p.48)",
+    "Operators should read manufacturer's instructions, MSDS's, employer's safety practices, and ANSI Z49.1 before use",
+    "Never leave the welder unattended while energized; turn power off if you have to leave"
+  ],
+  "topics": [
+    "safety",
+    "warning-symbols",
+    "table-of-contents",
+    "general-safety"
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "doc": "owner-manual",
+  "page": 10,
+  "summary": "This page covers the MIG/Flux-Cored Wire Welding section, specifically the procedure for Wire Spool Installation/Wire Setup for a 1-2 lb wire spool. It includes safety warnings, step-by-step instructions for opening the welder door and installing a wire spool, and diagrams labeling the Power Switch, Door, Door Latch, and the spool loading components (Wingnut, Spacer, Spool Spindle, Wire Spool, Spool Brake Pad, Welder Wall).",
+  "text": "MIG/Flux-Cored Wire Welding\nRead the ENTIRE IMPORTANT SAFETY INFORMATION section at the beginning of this manual including all text under subheadings therein before set up or use of this product.\nWARNING: TO PREVENT SERIOUS INJURY FROM ACCIDENTAL OPERATION: Turn the Power Switch off and unplug the Welder before setup.\nNote: Remove the protective foam and cardboard from the Welder before setup.\n\nWire Spool Installation/Wire Setup\n\n1. Turn the Power Switch OFF and unplug the Welder before proceeding.\n2. Pull up on the Door Latch, then open the Door.\n3. 1-2 Pound Wire Spool Installation: Remove the Wingnut and Spacer. If replacing a Spool, remove the old Spool and all remaining wire from the liners.\n4. Place the new Wire Spool over the Spool Spindle and against the Spool Brake Pad as illustrated. To prevent wire feed problems, set the Spool so that it will unwind clockwise.\n5. Replace the Spacer over the Spool Spindle and secure Spool in place with the Wingnut.\n\nNotice: If Wire Spool can spin freely, Wingnut is too loose. This will cause the welding wire to unravel and unspool which can cause tangling and feeding problems.\n\nPage 10  For technical questions, please call 1-800-444-3353.  Item 57812",
+  "tables": [],
+  "figures": [
+    {
+      "figure_id": "owner-manual-p10-f1",
+      "page": 10,
+      "caption": "Power Switch location and unplug instruction",
+      "description": "Illustration of the welder's front control panel showing the Power Switch location, with an arrow indicating unplugging the welder's power plug from the outlet before setup.",
+      "bbox": [
+        45.0,
+        102.37611389160156,
+        559.2760009765625,
+        314.2001037597656
+      ]
+    },
+    {
+      "figure_id": "owner-manual-p10-f2",
+      "page": 10,
+      "caption": "Door and Door Latch on welder wire compartment",
+      "description": "Side view of the welder case showing the Door (large panel) and Door Latch (small tab near bottom) used to access the wire spool compartment.",
+      "bbox": [
+        305.8977966308594,
+        359.2496032714844,
+        545.0213012695312,
+        514.2716674804688
+      ]
+    },
+    {
+      "figure_id": "owner-manual-p10-f3",
+      "page": 10,
+      "caption": "1-2 lb Spool Loading",
+      "description": "Exploded diagram showing the order of assembly for loading a 1-2 lb wire spool: Wingnut, Spacer, Spool Spindle, 1-2 lb Wire Spool, Spool Brake Pad, and Welder Wall, illustrating how components stack onto the spindle against the welder wall.",
+      "bbox": [
+        299.92498779296875,
+        612.8229370117188,
+        556.9258422851562,
+        718.2659912109375
+      ]
+    }
+  ],
+  "key_facts": [
+    "Power Switch must be turned OFF and the Welder unplugged before setup or spool installation.",
+    "The Door Latch must be pulled up to open the Door for accessing the wire spool compartment.",
+    "This installation procedure applies to 1-2 Pound wire spools.",
+    "The wire spool must be set so it unwinds clockwise to prevent wire feed problems.",
+    "Spool assembly order onto the Spool Spindle (against the Welder Wall) is: Spool Brake Pad, Wire Spool, Spacer, then secured with the Wingnut.",
+    "If the Wire Spool can spin freely, the Wingnut is too loose, which can cause the wire to unravel, unspool, tangle, and cause feeding problems.",
+    "Before setup, remove the protective foam and cardboard from the Welder."
+  ],
+  "topics": [
+    "wire-feed",
+    "wire-spool-installation",
+    "mig-welding",
+    "flux-cored-welding",
+    "safety",
+    "setup",
+    "troubleshooting"
+  ]
+}

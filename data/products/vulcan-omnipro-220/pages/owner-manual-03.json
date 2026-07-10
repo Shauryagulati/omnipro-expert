@@ -1,0 +1,36 @@
+{
+  "doc": "owner-manual",
+  "page": 3,
+  "summary": "Safety page covering two hazards: fume/gas inhalation risks from welding and plasma cutting, and arc ray hazards to eyes and skin. Lists numbered safety precautions for each hazard, including ventilation, respirator use, PPE (eye protection, leather leggings, welding jackets, ear protection), and references to OSHA/NIOSH/ACGIH guidelines.",
+  "text": "Fume and Gas Safety\\nINHALATION HAZARD:\\nWelding and Plasma Cutting produce toxic fumes.\\n1. Exposure to welding or cutting exhaust fumes can increase the risk of developing certain cancers, such as cancer of the larynx and lung cancer. Also, some diseases that may be linked to exposure to welding or plasma cutting exhaust fumes are:\\n• Early onset of Parkinson's Disease\\n• Heart disease\\n• Ulcers\\n• Damage to the reproductive organs\\n• Inflammation of the small intestine or stomach\\n• Kidney damage\\n• Respiratory diseases such as emphysema, bronchitis, or pneumonia\\nUse natural or forced air ventilation and wear a respirator approved by NIOSH to protect against the fumes produced to reduce the risk of developing the above illnesses.\\n2. Do not use near degreasing or painting operations.\\n3. Keep head out of fumes. Do not breathe exhaust fumes.\\n4. Use enough ventilation, exhaust at arc, or both, to keep fumes and gases from breathing zone and general area. If engineering controls are not feasible, use an approved respirator.\\n5. Work in a confined area only if it is well-ventilated, or while wearing an air-supplied respirator.\\n6. Have a recognized specialist in Industrial Hygiene or Environmental Services check the operation and air quality and make recommendations for the specific welding situation. Follow OSHA guidelines for Permissible Exposure Limits (PEL's) and the American Conference of Governmental Industrial Hygienists recommendations for Threshold Limit Values (TLV's) for fumes and gases.\\n\\nArc Ray Safety\\nARC RAYS can injure eyes and burn skin.\\n1. Wear ANSI-approved welding eye protection featuring at least a number 10 shade lens rating.\\n2. Wear leather leggings, fire resistant shoes or boots during use. Do not wear pants with cuffs, shirts with open pockets, or any clothing that can catch and hold molten metal or sparks.\\n3. Keep clothing free of grease, oil, solvents, or any flammable substances. Wear dry, insulating gloves and protective clothing.\\n4. Wear an approved head covering to protect the head and neck. Use aprons, cape, sleeves, shoulder covers, and bibs designed and approved for welding and cutting procedures.\\n5. Wear an approved welding jacket or long sleeves to protect forearms from radiation burns.\\n6. When welding/cutting overhead or in confined spaces, wear flame resistant ear plugs or ear muffs to keep sparks out of ears.",
+  "tables": [],
+  "figures": [],
+  "key_facts": [
+    "Welding and plasma cutting produce toxic fumes classified as an inhalation hazard.",
+    "Exposure to welding/cutting exhaust fumes can increase risk of cancers such as larynx and lung cancer.",
+    "Linked diseases from fume exposure include early-onset Parkinson's Disease, heart disease, ulcers, reproductive organ damage, inflammation of small intestine/stomach, kidney damage, and respiratory diseases (emphysema, bronchitis, pneumonia).",
+    "Use a NIOSH-approved respirator and natural or forced air ventilation to reduce fume exposure risk.",
+    "Do not weld or cut near degreasing or painting operations.",
+    "Use enough ventilation or exhaust at the arc to keep fumes/gases out of the breathing zone; use an approved respirator if engineering controls are not feasible.",
+    "Only work in confined areas if well-ventilated or while wearing an air-supplied respirator.",
+    "OSHA Permissible Exposure Limits (PELs) and ACGIH Threshold Limit Values (TLVs) should guide fume/gas exposure recommendations from an Industrial Hygiene specialist.",
+    "Arc rays can injure eyes and burn skin.",
+    "Wear ANSI-approved welding eye protection with at least a #10 shade lens rating.",
+    "Wear leather leggings and fire-resistant shoes or boots; avoid cuffed pants, open-pocket shirts, or flammable clothing that can catch molten metal or sparks.",
+    "Keep clothing free of grease, oil, solvents, or flammable substances; wear dry insulating gloves and protective clothing.",
+    "Wear approved head, neck, and body coverings (aprons, capes, sleeves, shoulder covers, bibs) designed for welding/cutting.",
+    "Wear an approved welding jacket or long sleeves to protect forearms from radiation burns.",
+    "When welding/cutting overhead or in confined spaces, wear flame-resistant ear plugs or ear muffs to prevent sparks from entering ears."
+  ],
+  "topics": [
+    "fume-and-gas-safety",
+    "inhalation-hazard",
+    "ventilation",
+    "respirator-use",
+    "arc-ray-safety",
+    "eye-protection",
+    "ppe",
+    "osha-guidelines",
+    "confined-space-safety"
+  ]
+}

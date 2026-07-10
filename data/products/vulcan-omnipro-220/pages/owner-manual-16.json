@@ -1,0 +1,200 @@
+{
+  "doc": "owner-manual",
+  "page": 16,
+  "summary": "This page covers steps 24-26 for setting up power and initial wire feeding on the Vulcan OmniPro 220 welder: plugging in the power cord, connecting to a proper grounded/GFCI receptacle and turning on the Power Switch, and using the Cold Wire Feed Switch to feed welding wire through the MIG gun. A DANGER safety notice warns of welding voltage shock hazards. Diagrams show the Power Input socket, Power Switch, Cold Wire Feed Switch location, and MIG Gun/Welding Wire feed-through distance.",
+  "text": "DANGER\nPARTS MAY BE AT WELDING VOLTAGE\nTO PREVENT ELECTRIC SHOCK AND DEATH:\n1. Keep hands away from Wire Feed mechanism.\n2. Close door before plugging in, unless using Cold Wire Feed to feed wire through to gun.\n3. Do not touch Trigger while feeding wire through to gun.\n\n24. Plug either 120VAC or 240VAC Power Cord into Power Input Socket.\nNote: Plug will only fit one way.\n\n25. Do not touch the Gun's Trigger. Plug the Power Cord into a properly grounded, GFCI protected 120VAC (20 amp rated) or 240VAC receptacle that matches the plug and turn the Power Switch ON. The circuit must be equipped with delayed action-type circuit breaker or fuses.\n\n26. Point the Gun away from all objects. Press and hold the Cold Wire Feed Switch until the wire feeds through two inches.\nThe wire liner may come out with the welding wire. This is normal, just push the wire liner back into the Gun.\nIf the wire does not feed properly and the Spool is stationary, turn OFF and unplug the Welder and slightly tighten the Feed Tensioner clockwise before retrying.\n\nNameplate data visible in diagram:\nVulcan OMNIPRO 220\nConforms to ANSI/IEC Std. 60974-1\nIP21S\nUPC 193175422590\nItem 57812\n\n30A/15.5V to 220A/25V, X: 25% / 60% / 100%, U0 = 86V\nI2: 200A / 130A / 115A\nU2: 24V / 20.5V / 19.75V\n1~50/60Hz U1 = 240V\nI1max = 25.5A / 23.7A / 15.6A\nI1eff = 12.8A / 11.9A / 8.5A\n\n10A/20.4V to 175A/27V, X: 25% / 60% / 100%, U0 = 86V\nI2: 175A / 115A / 100A\nU2: 27V / 24.6V / 24V\n\n10A/10.4V to 175A/17V, X: 30% / 60% / 100%, U0 = 86V\nI2: 175A / 125A / 105A\nU2: 17V / 15V / 14.2V\n\n30A/15.5V to 140A/21V, X: 40% / 60% / 100%, U0 = 86V\nI2: 100A / 85A / 75A\nU2: 19V / 18.25V / 17.75V\n1~50/60Hz U1 = 120V\nI1max = 20.8A / 19.5A / 20.6A\nI1eff = 13.1A / 12.3A / 13A\n\n10A/20.4V to 80A/23.2V, X: 40% / 60% / 100%, U0 = 86V\nI2: 80A / 70A / 60A\nU2: 23.2V / 22.8V / 22.4V\n\n10A/10.4V to 125A/15V, X: 40% / 60% / 100%, U0 = 86V\nI2: 125A / 105A / 90A\nU2: 15V / 14.2V / 13.6V\n\nPage 16\nFor technical questions, please call 1-800-444-3353. Item 57812",
+  "tables": [
+    {
+      "title": "Vulcan OmniPro 220 Duty Cycle / Voltage Rating Table (240V, Process A)",
+      "headers": [
+        "Parameter",
+        "100%",
+        "60%",
+        "25%"
+      ],
+      "rows": [
+        [
+          "I2 (Output Current)",
+          "115A",
+          "130A",
+          "200A"
+        ],
+        [
+          "U2 (Output Voltage)",
+          "19.75V",
+          "20.5V",
+          "24V"
+        ]
+      ]
+    },
+    {
+      "title": "Vulcan OmniPro 220 Rating Table 2 (240V)",
+      "headers": [
+        "Parameter",
+        "100%",
+        "60%",
+        "25%"
+      ],
+      "rows": [
+        [
+          "I2",
+          "100A",
+          "115A",
+          "175A"
+        ],
+        [
+          "U2",
+          "24V",
+          "24.6V",
+          "27V"
+        ]
+      ]
+    },
+    {
+      "title": "Vulcan OmniPro 220 Rating Table 3 (240V, 30/60/100%)",
+      "headers": [
+        "Parameter",
+        "100%",
+        "60%",
+        "30%"
+      ],
+      "rows": [
+        [
+          "I2",
+          "105A",
+          "125A",
+          "175A"
+        ],
+        [
+          "U2",
+          "14.2V",
+          "15V",
+          "17V"
+        ]
+      ]
+    },
+    {
+      "title": "Vulcan OmniPro 220 Rating Table 4 (120V, 40/60/100%)",
+      "headers": [
+        "Parameter",
+        "100%",
+        "60%",
+        "40%"
+      ],
+      "rows": [
+        [
+          "I2",
+          "75A",
+          "85A",
+          "100A"
+        ],
+        [
+          "U2",
+          "17.75V",
+          "18.25V",
+          "19V"
+        ]
+      ]
+    },
+    {
+      "title": "Vulcan OmniPro 220 Rating Table 5 (120V, 40/60/100%)",
+      "headers": [
+        "Parameter",
+        "100%",
+        "60%",
+        "40%"
+      ],
+      "rows": [
+        [
+          "I2",
+          "60A",
+          "70A",
+          "80A"
+        ],
+        [
+          "U2",
+          "22.4V",
+          "22.8V",
+          "23.2V"
+        ]
+      ]
+    },
+    {
+      "title": "Vulcan OmniPro 220 Rating Table 6 (120V, 40/60/100%)",
+      "headers": [
+        "Parameter",
+        "100%",
+        "60%",
+        "40%"
+      ],
+      "rows": [
+        [
+          "I2",
+          "90A",
+          "105A",
+          "125A"
+        ],
+        [
+          "U2",
+          "13.6V",
+          "14.2V",
+          "15V"
+        ]
+      ]
+    }
+  ],
+  "figures": [
+    {
+      "figure_id": "owner-manual-p16-f2",
+      "page": 16,
+      "caption": "Power Input",
+      "description": "Rear/top view of the welder showing the Power Input socket labeled 'Power Input', along with Gas Inlet, Reset button, and rating label with duty cycle chart. Also shows a cooling fan on the lower housing.",
+      "bbox": [
+        306.0675964355469,
+        192.6829376220703,
+        547.8433837890625,
+        527.7732543945312
+      ]
+    },
+    {
+      "figure_id": "owner-manual-p16-f3",
+      "page": 16,
+      "caption": "Cold Wire Feed Switch",
+      "description": "Side/internal view of the welder's wire feed compartment showing the 'Cold Wire Feed Switch' button location, the wire spool tensioner knob, and control panel connectors below.",
+      "bbox": [
+        219.40089416503906,
+        595.8486328125,
+        554.2855224609375,
+        807.492431640625
+      ]
+    }
+  ],
+  "key_facts": [
+    "A DANGER warning states parts may be at welding voltage; keep hands away from the Wire Feed mechanism to prevent electric shock and death.",
+    "Close the door before plugging in the welder unless using Cold Wire Feed to feed wire through the gun.",
+    "Never touch the Trigger while feeding wire through the gun.",
+    "The power cord plug (120VAC or 240VAC) is keyed and will only fit into the Power Input Socket one way.",
+    "Power cord must be plugged into a properly grounded, GFCI-protected 120VAC (20 amp rated) or 240VAC receptacle matching the plug.",
+    "The circuit must be equipped with delayed action-type circuit breaker or fuses.",
+    "To feed wire, point the Gun away from all objects and press/hold the Cold Wire Feed Switch until wire feeds through about two inches.",
+    "It is normal for the wire liner to come out with the welding wire during initial feed; simply push the liner back into the Gun.",
+    "If wire does not feed and the spool is stationary, turn off and unplug the welder, then slightly tighten the Feed Tensioner clockwise before retrying.",
+    "The Vulcan OmniPro 220 conforms to ANSI/IEC Std. 60974-1 and has an IP21S rating.",
+    "On 240V input (U1=240V), the machine outputs up to 220A/25V at 25% duty cycle, 130A/20.5V at 60%, and 115A/19.75V at 100%, with I1max up to 25.5A and I1eff up to 12.8A.",
+    "On 120V input (U1=120V), the machine outputs up to 140A/21V at 40% duty cycle, 85A/18.25V at 60%, and 75A/17.75V at 100%, with I1max up to 20.8A and I1eff up to 13.1A.",
+    "Item number for this Vulcan OmniPro 220 welder manual is 57812."
+  ],
+  "topics": [
+    "safety",
+    "electric-shock-hazard",
+    "power-input",
+    "gfci-grounding",
+    "power-switch",
+    "cold-wire-feed",
+    "wire-feed",
+    "mig-gun",
+    "duty-cycle",
+    "voltage-rating",
+    "setup"
+  ]
+}

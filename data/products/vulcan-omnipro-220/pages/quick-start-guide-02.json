@@ -1,0 +1,41 @@
+{
+  "doc": "quick-start-guide",
+  "page": 2,
+  "summary": "Quick start guide page for the Vulcan OmniPro 220 welder (document 57812) detailing cable setup procedures for four welding processes: Stick, MIG, Flux-core, and TIG. Each section provides numbered steps with corresponding numbered callouts on diagrams showing where to connect ground clamps, electrode holders, wire feed power, MIG guns, TIG torches, gas lines, and foot pedals on the back of the welder unit.",
+  "text": "STICK CABLE SETUP\n1. Connect ground clamp to negative terminal.\n2. Connect electrode holder to positive terminal.\n3. Leave wire feed power disconnected.\n\nMIG CABLE SETUP\n1. Connect ground clamp to negative terminal.\n2. Connect wire feed power to positive terminal.\n3. Connect MIG gun to wire feed.\n4. Connect wire feed control inside welder.\n\nFLUX CABLE SETUP\nFollow MIG cable setup but connect ground clamp to positive terminal and wire feed power to negative terminal.\n\nTIG CABLE SETUP\n1. Connect ground clamp to positive terminal.\n2. Connect TIG torch to negative terminal.\n3. Connect gas line to gas regulator.\n4. Connect foot pedal inside welder.\n5. Leave wire feed power disconnected.\n\nBASIC WELDING INSTRUCTIONS AND WELDING TIPS ARE IN MANUAL.",
+  "tables": [],
+  "figures": [
+    {
+      "figure_id": "quick-start-guide-p02-f1",
+      "page": 2,
+      "caption": "STICK CABLE SETUP",
+      "description": "Diagram of the rear panel of the Vulcan OmniPro 220 welder with an electrode holder and ground clamp cable assembly. Callout 1 points to the negative terminal connection for the ground clamp cable at the rear panel. Callout 2 points to the electrode holder's red-handled connector plugged into the positive terminal. Callout 3 points to the electrode holder cable/handle area.",
+      "bbox": [
+        0.0,
+        0.0,
+        419.52801513671875,
+        595.2760009765625
+      ]
+    }
+  ],
+  "key_facts": [
+    "Stick welding: ground clamp connects to negative terminal, electrode holder connects to positive terminal, wire feed power stays disconnected.",
+    "MIG welding: ground clamp connects to negative terminal, wire feed power connects to positive terminal, MIG gun connects to wire feed, wire feed control connects inside welder.",
+    "Flux-core cable setup follows MIG setup but reverses polarity: ground clamp to positive terminal, wire feed power to negative terminal.",
+    "TIG welding: ground clamp connects to positive terminal, TIG torch connects to negative terminal, gas line connects to gas regulator, foot pedal connects inside welder, wire feed power stays disconnected.",
+    "Document number for this quick start guide is 57812.",
+    "Basic welding instructions and welding tips are located in the full owner's manual, not this quick start guide."
+  ],
+  "topics": [
+    "cable-setup",
+    "stick-welding",
+    "mig-welding",
+    "flux-core-welding",
+    "tig-welding",
+    "polarity",
+    "wire-feed",
+    "ground-clamp",
+    "gas-regulator",
+    "foot-pedal"
+  ]
+}

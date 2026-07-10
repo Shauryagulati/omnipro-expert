@@ -1,0 +1,49 @@
+{
+  "doc": "owner-manual",
+  "page": 45,
+  "summary": "This page presents the full Wiring Schematic diagram for the welding machine, showing the power circuit (input AC, rectifier, PFC/IGBT stage, transformer, output Hall sensor) and the control circuit (MCU Board, LCD Screen, Remote Board, connectors CN1-CN8, fans, wire feeder, solenoid valves, and aviation plugs).",
+  "text": "Wiring Schematic\n\nItem 57812 — For technical questions, please call 1-800-444-3353. — Page 45\n\nDiagram shows the complete electrical schematic of the welding machine, including:\n\nPower input section: K1 AC 120-240V/50/60HZ switch, AC1, AC2, and Ground (G) terminals feeding into the rectifier and PFC/IGBT power stage.\n\nOutput section: OUT+ and OUT- terminals with a Hall sensor (Hall) on the OUT+ line, connected via CN1 (pins 1-4).\n\nTransformer T1 (T60*30*28) with secondary taps (pins 1,2,4,5,6) feeding a rectifier bridge (pins 1-4, +/- ~ terminals) and IGBT/PFC module.\n\n1/4 fuse or resistor bank (four 1/4 elements) in the power section.\n\n24V control supply circuit near a transistor/relay (J) stage.\n\nMCU BOARD with two ribbon connectors CN5 (34 pins) and CN7 (34 pins), each pin numbered 1 through 34 (with 28 and 29 shown out of strict sequence), driving three gate-driver blocks (each with pins 1,2,3,4,5) that control the IGBT switches.\n\nCN5 connector (separate 4-pin) linking MCU board to LCD SCREEN (4-pin connector, pins 1-4).\n\nCN8 connector (7-pin) linking MCU board to REMOTE BOARD; REMOTE BOARD has its own CN1 (7-pin) and CN2 (6-pin) connectors.\n\nREMOTE BOARD connects to two AVIATION PLUG connectors (one via CN2, one via CN3 2-pin).\n\nCN6 (2-pin, pins 3-4 shown) connects to FAST WIRE FEED SWITCH.\n\nCN3 (4-pin) and CN4 (5-pin) connect to WIRE FEEDER (motor M).\n\nCN7 (3-pin) connects to a SOLENOID VALVE; a second SOLENOID VALVE is also shown connected near CN3/CN6 area.\n\nFAN and FAN2 connectors (2-pin each, pins 1-2) power two cooling fans depicted as fan blade circles at bottom of diagram.\n\nCapacitors, diodes, and transistor symbols throughout represent snubber networks, rectification, and switching stages of the power supply.\n\nSidebar tabs on right edge of page: SAFETY, CONTROLS, WIRE, TIG / STICK, WELDING TIPS, MAINTENANCE (MAINTENANCE tab highlighted/active).",
+  "tables": [],
+  "figures": [
+    {
+      "figure_id": "owner-manual-p45-f1",
+      "page": 45,
+      "caption": "Wiring Schematic",
+      "description": "Full electrical schematic diagram of the welding machine. Shows AC input (K1 AC 120-240V/50/60HZ, AC1, AC2, G ground), rectifier stage, PFC and IGBT power modules, transformer T1 (T60*30*28), output Hall sensor and OUT+/OUT- terminals via CN1. Control side shows MCU BOARD with CN5 and CN7 34-pin ribbon connectors driving three gate-driver stages, connected to LCD SCREEN via a 4-pin connector, and to REMOTE BOARD via CN8 (7-pin). REMOTE BOARD connects to two AVIATION PLUG jacks via CN1/CN2. Additional connectors CN3 (4-pin) and CN4 (5-pin) connect to the WIRE FEEDER motor (M); CN6 connects to the FAST WIRE FEED SWITCH; CN7 (3-pin) connects to a SOLENOID VALVE, with a second SOLENOID VALVE also shown. FAN and FAN2 2-pin connectors power two cooling fans depicted at the bottom. A 1/4 fuse bank (four elements) and 24V control supply circuitry are also depicted in the power section.",
+      "bbox": [
+        56.83489990234375,
+        99.63713836669922,
+        523.8809814453125,
+        780.0441284179688
+      ]
+    }
+  ],
+  "key_facts": [
+    "The machine's AC input is rated K1 AC 120-240V/50/60Hz.",
+    "The main control board is labeled MCU BOARD and connects via ribbon connectors CN5 and CN7 (34 pins each) to three gate-driver stages controlling the IGBT switches.",
+    "A Hall effect sensor is installed on the OUT+ output line, wired through connector CN1.",
+    "The transformer is designated T1, core type T60*30*28.",
+    "The LCD SCREEN connects to the MCU board via a 4-pin connector (CN5/CNS).",
+    "The REMOTE BOARD connects to the MCU board via CN8 (7-pin) and provides two AVIATION PLUG connections.",
+    "The wire feeder motor (M) connects via CN3 (4-pin) and CN4 (5-pin) connectors.",
+    "The FAST WIRE FEED SWITCH connects via CN6 (2-pin, pins 3-4).",
+    "Two SOLENOID VALVE outputs are shown, one connected via CN7 (3-pin).",
+    "Two cooling fans (FAN and FAN2) are each powered via 2-pin connectors.",
+    "A bank of four 1/4 (fuse/resistor) elements is present in the power stage of the circuit.",
+    "A PFC (power factor correction) module and IGBT switching module are shown in the main power stage."
+  ],
+  "topics": [
+    "wiring-schematic",
+    "circuit-diagram",
+    "mcu-board",
+    "power-supply",
+    "igbt",
+    "pfc",
+    "wire-feeder",
+    "solenoid-valve",
+    "remote-board",
+    "cooling-fan",
+    "hall-sensor",
+    "transformer"
+  ]
+}

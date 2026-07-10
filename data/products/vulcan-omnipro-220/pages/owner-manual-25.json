@@ -1,0 +1,54 @@
+{
+  "doc": "owner-manual",
+  "page": 25,
+  "summary": "This page provides step-by-step instructions for connecting the shielding gas (Argon) cylinder and regulator to the TIG torch, followed by instructions for connecting the power cord (120VAC or 240VAC) to the welder's Power Input socket, with an accompanying safety warning about accidental operation.",
+  "text": "Connect Shielding Gas\n1. With assistance, place an 100% Argon cylinder (not included) onto a cabinet or cart near the Welder and secure the cylinder in place with two straps (not included) to prevent tipping.\n2. Remove the cylinder's cap. Stand to the side of the valve opening, then open the valve briefly to blow dust and dirt from the valve opening. Close the cylinder valve.\n3. Locate the Regulator (included) and close its valve until it is loose, then thread Regulator onto cylinder and wrench-tighten connection.\n4. Connect Shielding Gas Hose on TIG Torch Cable Connector to the Regulator's Outlet and wrench-tighten connection.\n\nConnect Power Cord\nPlug either 120VAC or 240VAC Power Cord into Power Input Socket.\nNote: Plug will only fit one way.\nWARNING! TO PREVENT SERIOUS INJURY FROM ACCIDENTAL OPERATION: Do not plug cord into wall outlet at this time.",
+  "tables": [],
+  "figures": [
+    {
+      "figure_id": "owner-manual-p25-f1",
+      "page": 25,
+      "caption": "Gas cylinder setup steps 1-4",
+      "description": "Illustration showing an Argon gas cylinder being secured with two straps (step 1, labeled '1'), the cylinder valve being briefly opened to clean it then closed (step 2, labeled '2' with text 'Briefly open valve to clean, then close valve.'), the regulator being threaded onto the cylinder (step 3, labeled '3'), and the shielding gas hose with TIG torch being connected to the regulator outlet (step 4, labeled '4').",
+      "bbox": [
+        307.3597106933594,
+        175.2036895751953,
+        548.5592651367188,
+        349.34832763671875
+      ]
+    },
+    {
+      "figure_id": "owner-manual-p25-f3",
+      "page": 25,
+      "caption": "Connect Power Cord - front panel view",
+      "description": "Front view of the welder's control panel showing the 'Power Input' socket (labeled with callout 'Power Input'), a 'Gas Inlet' port, and a 'Reset' button, along with a rating label plate and cooling fan below.",
+      "bbox": [
+        307.81988525390625,
+        550.4820556640625,
+        504.1611022949219,
+        762.3060302734375
+      ]
+    }
+  ],
+  "key_facts": [
+    "Use a 100% Argon cylinder (not included) for shielding gas.",
+    "Secure the gas cylinder to a cabinet or cart with two straps (not included) to prevent tipping.",
+    "Briefly open the cylinder valve before attaching the regulator to blow out dust and dirt, then close it.",
+    "The Regulator is included with the welder.",
+    "The Shielding Gas Hose connects from the TIG Torch Cable Connector to the Regulator's Outlet.",
+    "The welder (Item 57812, Vulcan OmniPro 220) accepts either 120VAC or 240VAC power cords.",
+    "The power cord plug will only fit into the Power Input Socket one way.",
+    "Warning: Do not plug the power cord into the wall outlet during setup to prevent accidental operation injury.",
+    "The Power Input socket and Gas Inlet are located on the front control panel of the welder, along with a Reset button."
+  ],
+  "topics": [
+    "shielding-gas",
+    "gas-cylinder-setup",
+    "regulator",
+    "tig-torch",
+    "power-cord",
+    "power-input",
+    "safety-warning",
+    "setup"
+  ]
+}

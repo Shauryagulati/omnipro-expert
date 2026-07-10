@@ -1,0 +1,36 @@
+{
+  "doc": "owner-manual",
+  "page": 12,
+  "summary": "Step 12 of the setup/maintenance instructions covers Feed Roller Instructions: verifying the feed roller matches the wire type (solid core or flux-cored) and wire diameter marked on the spool, and the procedure (A-D) to unscrew the feed roller knob, remove it, flip/replace the roller as needed, and reinstall the knob to secure the roller.",
+  "text": "12. Feed Roller Instructions:\nCheck that the Feed Roller is correct for the type of wire being used (solid core or flux-cored) and that it is turned to properly match the wire size marked on the Wire Spool:\n\na. Unscrew the Feed Roller Knob counterclockwise.\nb. Remove the Feed Roller Knob to expose the Feed Roller.\nc. Flip or replace the Feed Roller as needed and confirm that it is the correct Roller for the type of wire being used and that the number showing is the same as the wire diameter on the Spool.\nd. Screw the Feed Roller Knob back into place to secure the Feed Roller.",
+  "tables": [],
+  "figures": [
+    {
+      "figure_id": "owner-manual-p12-f2",
+      "page": 12,
+      "caption": "Feed Roller Instructions diagram",
+      "description": "A 4-step illustrated sequence (labeled A, B, C, D) showing the wire feed mechanism housing. Step A shows the Feed Roller Knob being unscrewed counterclockwise from the housing (labeled 'Feed Roller Knob'). Step B shows the knob removed, exposing the 'Feed Roller' inside the housing. Between B and C, two roller cross-section diagrams are shown: 'Solid Core V-Groove' roller with '0.030/0.035 groove' on one side and '0.025 groove' on the other; and 'Flux-Cored Knurled Groove' roller with '0.045 groove' on one side and '0.030/0.035 groove' on the other. Step C shows the roller being flipped/replaced in the housing. Step D shows the knob being screwed back into place to secure the roller.",
+      "bbox": [
+        331.90631103515625,
+        457.3893127441406,
+        548.6525268554688,
+        539.8673095703125
+      ]
+    }
+  ],
+  "key_facts": [
+    "The feed roller must match the wire type: solid core (V-Groove) or flux-cored (Knurled Groove).",
+    "The feed roller groove size must match the wire diameter marked on the wire spool.",
+    "Solid Core V-Groove roller has grooves for 0.030/0.035 and 0.025 wire sizes.",
+    "Flux-Cored Knurled Groove roller has grooves for 0.045 and 0.030/0.035 wire sizes.",
+    "To change or check the feed roller: (a) unscrew the Feed Roller Knob counterclockwise, (b) remove the knob to expose the feed roller, (c) flip or replace the roller so the number showing matches the wire diameter on the spool, (d) screw the knob back in to secure the roller."
+  ],
+  "topics": [
+    "wire-feed",
+    "feed-roller",
+    "maintenance",
+    "polarity",
+    "wire-diameter",
+    "troubleshooting"
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "doc": "owner-manual",
+  "page": 37,
+  "summary": "This page is part of a wire welding troubleshooting guide, covering four common weld bead defects: Porosity, Excessive Spatter, Crooked/Wavy Bead, and Burn-Through. Each section includes a top-view diagram of the defect and a numbered list of possible causes and corresponding solutions.",
+  "text": "Wire Weld – Porosity\nSmall cavities or holes in the bead.\nTOP VIEW [diagram showing weld bead with small holes/cavities]\nPOSSIBLE CAUSES AND SOLUTIONS\n1. Incorrect polarity: Check that polarity is set correctly for type of welding.\n2. Insufficient shielding gas (MIG only): Increase flow of gas. Clean nozzle. Maintain proper CTWD.\n3. Incorrect shielding gas (MIG only): Use shielding gas recommended by wire supplier.\n4. Dirty workpiece or welding wire: Clean workpiece down to bare metal. Make certain that wire is clean and free from oil, coatings, and other residues.\n5. Inconsistent travel speed: Maintain steady travel speed.\n6. CTWD too long: Reduce CTWD.\n\nWire Weld – Excessive Spatter\nFine spatter is normal. Spatter that is grainy and large is a problem.\nTOP VIEW [diagram showing weld bead with spatter particles]\nPOSSIBLE CAUSES AND SOLUTIONS\n1. Dirty workpiece or welding wire: Clean workpiece down to bare metal. Make certain that wire is clean and free from oil, coatings, and other residues.\n2. Incorrect polarity: Check that polarity is set correctly for type of welding.\n3. Insufficient shielding gas (MIG only): Increase flow of gas. Clean nozzle. Maintain proper CTWD.\n4. Wire feeding too fast: Reduce wire feed speed.\n5. CTWD too long: Reduce CTWD.\n\nWire Weld – Crooked/Wavy Bead\nTOP VIEW [diagram showing wavy, uneven weld bead]\nPOSSIBLE CAUSES AND SOLUTIONS\n1. Inaccurate welding: Use two hands or rest hand on steady surface.\n2. Inconsistent travel speed: Maintain steady travel speed.\n3. CTWD too long: Reduce CTWD.\n\nWire Weld – Burn-Through\nBase material melts away, leaving a hole in the weld.\nTOP VIEW [diagram showing weld bead with a hole/gap from burn-through]\nPOSSIBLE CAUSES AND SOLUTIONS\n1. Workpiece overheating: Reduce current and/or wire feed speed.\n2. Travel speed too slow: Increase travel speed and ensure that travel speed is kept steady.\n3. Excessive material at weld: Reduce wire feed speed.\n\nItem 57812\nFor technical questions, please call 1-800-444-3353.\nPage 37",
+  "tables": [],
+  "figures": [
+    {
+      "figure_id": "owner-manual-p37-f1",
+      "page": 37,
+      "caption": "Wire Weld – Porosity, Top View",
+      "description": "Top view diagram of a weld bead showing small cavities or holes scattered throughout the bead, illustrating porosity defect.",
+      "bbox": [
+        42.92169952392578,
+        73.291015625,
+        223.49960327148438,
+        136.291015625
+      ]
+    },
+    {
+      "figure_id": "owner-manual-p37-f2",
+      "page": 37,
+      "caption": "Wire Weld – Excessive Spatter, Top View",
+      "description": "Top view diagram of a weld bead surrounded by scattered spatter particles, illustrating grainy, large spatter as a defect while fine spatter is normal.",
+      "bbox": [
+        313.1965026855469,
+        85.35504150390625,
+        490.8664855957031,
+        148.35504150390625
+      ]
+    },
+    {
+      "figure_id": "owner-manual-p37-f3",
+      "page": 37,
+      "caption": "Wire Weld – Crooked/Wavy Bead, Top View",
+      "description": "Top view diagram of a weld bead with an uneven, wavy, crooked pattern instead of a straight consistent bead.",
+      "bbox": [
+        33.6879997253418,
+        509.0553283691406,
+        550.2758178710938,
+        602.1220092773438
+      ]
+    }
+  ],
+  "key_facts": [
+    "Porosity defect appears as small cavities or holes in the weld bead.",
+    "Porosity causes include: incorrect polarity, insufficient shielding gas (MIG only), incorrect shielding gas (MIG only), dirty workpiece or wire, inconsistent travel speed, and CTWD (Contact Tip to Work Distance) too long.",
+    "Fine spatter during welding is normal; grainy and large spatter indicates a problem.",
+    "Excessive spatter causes include: dirty workpiece or welding wire, incorrect polarity, insufficient shielding gas (MIG only), wire feeding too fast, and CTWD too long.",
+    "Crooked/wavy bead causes include inaccurate welding technique, inconsistent travel speed, and CTWD too long.",
+    "Recommended fix for inaccurate/crooked welding: use two hands or rest hand on a steady surface.",
+    "Burn-through occurs when base material melts away, leaving a hole in the weld.",
+    "Burn-through causes include workpiece overheating, travel speed too slow, and excessive material at weld (wire feed speed too high).",
+    "To fix burn-through: reduce current and/or wire feed speed, increase and steady travel speed, or reduce wire feed speed.",
+    "CTWD stands for Contact Tip to Work Distance; maintaining proper CTWD or reducing it is a common fix for multiple wire welding defects."
+  ],
+  "topics": [
+    "wire-feed",
+    "troubleshooting",
+    "porosity",
+    "spatter",
+    "weld-bead-defects",
+    "burn-through",
+    "polarity",
+    "shielding-gas",
+    "ctwd",
+    "mig-welding"
+  ]
+}

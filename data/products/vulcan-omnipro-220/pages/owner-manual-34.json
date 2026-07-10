@@ -1,0 +1,69 @@
+{
+  "doc": "owner-manual",
+  "page": 34,
+  "summary": "This page covers \"Welding Tips\" including guidance on testing weld technique after cooling, a NOTICE about TIG welding complexity, a Strike Test procedure with diagrams comparing a good weld versus a poor weld, and a \"Cleaning the Weld\" section with a WARNING about eye protection and instructions for using a chipping hammer and wire brush to clean slag from welds.",
+  "text": "Welding Tips\nA good way to test welding technique is to examine a weld's appearance after it has cooled and the slag has been removed. Then, better welding can be learned by adjusting your weld technique to remedy any problems found.\n\nNOTICE: TIG welding is a complicated process, requiring experience and skill to achieve successful results. Training beyond the scope of this manual is required to TIG weld properly.\n\n[Boxed text] After practice welding a couple of welding beads, STOP and examine your weld using the following guidelines.\n\nStrike Test\nA test weld on a PIECE OF SCRAP can be tested by using the following procedure.\nWEAR ANSI-APPROVED SAFETY GOGGLES DURING THIS PROCEDURE.\n\nCAUTION! This test WILL damage the weld it is performed on. This test is ONLY an indicator of weld technique and is not intended to test working welds.\n\n1. After two scraps have been welded together and the weld has cooled, clamp one scrap in a sturdy vise.\n2. Stay clear from underneath while you strike the opposite scrap with a heavy hammer, preferably a dead-blow hammer.\n3. A GOOD WELD will deform but not break, as shown on top.\nA POOR WELD will be brittle and snap at the weld, as shown on bottom.\n\nCleaning the Weld\n\nWARNING\nTO PREVENT SERIOUS INJURY:\nContinue to wear ANSI-approved safety goggles and protective wear when cleaning a weld.\nSparks or chips may fly when cleaning.\n\n1. A weld from flux-cored wire welding or stick welding will be covered by slag. Use a chipping hammer to knock this off. Be careful not to damage the weld or base material.\n2. Use a wire brush to further clean the weld or use an angle grinder (sold separately) to shape the weld.",
+  "tables": [],
+  "figures": [
+    {
+      "figure_id": "owner-manual-p34-f1",
+      "page": 34,
+      "caption": "GOOD WELD bends and is not brittle",
+      "description": "Diagram showing a strike test on a good weld: a dead-blow hammer strikes downward on a scrap workpiece held in a clamp; the scrap is welded to another SCRAP workpiece; the weld point bends without breaking, illustrating a good weld.",
+      "bbox": [
+        45.0,
+        229.67559814453125,
+        559.2760009765625,
+        360.7353210449219
+      ]
+    },
+    {
+      "figure_id": "owner-manual-p34-f2",
+      "page": 34,
+      "caption": "POOR WELD snaps or cracks",
+      "description": "Diagram showing a strike test on a poor weld: a dead-blow hammer strikes downward on a scrap workpiece held in a clamp; the welded joint between two SCRAP workpieces snaps or cracks at the weld, illustrating a poor/brittle weld.",
+      "bbox": [
+        309.2135009765625,
+        368.5257263183594,
+        558.318603515625,
+        492.3150329589844
+      ]
+    },
+    {
+      "figure_id": "owner-manual-p34-f4",
+      "page": 34,
+      "caption": "Chipping Hammer and Wire Brush",
+      "description": "Illustration of a combination tool with a pointed chipping hammer head on one end and a wire brush on the other end, used for cleaning slag and debris from welds.",
+      "bbox": [
+        320.9305725097656,
+        552.1785278320312,
+        541.2747192382812,
+        696.7550659179688
+      ]
+    }
+  ],
+  "key_facts": [
+    "Weld technique should be examined after the weld has cooled and slag has been removed.",
+    "TIG welding is a complicated process requiring experience and skill; training beyond the scope of this manual is required.",
+    "The Strike Test is used to test welding technique on a scrap test weld only, not working welds, and it WILL damage the weld it is performed on.",
+    "ANSI-approved safety goggles must be worn during the Strike Test procedure and during weld cleaning.",
+    "Strike Test procedure: clamp one welded scrap in a sturdy vise, stay clear from underneath, then strike the opposite scrap with a heavy hammer (preferably a dead-blow hammer).",
+    "A GOOD WELD will deform but not break when struck.",
+    "A POOR WELD will be brittle and snap or crack at the weld when struck.",
+    "Flux-cored wire welding or stick welding produces slag on the weld that must be removed with a chipping hammer.",
+    "Care must be taken not to damage the weld or base material when chipping off slag.",
+    "A wire brush or an angle grinder (sold separately) can be used to further clean and shape the weld.",
+    "Sparks or chips may fly when cleaning a weld, requiring continued use of ANSI-approved safety goggles and protective wear."
+  ],
+  "topics": [
+    "welding-tips",
+    "strike-test",
+    "weld-quality",
+    "safety",
+    "weld-cleaning",
+    "tig-welding",
+    "stick-welding",
+    "flux-cored-welding",
+    "troubleshooting"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "doc": "owner-manual",
+  "page": 5,
+  "summary": "Page 5 of the owner's manual for Item 57812 covers \"Welder Use and Care\" guidelines, \"Maintenance\" procedures, and \"Gas Shielded Welding - Cylinder Safety\" precautions, concluding with a \"SAVE THESE INSTRUCTIONS\" notice. It provides numbered safety and upkeep instructions for proper welder operation, storage, servicing, and safe handling of gas cylinders used in shielded welding processes.",
+  "text": "Welder Use and Care\n1. Do not use the welder if the switch does not turn it on and off. Any welder that cannot be controlled with the switch is dangerous and must be repaired.\n2. Disconnect the plug from the power source before making any adjustments, changing accessories, or storing welders. Such preventive Safety measures reduce the risk of starting the welder accidentally.\n3. Prevent unintentional starting. Ensure the switch is in the off-position before connecting to power source or moving the welder. Carrying or energizing welders that have the switch on invites accidents.\n4. Store idle welders out of the reach of children and do not allow persons unfamiliar with the welder or these instructions to operate the welder. Welders are dangerous in the hands of untrained users.\n5. Use the welder and accessories in accordance with these instructions, taking into account the working conditions and the work to be performed. Use of the welder for operations different from those intended could result in a hazardous situation.\n6. Do not use the welder for pipe thawing.\n\nMaintenance\n1. Maintain welders. Check for misalignment or binding of moving parts, breakage of parts and any other condition that may affect the welder's operation. If damaged, have the welder repaired before use. Many accidents are caused by poorly maintained welders.\n2. Have your welder serviced by a qualified repair person using only identical replacement parts. This will ensure that the Safety of the welder is maintained.\n3. Maintain labels and nameplates on the Welder. These carry important information. If unreadable or missing, contact Harbor Freight Tools for a replacement.\n4. Unplug before maintenance. Unplug the Welder from its electrical outlet before any inspection, maintenance, or cleaning procedures.\n\nGas Shielded Welding - Cylinder Safety\nCylinders can explode when damaged.\n1. Do not weld on a pressurized or closed cylinder.\n2. Do not allow an electrode holder, electrode, welding torch, or welding wire to touch the cylinder.\n3. Keep cylinders away from any electrical circuits, including welding circuits.\n4. Keep protective cap in place over the valve except when the cylinder is in use.\n5. Use only correct gas shielding equipment designed specifically for the type of welding you will do. Maintain this equipment properly.\n6. Protect gas cylinders from heat, being struck, physical damage, slag, flames, sparks, and arcs.\n7. Use proper procedures to move cylinders.\n\nSAVE THESE INSTRUCTIONS.\n\nItem 57812. For technical questions, please call 1-800-444-3353. Page 5",
+  "tables": [],
+  "figures": [],
+  "key_facts": [
+    "Welders must not be used if the on/off switch does not function properly; such welders must be repaired.",
+    "Always disconnect the plug from the power source before making adjustments, changing accessories, or storing the welder.",
+    "Ensure the switch is in the off-position before connecting to a power source or moving the welder.",
+    "Idle welders should be stored out of the reach of children and away from untrained users.",
+    "The welder must not be used for pipe thawing.",
+    "Welders should be inspected for misalignment, binding parts, or breakage, and repaired before use if damaged.",
+    "Welder service must be performed by a qualified repair person using only identical replacement parts.",
+    "If labels or nameplates on the welder are unreadable or missing, contact Harbor Freight Tools for a replacement.",
+    "Always unplug the welder before performing inspection, maintenance, or cleaning.",
+    "Cylinders can explode when damaged.",
+    "Never weld on a pressurized or closed gas cylinder.",
+    "Do not allow an electrode holder, electrode, welding torch, or welding wire to touch a gas cylinder.",
+    "Keep gas cylinders away from all electrical circuits, including welding circuits.",
+    "Keep the protective cap in place over the cylinder valve except when the cylinder is in use.",
+    "Use only gas shielding equipment designed specifically for the type of welding being performed.",
+    "Protect gas cylinders from heat, impact, physical damage, slag, flames, sparks, and arcs.",
+    "Use proper procedures when moving gas cylinders.",
+    "Item number for this welder is 57812.",
+    "Technical support phone number is 1-800-444-3353."
+  ],
+  "topics": [
+    "welder-use-and-care",
+    "maintenance",
+    "safety",
+    "gas-cylinder-safety",
+    "gas-shielded-welding",
+    "storage",
+    "servicing",
+    "troubleshooting"
+  ]
+}

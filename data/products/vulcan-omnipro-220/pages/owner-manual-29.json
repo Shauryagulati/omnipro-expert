@@ -1,0 +1,114 @@
+{
+  "doc": "owner-manual",
+  "page": 29,
+  "summary": "This page explains duty cycle concepts for TIG and Stick welding processes, including rated duty cycle charts for 240VAC and 120VAC operation, the welder's internal thermal protection system, and instructions for setting up a weld including workpiece preparation, clamping, and ground cable connection.",
+  "text": "Duty Cycle (Duration of Use)\n\nAvoid damage to the Welder by not welding for more than the prescribed duty cycle time. The Duty Cycle defines the number of minutes, within a 10 minute period, during which a given welder can produce a particular welding current without overheating.\n\nFor example, a welder with a 40% duty cycle at 125A welding current must be allowed to rest for at least 6 minutes after every 4 minutes of continuous welding.\n\nFailure to carefully observe duty cycle limitations can easily over-stress a welder's power generation system contributing to premature welder failure.\n\nThis Welder has an internal thermal protection system to help prevent this sort of over-stress. When the Welder overheats, it automatically shuts down and a warning screen appears in the LCD Display window. The Welder automatically returns to service after cooling off. Should this occur, rest the Tig Torch or Electrode Holder on an electrically non-conductive, heat-proof surface, such as a concrete slab, well clear of the ground clamp.\n\nAllow the Welder to cool with the Power Switch on, so that the internal Fan will help cool the Welder.\n\nWhen normal operation resumes, use shorter welding periods and longer rest periods to prevent needless wear.\n\nSetting up the Weld\n\n1. Make practice welds on pieces of scrap the same thickness as your intended workpiece to practice technique before welding anything of value. Clean the weld surfaces thoroughly with a wire brush or angle grinder; there must be no rust, paint, oil, or other materials on the weld surfaces, only bare metal.\n\n2. Use clamps (not included) to hold the workpieces in position so that you can concentrate on proper welding technique. The distance (if any) between the two workpieces must be controlled properly to allow the weld to hold both sides securely while allowing the weld to penetrate fully into the joint. The edges of thicker workpieces may need to be chamfered (or beveled) to allow proper weld penetration.\n\nNOTICE: When welding equipment on a vehicle, disconnect the vehicle battery power from both the positive connection and the ground before welding. This prevents damage to some vehicle electrical systems and electronics due to the high voltage and high frequency bursts common in welding.\n\n3. Clamp Ground Cable to bare metal on the workpiece near the weld area, or to metal work bench where the workpiece is clamped.\n\nItem 57812 | For technical questions, please call 1-800-444-3353. | Page 29",
+  "tables": [
+    {
+      "title": "TIG Rated Duty Cycles",
+      "headers": [
+        "240VAC",
+        "120VAC"
+      ],
+      "rows": [
+        [
+          "30% Use at 175A For 10 Continuous Minutes",
+          "40% Use at 125A For 10 Continuous Minutes"
+        ],
+        [
+          "3 Minutes Welding / 7 Minutes Resting",
+          "4 Minutes Welding / 6 Minutes Resting"
+        ],
+        [
+          "100% Continuous Use at 105A",
+          "100% Continuous Use at 90A"
+        ]
+      ]
+    },
+    {
+      "title": "Stick Rated Duty Cycles",
+      "headers": [
+        "240VAC",
+        "120VAC"
+      ],
+      "rows": [
+        [
+          "25% Use at 175A For 10 Continuous Minutes",
+          "40% Use at 80A For 10 Continuous Minutes"
+        ],
+        [
+          "2-1/2 Minutes Welding / 7-1/2 Minutes Resting",
+          "4 Minutes Welding / 6 Minutes Resting"
+        ],
+        [
+          "100% Continuous Use at 100A",
+          "100% Continuous Use at 60A"
+        ]
+      ]
+    }
+  ],
+  "figures": [
+    {
+      "figure_id": "owner-manual-p29-f2",
+      "page": 29,
+      "caption": "TIG Rated Duty Cycles",
+      "description": "Two dial gauges illustrating duty cycle timing for TIG welding at 240VAC (30% use at 175A, 3 min welding/7 min resting, 100% continuous at 105A) and 120VAC (40% use at 125A, 4 min welding/6 min resting, 100% continuous at 90A) over a 10 minute period.",
+      "bbox": [
+        105.7156982421875,
+        237.2105255126953,
+        541.1270141601562,
+        345.467529296875
+      ]
+    },
+    {
+      "figure_id": "owner-manual-p29-f3",
+      "page": 29,
+      "caption": "Setting up the Weld - clamping workpieces",
+      "description": "Diagram showing two workpieces held by clamps with labels: 'clamps', 'workpieces', 'Clean surfaces to bare metal.', and 'Chamfer thick workpieces.' pointing to the joint area between the two clamped pieces.",
+      "bbox": [
+        36.0,
+        395.9480285644531,
+        550.2760009765625,
+        480.4806213378906
+      ]
+    },
+    {
+      "figure_id": "owner-manual-p29-f4",
+      "page": 29,
+      "caption": "Ground connection depends on desired welding polarity",
+      "description": "Illustration of the Vulcan welder unit with a ground cable running to a ground clamp attached to a workpiece. Labels include 'Workpiece', 'Ground Clamp', and 'Clean surface to bare metal.' pointing to the clamped connection point on the workpiece.",
+      "bbox": [
+        256.8860168457031,
+        615.7265014648438,
+        549.05419921875,
+        759.060546875
+      ]
+    }
+  ],
+  "key_facts": [
+    "A 40% duty cycle at 125A means the welder can weld for 4 minutes then must rest at least 6 minutes within a 10 minute period.",
+    "TIG at 240VAC: 30% duty cycle at 175A (3 min welding/7 min resting per 10 min); 100% continuous use rated at 105A.",
+    "TIG at 120VAC: 40% duty cycle at 125A (4 min welding/6 min resting per 10 min); 100% continuous use rated at 90A.",
+    "Stick at 240VAC: 25% duty cycle at 175A (2-1/2 min welding/7-1/2 min resting per 10 min); 100% continuous use rated at 100A.",
+    "Stick at 120VAC: 40% duty cycle at 80A (4 min welding/6 min resting per 10 min); 100% continuous use rated at 60A.",
+    "The welder has an internal thermal protection system that automatically shuts down on overheating and displays a warning on the LCD, then returns to service after cooling.",
+    "Leave the Power Switch on while cooling so the internal fan can help cool the welder.",
+    "When welding equipment on a vehicle, disconnect the vehicle battery's positive and ground connections before welding to prevent damage from high voltage/high frequency bursts.",
+    "Weld surfaces must be cleaned to bare metal (no rust, paint, oil) using a wire brush or angle grinder before welding.",
+    "Thicker workpiece edges may need to be chamfered/beveled to allow proper weld penetration.",
+    "Clamp the Ground Cable to bare metal on the workpiece near the weld area or to a metal work bench where the workpiece is clamped.",
+    "Ground connection point/polarity depends on the desired welding polarity."
+  ],
+  "topics": [
+    "duty-cycle",
+    "tig",
+    "stick-welding",
+    "thermal-protection",
+    "overheating",
+    "weld-setup",
+    "ground-clamp",
+    "workpiece-preparation",
+    "safety",
+    "polarity"
+  ]
+}

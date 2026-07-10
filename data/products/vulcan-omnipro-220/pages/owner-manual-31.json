@@ -1,0 +1,54 @@
+{
+  "doc": "owner-manual",
+  "page": 31,
+  "summary": "This page continues TIG welding setup and operation instructions (steps 10-19), covering torch/rod handling, gas flow, arc initiation, torch angle technique, TIG rod addition, weld finishing, and post-use shutdown/safety procedures. It also finishes the \"Optional Settings\" menu instructions (Recall Setting and Save Setting screens) from the previous page's control setup, along with safety warnings about protective gear and grounding.",
+  "text": "d. Optional Settings:\n• Press Main Control Knob to enter Optional Settings.\n• Turn Main Control Knob until desired setting appears on screen.\n• Press Main Control Knob to select desired setting.\n• Turn Main Control Knob to adjust setting.\nAvailable Optional Settings:\n• Recall Setting – Retrieve saved settings.\n• Save Setting – Program up to 5 different configurations.\n\nNote: The initial settings may need to be adjusted after stopping and carefully inspecting the weld. Proper welding takes experience.\n\nWARNING! TO PREVENT SERIOUS INJURY: Protective gear must be worn when using the Welder; minimum shade number 10 full face shield (or welding mask), ear protection, welding gloves, sleeves and apron, NIOSH-approved respirator, and fire resistant work clothes without pockets should be worn when welding. Light from the arc can cause permanent damage to the eyes and skin. Do not breathe arc fumes.\n\nAfter practice welding on scrap, stop, and check your progress. Perform Strike Test according to Strike Test on page 34. After making any necessary adjustments, continue to weld while carefully following the DUTY CYCLE guidelines as explained on page 29.\n\nWARNING! TO PREVENT SERIOUS INJURY: Metal work bench must be grounded when TIG welding.\n\n10. Hold TIG Torch in one gloved hand and the TIG Rod (sold separately) in other gloved hand.\n\nNOTE: Maintain a constant distance between the Tungsten Electrode and the workpiece: between 1 and 1.5 times the diameter of the Electrode.\n\n11. Open valve on TIG Torch to start gas flow.\n\n12. To initiate welding arc, push Foot Pedal and touch Electrode to work piece and lift. If not using Foot Pedal, touch Electrode to work piece and lift.\n\n13. When welding puddle is hot enough, tilt Torch backward about 10-15 degrees from vertical and move it back slightly. Add TIG Rod material as needed to the front end of the weld puddle.\n\n14. Alternate between pushing the torch/weld puddle and adding the TIG Rod material.\n\nNOTE: Remove the TIG Rod each time the Electrode is advanced, but do not remove it from the gas shield. This prevents oxidation from contaminating the weld.\n\n15. When finished welding, release the Foot Pedal but keep Torch on weld puddle until weld solidifies. If not using Foot Pedal, pull Torch away from work piece until welding arc is broken, then return the gas coverage until weld solidifies.\n\n16. Close valve on TIG Torch and turn Right Knob to OFF to turn off power to TIG Torch.\n\n17. Set TIG Torch down on nonconductive, nonflammable surface away from any grounded objects.\n\n18. Turn the Power Switch OFF.\n\n19. To prevent accidents, after use:\n• Allow Welder to cool down.\n• Unplug Welder's power cord from outlet.\n• Remove Ground Clamp from workpiece or table.\n• Disconnect TIG Torch, Ground and Foot Pedal Cables.\n• Close gas cylinder's valve securely, remove regulator and replace cap.\n• Disconnect Gas Hose from Welder.\n• Store and secure gas cylinder.\n• Clean, then store Welder and its accessories indoors out of children's reach.",
+  "tables": [],
+  "figures": [
+    {
+      "figure_id": "owner-manual-p31-f1",
+      "page": 31,
+      "caption": "Recall Setting",
+      "description": "Display screen showing 'Recall Setting' text with an upward arrow icon inside a bracket, and two small icon buttons below labeled with foot/knob symbols, representing the control panel screen for retrieving saved welder settings.",
+      "bbox": [
+        73.26922607421875,
+        211.780517578125,
+        250.1420135498047,
+        312.026123046875
+      ]
+    },
+    {
+      "figure_id": "owner-manual-p31-f2",
+      "page": 31,
+      "caption": "Save Setting",
+      "description": "Display screen showing 'Save Setting' text with a downward arrow icon inside a bracket, and two small icon buttons below, representing the control panel screen for saving up to 5 configurations.",
+      "bbox": [
+        72.99566650390625,
+        326.19488525390625,
+        249.8684539794922,
+        426.44049072265625
+      ]
+    }
+  ],
+  "key_facts": [
+    "Maintain a constant distance between the Tungsten Electrode and workpiece of between 1 and 1.5 times the diameter of the Electrode.",
+    "Tilt the TIG Torch backward about 10-15 degrees from vertical when the weld puddle is hot enough to add TIG Rod material.",
+    "Remove the TIG Rod each time the Electrode is advanced, but do not remove it from the gas shield to prevent oxidation contamination.",
+    "Minimum shade number 10 full face shield or welding mask is required protective gear for welding.",
+    "Metal work bench must be grounded when TIG welding to prevent serious injury.",
+    "Save Setting allows programming up to 5 different configurations.",
+    "Recall Setting retrieves saved settings.",
+    "After use, close gas cylinder's valve securely, remove regulator, and replace cap before storage.",
+    "Strike Test procedure is detailed on page 34; Duty Cycle guidelines are on page 29."
+  ],
+  "topics": [
+    "tig-welding",
+    "controls",
+    "setup",
+    "shutdown-procedure",
+    "safety",
+    "duty-cycle",
+    "gas-flow",
+    "electrode"
+  ]
+}

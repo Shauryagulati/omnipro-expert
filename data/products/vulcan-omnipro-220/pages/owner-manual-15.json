@@ -1,0 +1,66 @@
+{
+  "doc": "owner-manual",
+  "page": 15,
+  "summary": "This page continues instructions for loading MIG welding wire into a wire-feed welding machine. It covers steps 18–23: trimming the wire end, feeding wire through the Wire Inlet Liner and Feed Guide, positioning the wire in the Feed Roller groove and latching the Feed Tensioner over the Idler Arm, and removing the Nozzle and Contact Tip on the MIG Gun before laying the gun cable straight. Includes two IMPORTANT notices about wire tension/unspooling and the difficulty of feeding stainless steel wire.",
+  "text": "IMPORTANT: Securely hold onto the end of the welding wire and keep tension on it during the following steps. If this is not done, the welding wire will unravel and unspool which can cause tangling and feeding problems.\n\n18. Cut off all bent and crimped wire. The cut end must have no burrs or sharp edges; cut again if needed.\n\n19. Keep tension on the wire and guide at least 12 inches of wire into the Wire Inlet Liner and Feed Guide.\n\n20. Make sure the welding wire is resting in the groove of the Feed Roller, then push the wire Idler Arm down, and swing the Feed Tensioner up to latch it across the tip of the arm. After the wire is held by the Tensioner, you may release it.\n\nNote: The tension should be 3–5 for solid wire and 2–3 for flux-cored wire. Too much force on flux-cored wire will crush it and may cause feeding issues.\n\n21. Pull the Nozzle to remove it.\n\n22. Unscrew the Contact Tip counterclockwise and remove.\n\n23. Lay the MIG Gun Cable out in a straight line so that the welding wire moves through it easily. Leave the cover open, so that the feed mechanism can be observed.\n\nIMPORTANT: Stainless steel wire is less flexible than other welding wire. Therefore, it is more difficult to feed through the liner and gun. It is especially important to keep the gun cable straight while feeding stainless steel wire.\n\nItem 57812. For technical questions, please call 1-800-444-3353. Page 15",
+  "tables": [],
+  "figures": [
+    {
+      "figure_id": "owner-manual-p15-f2",
+      "page": 15,
+      "caption": "Feeding welding wire from Wire Spool into Wire Inlet Liner and Feed Guide",
+      "description": "Diagram showing a Wire Spool with wire unwinding, a hand labeled 'HOLD WIRE SECURELY' holding the Welding Wire, which passes into the Wire Inlet Liner and then into the Feed Guide on the wire feed mechanism housing.",
+      "bbox": [
+        297.7527770996094,
+        178.59329223632812,
+        544.2086791992188,
+        326.9613952636719
+      ]
+    },
+    {
+      "figure_id": "owner-manual-p15-f3",
+      "page": 15,
+      "caption": "Latching the Feed Tensioner over the Idler Arm",
+      "description": "Two-panel diagram showing the wire feed mechanism: left panel shows the Idler Arm being pushed down (arrow indicates downward/rotational motion) with wire resting in the Feed Roller groove; right panel shows the Feed Tensioner swung up and latched across the tip of the arm.",
+      "bbox": [
+        292.32958984375,
+        366.7926330566406,
+        544.8682250976562,
+        467.41461181640625
+      ]
+    },
+    {
+      "figure_id": "owner-manual-p15-f4",
+      "page": 15,
+      "caption": "MIG Gun showing Nozzle and Contact Tip locations",
+      "description": "Illustration of a MIG Gun with labeled parts: Nozzle at the tip end, Contact Tip just behind the nozzle, and the overall MIG Gun body with cable leading to the handle.",
+      "bbox": [
+        328.4353942871094,
+        521.1381225585938,
+        506.6477966308594,
+        717.477294921875
+      ]
+    }
+  ],
+  "key_facts": [
+    "Wire tension setting should be 3–5 for solid wire.",
+    "Wire tension setting should be 2–3 for flux-cored wire.",
+    "Too much tensioner force on flux-cored wire will crush it and may cause feeding issues.",
+    "At least 12 inches of wire should be guided into the Wire Inlet Liner and Feed Guide.",
+    "The cut end of welding wire must have no burrs or sharp edges before feeding.",
+    "The Nozzle is removed by pulling it off.",
+    "The Contact Tip is removed by unscrewing it counterclockwise.",
+    "Stainless steel wire is less flexible than other welding wire and is more difficult to feed through the liner and gun.",
+    "The MIG Gun cable should be laid out straight, especially when feeding stainless steel wire, to allow easy wire movement and cover left open to observe the feed mechanism."
+  ],
+  "topics": [
+    "wire-feed",
+    "wire-loading",
+    "mig-gun",
+    "tensioner-adjustment",
+    "contact-tip",
+    "nozzle",
+    "stainless-steel-wire",
+    "flux-cored-wire"
+  ]
+}

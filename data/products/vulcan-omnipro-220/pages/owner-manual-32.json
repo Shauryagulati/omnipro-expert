@@ -1,0 +1,90 @@
+{
+  "doc": "owner-manual",
+  "page": 32,
+  "summary": "Instructions for setting up and operating the Stick (SMAW) welding process on the Vulcan OmniPro 220 welder, covering safety warnings, power/setup steps, control panel navigation, electrode/polarity settings, diameter/thickness settings, and auto weld amperage settings, plus a labeled diagram of the main display screen during operation.",
+  "text": "Stick Welding\\n\\nWARNING\\nTO PREVENT SERIOUS INJURY AND DEATH:\\nDo not weld without Grounding Clamp.\\nWhen the operator is not holding the Electrode Holder, it must be sitting on a nonconductive, nonflammable surface.\\n\\n1. Turn the Power Switch to the OFF position, then plug the Welder into a properly grounded, GFCI protected, 120VAC (20 amp rated) outlet or 240V outlet. The circuit must be equipped with delayed action-type circuit breaker or fuses.\\n2. Set Electrode Holder down on nonconductive, nonflammable surface away from any grounded objects.\\n3. Turn the Power Switch ON.\\n4. Press Home Button on Control Panel.\\n5. Turn Main Control Knob until Stick process appears on LCD display screen.\\n6. Press Main Control Knob to select STICK process.\\n\\nNote: Press Main Control Knob to go to next screen. Press Back Button to return to the previous screen.\\n\\n[Diagram: Control panel with Left Knob, Main Control Knob, Right Knob, showing 'Stick' selected on LCD]\\n\\n7. Adjust settings for the STICK process.\\na. Polarity Setting:\\n • Plug cables in according to screen.\\n [Diagram: Polarity screen showing '-' and '+' terminals, ground clamp symbol on left (-), electrode holder symbol on right (+), text 'No Gas Required']\\n\\nb. Set Electrode type:\\n • Turn Main Control Knob to set electrode type.\\n [Diagram: LCD screen showing 'Stick' process, 'Electrode' field set to '60xx']\\n\\nc. Set Electrode Diameter and Material Thickness:\\n • Turn Left Knob to set electrode diameter.\\n • Turn Right Knob to set material thickness.\\n [Diagram: LCD screen showing 'Stick' with Diameter '3/32\\\"' and Thickness '16 Ga']\\n\\nd. Auto Weld Settings:\\n • Turn Left Knob to adjust output amperage.\\n • Turn Right Knob to ON to energize Electrode Holder.\\n\\nWARNING! TO PREVENT SERIOUS INJURY: Welder is now energized and Open Circuit Voltage is present.\\n\\n[Diagram: Main welding display showing amperage '60 A' / '0 A', ON/OFF toggle, voltage '0.0 V', and labeled fields: Process (Stick), Electrode Type (70XX), Hot Start (6), Electrode Diameter (3/32\\\"), Material Thickness (16Ga), Arc Force (0)]",
+  "tables": [],
+  "figures": [
+    {
+      "figure_id": "owner-manual-p32-f3",
+      "page": 32,
+      "caption": "Control Panel - Stick Process Selection",
+      "description": "Shows the Vulcan control panel with Left Knob, Main Control Knob, and Right Knob labeled below the LCD screen, which displays 'Stick' process with an electrode icon selected among a row of process icons.",
+      "bbox": [
+        64.26164245605469,
+        383.4127197265625,
+        461.9857177734375,
+        530.5499267578125
+      ]
+    },
+    {
+      "figure_id": "owner-manual-p32-f5",
+      "page": 32,
+      "caption": "Polarity Setting Screen for Stick Welding",
+      "description": "LCD screen showing negative (-) terminal connected to ground clamp icon and positive (+) terminal connected to electrode holder icon, with text 'No Gas Required' and CONFIRM button icon at bottom.",
+      "bbox": [
+        82.13250732421875,
+        635.6187133789062,
+        345.3263854980469,
+        736.9964599609375
+      ]
+    },
+    {
+      "figure_id": "owner-manual-p32-f1",
+      "page": 32,
+      "caption": "Set Electrode Type Screen",
+      "description": "LCD screen showing 'Stick' process icon at top, 'Electrode' field with value '60xx', and CONFIRM button icon at bottom.",
+      "bbox": [
+        345.2702941894531,
+        177.80865478515625,
+        522.14306640625,
+        278.05426025390625
+      ]
+    },
+    {
+      "figure_id": "owner-manual-p32-f2",
+      "page": 32,
+      "caption": "Set Electrode Diameter and Material Thickness Screen",
+      "description": "LCD screen showing 'Stick' process, left side 'Diameter' field set to 3/32\" with rotate icons, right side 'Thickness' field set to 16 Ga with rotate icons, and CONFIRM button at bottom.",
+      "bbox": [
+        345.270263671875,
+        352.0542907714844,
+        522.14306640625,
+        452.2998962402344
+      ]
+    },
+    {
+      "figure_id": "owner-manual-p32-f4",
+      "page": 32,
+      "caption": "Auto Weld Settings / Main Operating Display",
+      "description": "Main welder display during Stick operation showing amperage readout '60 A' over '0 A', an ON/OFF toggle switch, voltage readout '0.0 V', and a row of labeled setting icons: Process (Stick), Electrode Type (70XX), Hot Start (6), Electrode Diameter (3/32\"), Material Thickness (16Ga), and Arc Force (0). Callout labels point to Process, Electrode Type, Hot Start on the left and Electrode Diameter, Material Thickness, Arc Force on the right.",
+      "bbox": [
+        307.0935974121094,
+        582.2893676757812,
+        562.3661499023438,
+        681.8797607421875
+      ]
+    }
+  ],
+  "key_facts": [
+    "Welder must be plugged into a properly grounded, GFCI protected, 120VAC (20 amp rated) outlet or 240V outlet for Stick welding.",
+    "The circuit must be equipped with delayed action-type circuit breaker or fuses.",
+    "Do not weld without a Grounding Clamp.",
+    "When not held by the operator, the Electrode Holder must sit on a nonconductive, nonflammable surface, away from grounded objects.",
+    "Stick welding requires No Gas.",
+    "Main Control Knob sets electrode type; Left Knob sets electrode diameter; Right Knob sets material thickness in Stick mode.",
+    "Left Knob adjusts output amperage; turning the Right Knob to ON energizes the Electrode Holder.",
+    "Once the Electrode Holder is energized, Open Circuit Voltage is present, creating a serious injury risk.",
+    "Example settings shown: Electrode 60xx (or 70XX), Diameter 3/32 inch, Thickness 16 Ga, Amperage 60 A, Hot Start 6, Arc Force 0."
+  ],
+  "topics": [
+    "stick-welding",
+    "smaw",
+    "polarity",
+    "electrode-setup",
+    "control-panel",
+    "safety-warning",
+    "auto-weld-settings",
+    "open-circuit-voltage"
+  ]
+}

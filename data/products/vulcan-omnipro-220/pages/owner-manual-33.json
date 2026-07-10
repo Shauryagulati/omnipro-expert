@@ -1,0 +1,85 @@
+{
+  "doc": "owner-manual",
+  "page": 33,
+  "summary": "This page covers Optional Settings menu navigation (Hot Start, Arc Force, Recall Setting, Save Setting) via the Main Control Knob, followed by a safety warning about protective gear for welding, a duty cycle/strike test reminder, and step-by-step instructions (steps 8-14) for Stick welding: igniting the arc, welding technique, and post-use shutdown/cleanup procedures.",
+  "text": "e. Optional Settings:\\n• Press Main Control Knob to enter Optional Settings.\\n• Turn Main Control Knob until desired setting appears on screen.\\n• Press Main Control Knob to select desired setting.\\n• Turn Main Control Knob to adjust setting.\\nAvailable Optional Settings:\\n• Hot Start – Adjust amperage at start of weld.\\n• Arc Force – Adjust weld penetration and smoothness.\\n• Recall Setting – Retrieve saved settings.\\n• Save Setting – Program up to 5 different configurations.\\n\\nNote: The initial settings may need to be adjusted after stopping and carefully inspecting the weld. Proper welding takes experience.\\n\\nWARNING! TO PREVENT SERIOUS INJURY: Protective gear must be worn when using the Welder; minimum shade number 10 full face shield (or welding mask), ear protection, welding gloves, sleeves and apron, NIOSH-approved respirator, and fire resistant work clothes without pockets should be worn when welding. Light from the arc can cause permanent damage to the eyes and skin. Do not breathe arc fumes.\\n\\nAfter practice welding on scrap, stop, and check your progress. Perform Strike Test according to Strike Test on page 34. After making any necessary adjustments, continue to weld while carefully following the DUTY CYCLE guidelines as explained on page 29.\\n\\n8. Place the bare metal end of the Stick Electrode (sold separately) inside the jaws of the Electrode Holder.\\n9. Stroke the workpiece lightly to ignite the arc.\\nTips for igniting the arc:\\na. Tap the surface with the Electrode.\\nb. Stroke the surface with the Electrode.\\nc. Strike the surface like a match with the Electrode.\\n10. After the arc ignites:\\na. Lift the Electrode off workpiece the same distance as the diameter of the bare metal end.\\nb. Tilt Electrode back 10 to 20 degrees.\\nc. Drag Electrode to the back end of the weld puddle to deposit material as needed.\\n11. When finished welding; lift the Electrode from the workpiece, then set Electrode Holder down on nonconductive, nonflammable surface away from any grounded objects.\\n12. Turn the Power Switch OFF.\\n13. To prevent accidents, after use:\\n• Allow Welder to cool down.\\n• Unplug Welder's power cord from outlet.\\n• Remove Ground Clamp.\\n• Disconnect Electrode Holder and Ground Cables.\\n14. Clean, then store Welder and its accessories indoors out of children's reach.",
+  "tables": [],
+  "figures": [
+    {
+      "figure_id": "owner-manual-p33-f2",
+      "page": 33,
+      "caption": "Hot Start",
+      "description": "Display screen showing the Hot Start optional setting with a waveform icon indicating amperage adjustment at the start of weld; icon bar at bottom shows four setting icons with the first (Hot Start waveform) highlighted.",
+      "bbox": [
+        73.13250732421875,
+        256.75927734375,
+        250.0052947998047,
+        357.0048828125
+      ]
+    },
+    {
+      "figure_id": "owner-manual-p33-f3",
+      "page": 33,
+      "caption": "Arc Force",
+      "description": "Display screen showing the Arc Force optional setting with a waveform icon indicating weld penetration/smoothness adjustment; icon bar at bottom shows four setting icons with the second (Arc Force waveform) highlighted.",
+      "bbox": [
+        73.13250732421875,
+        367.0392761230469,
+        406.0677490234375,
+        467.2848815917969
+      ]
+    },
+    {
+      "figure_id": "owner-manual-p33-f4",
+      "page": 33,
+      "caption": "Recall Setting",
+      "description": "Display screen showing the Recall Setting optional setting with an upward arrow icon indicating retrieval of saved settings; icon bar at bottom shows four setting icons with the third (up arrow) highlighted.",
+      "bbox": [
+        73.13250732421875,
+        476.31927490234375,
+        455.0007629394531,
+        576.5648803710938
+      ]
+    },
+    {
+      "figure_id": "owner-manual-p33-f5",
+      "page": 33,
+      "caption": "Save Setting",
+      "description": "Display screen showing the Save Setting optional setting with a downward arrow icon indicating saving/programming of up to 5 configurations; icon bar at bottom shows four setting icons with the fourth (down arrow) highlighted.",
+      "bbox": [
+        73.13250732421875,
+        586.3192749023438,
+        250.0052947998047,
+        686.5648803710938
+      ]
+    }
+  ],
+  "key_facts": [
+    "Optional Settings are accessed by pressing the Main Control Knob, then turning it to navigate and adjust settings.",
+    "Available Optional Settings include Hot Start, Arc Force, Recall Setting, and Save Setting.",
+    "Hot Start adjusts amperage at the start of the weld.",
+    "Arc Force adjusts weld penetration and smoothness.",
+    "Recall Setting retrieves saved settings.",
+    "Save Setting allows programming up to 5 different configurations.",
+    "Minimum shade number 10 full face shield or welding mask is required for welding protection.",
+    "Required PPE includes ear protection, welding gloves, sleeves and apron, NIOSH-approved respirator, and fire resistant work clothes without pockets.",
+    "After practice welding on scrap, perform a Strike Test as described on page 34.",
+    "Duty cycle guidelines are explained on page 29 and must be followed while welding.",
+    "To ignite a Stick arc: tap, stroke, or strike the surface like a match with the electrode.",
+    "After arc ignition, lift the electrode off the workpiece the same distance as the diameter of the bare metal end and tilt it back 10 to 20 degrees.",
+    "After welding, set the Electrode Holder on a nonconductive, nonflammable surface away from grounded objects.",
+    "Post-use safety steps: allow welder to cool, unplug power cord, remove ground clamp, disconnect electrode holder and ground cables, then clean and store indoors out of children's reach."
+  ],
+  "topics": [
+    "controls",
+    "optional-settings",
+    "hot-start",
+    "arc-force",
+    "stick-welding",
+    "safety",
+    "ppe",
+    "arc-striking",
+    "duty-cycle",
+    "shutdown-procedure"
+  ]
+}

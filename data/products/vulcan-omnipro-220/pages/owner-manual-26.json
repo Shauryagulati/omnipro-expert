@@ -1,0 +1,54 @@
+{
+  "doc": "owner-manual",
+  "page": 26,
+  "summary": "This page covers two TIG-related maintenance procedures: sharpening a tungsten electrode (sold separately) using a dedicated fine grit grinding wheel, and assembling a TIG torch (sold separately) including collet, collet body, ceramic nozzle, and back cap. It includes a warning about hazardous materials in some electrodes and diagrams illustrating proper grinding technique and torch assembly component layout.",
+  "text": "Sharpen Tungsten Electrode (sold separately)\\nTo avoid Electrode contamination, dedicate a fine grit grinding wheel exclusively to Electrode grinding.\\n\\nWARNING! TO PREVENT SERIOUS INJURY: Some Electrodes may have materials added to them that are hazardous to breathe. Wear a respirator and ANSI-approved Safety goggles when grinding an Electrode.\\n\\n1. Shut off the welder and wait until Electrode and Torch have cooled enough to handle.\\n2. Remove Back Cap. Pull Electrode from front of Torch. (Pulling it from rear will damage Collet and create burrs on Electrode).\\n3. If Electrode has dulled or been otherwise contaminated, use pliers or a suitable tool to grip the Electrode above the contaminated section and snap off the end of the Electrode.\\n4. Lightly press Electrode tip against the surface of the grinding wheel at an angle. Rotate Electrode tip until a blunt point is formed.\\nNote: Grinding direction must be parallel to length of Electrode.\\n5. The conical portion of the ideal tip will be 2-1/2 times as long as the Electrode diameter.\\n6. Re-insert Electrode into Collet with tip protruding 1/8\\\"-1/4\\\" beyond the Ceramic Nozzle, then re-tighten the Back Cap.\\n\\nAssemble TIG Torch (sold separately)\\n1. Consult Settings Chart, on top of Welder, to determine proper Tungsten Electrode size to be used with thickness of material to be welded.\\n2. Match Collet and Collet Body sizes to Tungsten Electrode size.\\n3. Thread Collet Body into the front of the Torch.\\n4. Make sure Ceramic Nozzle size is appropriate for application.\\n5. Thread Ceramic Nozzle onto Collet Body.\\n6. Insert Collet into back of Torch and into Collet Body.\\n7. Insert Tungsten Electrode into Collet on front of Torch.\\n8. Lock Electrode in place with Back Cap. Electrode should protrude 1/8\\\" to 1/4\\\" beyond the Ceramic Nozzle.",
+  "tables": [],
+  "figures": [
+    {
+      "figure_id": "owner-manual-p26-f1",
+      "page": 26,
+      "caption": "Electrode grinding illustration",
+      "description": "Diagram showing an Electrode being held at an angle against a Grinding Wheel to form a pointed tip; also shows a cross-section comparing an acceptable conical tip shape versus an incorrect tip shape marked with a prohibition (X) symbol.",
+      "bbox": [
+        464.5553894042969,
+        103.13763427734375,
+        578.3643188476562,
+        253.075927734375
+      ]
+    },
+    {
+      "figure_id": "owner-manual-p26-f2",
+      "page": 26,
+      "caption": "TIG Torch assembly diagram",
+      "description": "Exploded/assembled view of a TIG torch showing labeled components: Back Cap (top, where electrode is inserted), Collet, Collet Body, and Ceramic Nozzle (front tip), with an arrow labeled 'Insert tungsten Electrode here' pointing to the rear opening of the torch.",
+      "bbox": [
+        332.30731201171875,
+        349.73370361328125,
+        535.1061401367188,
+        531.9661865234375
+      ]
+    }
+  ],
+  "key_facts": [
+    "Dedicate a fine grit grinding wheel exclusively to electrode grinding to avoid contamination.",
+    "Some electrodes contain hazardous materials; wear a respirator and ANSI-approved safety goggles when grinding.",
+    "Pull the electrode out from the front of the torch, not the rear, to avoid damaging the collet and creating burrs.",
+    "Grinding direction must be parallel to the length of the electrode.",
+    "Ideal tungsten electrode tip conical portion length should be 2-1/2 times the electrode diameter.",
+    "Electrode should protrude 1/8\" to 1/4\" beyond the ceramic nozzle after assembly.",
+    "TIG torch assembly order: thread collet body into torch front, select appropriate ceramic nozzle size, thread ceramic nozzle onto collet body, insert collet into back of torch and collet body, insert tungsten electrode into collet from front, lock electrode in place with back cap.",
+    "Collet and collet body sizes must match the tungsten electrode size.",
+    "Tungsten electrode size should be selected based on material thickness per the Settings Chart on top of the welder.",
+    "TIG torch and tungsten electrode are sold separately."
+  ],
+  "topics": [
+    "tig-torch-assembly",
+    "tungsten-electrode",
+    "electrode-grinding",
+    "maintenance",
+    "safety-warning",
+    "collet",
+    "ceramic-nozzle"
+  ]
+}

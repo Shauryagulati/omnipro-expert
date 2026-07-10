@@ -1,0 +1,80 @@
+{
+  "doc": "owner-manual",
+  "page": 30,
+  "summary": "This page covers the TIG welding setup and startup procedure for the Vulcan OmniPro 220 welder, including safety warnings about grounding, torch handling, and asphyxiation risk from shielding gas. It provides a numbered step-by-step procedure (steps 1-9) for opening the gas cylinder, setting flow gauge, powering on the welder, navigating the control panel to select the TIG process, and adjusting polarity/gas settings, rod diameter/material thickness, and auto weld amperage settings. Diagrams show the control panel knob layout, gas/polarity screen, diameter/thickness screen, and the main welding display with labeled callouts.",
+  "text": "TIG Welding\n\nWARNING\nTO PREVENT SERIOUS INJURY AND DEATH:\nDo not weld without Grounding Clamp.\nWhen the operator is not holding the Torch, it must be sitting on a nonconductive, nonflammable surface.\nOnly hold TIG Rod with an electrically insulated welding glove.\n\nDANGER\nTO PREVENT DEATH FROM ASPHYXIATION:\nDo not open gas without proper ventilation. Fix gas leaks immediately. Shielding gas can displace air and cause rapid loss of consciousness and death. Shielding gas without carbon dioxide can be even more hazardous because asphyxiation can start without feeling shortness of breath.\n\nNOTICE: TIG welding is a complicated process, requiring experience and skill to achieve successful results. Training beyond the scope of this manual is required to TIG weld properly.\n\n1. Open gas cylinder's valve all the way.\n2. Set Flow Gauge to SCFH value indicated on the Settings Chart on the inside of the Welder door.\n3. Turn the Power Switch to the OFF position, then plug the Welder into a properly grounded, GFCI protected, 120VAC (20 amp rated) outlet or 240V outlet. The circuit must be equipped with delayed action-type circuit breaker or fuses.\n4. Set TIG Torch down on nonconductive, nonflammable surface away from any grounded objects.\n5. Turn the Power Switch ON.\n6. Press Home Button on Control Panel.\n7. Turn Main Control Knob until TIG process appears on LCD display screen.\n8. Press Main Control Knob to select TIG process.\n\nNote: Press Main Control Knob to go to next screen. Press Back Button to return to the previous screen.\n\n9. Adjust settings for the TIG process.\na. Polarity and Gas Settings:\n• Plug cables in according to screen.\n• Connect gas according to screen.\n• Set SCFH between 10-25.\n\nb. Set Rod Diameter and Material Thickness:\n• Turn Left Knob to set rod diameter.\n• Turn Right Knob to set material thickness.\n\nc. Auto Weld Settings:\n• Turn Left Knob to adjust output amperage.\n• Turn Right Knob to ON to energize TIG Torch.\n\nWARNING! TO PREVENT SERIOUS INJURY: Welder is now energized and Open Circuit Voltage is present.\n\nPage 30\nFor technical questions, please call 1-800-444-3353. Item 57812",
+  "tables": [],
+  "figures": [
+    {
+      "figure_id": "owner-manual-p30-f3",
+      "page": 30,
+      "caption": "Vulcan OmniPro 220 control panel",
+      "description": "Front view of the control panel showing LCD display with 'TIG' process icon selected, Home button on left, Back button on right, and three knobs below the display labeled Left Knob, Main Control Knob, and Right Knob.",
+      "bbox": [
+        64.26145935058594,
+        571.4127197265625,
+        427.2747802734375,
+        716.6826171875
+      ]
+    },
+    {
+      "figure_id": "owner-manual-p30-f1",
+      "page": 30,
+      "caption": "Polarity and gas setting screen",
+      "description": "LCD screen showing a minus (-) symbol on left with a torch/rod icon knob and a plus (+) symbol on right with a ground clamp icon knob, and text reading '100% Argon' with a CONFIRM knob icon below.",
+      "bbox": [
+        345.2702941894531,
+        299.8087158203125,
+        522.14306640625,
+        400.0543212890625
+      ]
+    },
+    {
+      "figure_id": "owner-manual-p30-f2",
+      "page": 30,
+      "caption": "Rod diameter and material thickness screen",
+      "description": "LCD screen labeled TIG with a torch icon, showing 'Diameter' field set to 1/16\" on the left (adjusted by Left Knob) and 'Thickness' field set to 24 Ga on the right (adjusted by Right Knob), with CONFIRM knob icon below.",
+      "bbox": [
+        345.270263671875,
+        474.05426025390625,
+        522.14306640625,
+        574.2998657226562
+      ]
+    },
+    {
+      "figure_id": "owner-manual-p30-f4",
+      "page": 30,
+      "caption": "Main welding display with callouts",
+      "description": "LCD display showing amperage readout '30 A' over '0 A', an ON/OFF toggle switch, voltage reading '0.0 V', and a settings row showing Process icon 'TIG with Pedal', Gas Type '100% Ar', Rod Diameter icon '1/16\"', and Material Thickness icon '24Ga'. Callout labels point to Process, Gas Type, Rod Diameter, and Material Thickness fields.",
+      "bbox": [
+        306.7265930175781,
+        688.7998657226562,
+        558.144775390625,
+        787.5032348632812
+      ]
+    }
+  ],
+  "key_facts": [
+    "Do not weld TIG without a Grounding Clamp attached.",
+    "When not holding the TIG Torch, it must rest on a nonconductive, nonflammable surface.",
+    "Only hold TIG Rod with an electrically insulated welding glove.",
+    "Shielding gas can displace air and cause rapid loss of consciousness and death; shielding gas without carbon dioxide can be even more hazardous because asphyxiation can start without feeling shortness of breath.",
+    "SCFH gas flow for TIG should be set between 10-25.",
+    "Welder requires a properly grounded, GFCI protected 120VAC (20 amp rated) outlet or a 240V outlet, with delayed action-type circuit breaker or fuses.",
+    "Control panel has a Left Knob (sets rod diameter / adjusts output amperage), Main Control Knob (selects process), and Right Knob (sets material thickness / energizes TIG Torch).",
+    "Turning the Right Knob to ON energizes the TIG Torch, at which point Open Circuit Voltage is present - a shock hazard.",
+    "Example TIG settings shown: 100% Argon gas, 1/16\" rod diameter, 24 Ga material thickness, 30 A output amperage."
+  ],
+  "topics": [
+    "tig-welding",
+    "gas-flow-setup",
+    "control-panel",
+    "safety-warning",
+    "grounding",
+    "polarity",
+    "rod-diameter",
+    "material-thickness",
+    "open-circuit-voltage",
+    "asphyxiation-hazard"
+  ]
+}

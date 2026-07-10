@@ -1,0 +1,92 @@
+{
+  "doc": "owner-manual",
+  "page": 20,
+  "summary": "This page covers final power-up steps for the welder (steps 4-6 of a startup sequence) and details the \"Settings\" menu navigation using the control panel's Home Button, Main Control Knob, Left Knob, and Right Knob. It explains a 4-step process for selecting a welding process and adjusting its settings: polarity/gas settings, wire diameter/material thickness, and auto weld settings (wire feed speed/amperage and voltage), with labeled diagrams of the control panel LCD screens.",
+  "text": "4. Turn the Power Switch to the OFF position, then plug the Power Cord into a properly grounded, GFCI protected 120VAC (20 amp rated) or 240VAC receptacle that matches the plug. The circuit must be equipped with delayed action-type circuit breaker or fuses.\n5. Set MIG Gun down on nonconductive, nonflammable surface away from any grounded objects.\n6. Turn the Power Switch ON.\n\nSettings\n1. Press Home Button on Control Panel.\n2. Turn Main Control Knob until desired process appears on LCD display screen.\n3. Press Main Control Knob to select process.\nNote: Press Main Control Knob to go to next screen. Press Back Button to return to the previous screen.\n4. Adjust settings for the selected process.\na. Polarity and Gas Settings:\n• Plug cables in according to screen.\n• Connect gas according to screen.\n• Set SCFH between 20-30.\n(Diagram shows \"Stainless Tri-Mix\" gas/polarity screen with negative (-) and positive (+) terminal icons and CONFIRM button)\n\nb. Set Wire Diameter and Material Thickness:\n• Turn Left Knob to set wire diameter.\n• Turn Right Knob to set material thickness.\n(Diagram shows LCD screen \"MIG Stainless Steel\" with Diameter .025\" and Thickness 24Ga fields, CONFIRM button)\n\nc. Auto Weld Settings:\n• Turn Left Knob to adjust Wire Feed Speed (Amperage).\n• Turn Right Knob to adjust Voltage.\n(Diagram shows LCD screen with 121 in/min, 0 A on left; 13.8 V, 0.0 V on right; bottom row shows Process (MIG Steel), Gas Type (C25), Run-In WFS (25%), Inductance (5), Wire Diameter (.030\"), Material Thickness (24Ga), Spot Timer (0.0 S))\n\nNote: If the Wire Feed Speed or Voltage settings are adjusted manually, the white mark on the line shows the recommended setting for your wire/electrode diameter and workpiece thickness.",
+  "tables": [],
+  "figures": [
+    {
+      "figure_id": "owner-manual-p20-f1",
+      "page": 20,
+      "caption": "Power Switch location and grounded receptacle with plug",
+      "description": "Shows the welder's front panel with the Power Switch labeled, and an illustration of a 3-prong plug being inserted into a grounded wall receptacle.",
+      "bbox": [
+        425.6379089355469,
+        71.18499755859375,
+        556.865966796875,
+        151.07803344726562
+      ]
+    },
+    {
+      "figure_id": "owner-manual-p20-f2",
+      "page": 20,
+      "caption": "Control panel knobs: Left Knob, Main Control Knob, Right Knob",
+      "description": "LCD screen showing 'MIG Stainless Steel' process selection with icon row below; three knobs beneath labeled Left Knob, Main Control Knob, and Right Knob, with Home and Back buttons on either side.",
+      "bbox": [
+        64.26148986816406,
+        245.19970703125,
+        276.8759460449219,
+        390.4696044921875
+      ]
+    },
+    {
+      "figure_id": "owner-manual-p20-f5",
+      "page": 20,
+      "caption": "Polarity and Gas Settings screen - Stainless Tri-Mix",
+      "description": "LCD screen showing negative and positive terminal icons, a ground clamp icon, and gas cylinder icon, labeled 'Stainless Tri-Mix' with a CONFIRM button below.",
+      "bbox": [
+        81.2310791015625,
+        625.0140380859375,
+        259.9134521484375,
+        727.0068359375
+      ]
+    },
+    {
+      "figure_id": "owner-manual-p20-f3",
+      "page": 20,
+      "caption": "Set Wire Diameter and Material Thickness screen",
+      "description": "LCD screen titled 'MIG Stainless Steel' showing Diameter field .025\" and Thickness field 24Ga, each adjustable with knob icons, and a CONFIRM button below.",
+      "bbox": [
+        346.1322326660156,
+        299.08905029296875,
+        521.2810668945312,
+        398.3709411621094
+      ]
+    },
+    {
+      "figure_id": "owner-manual-p20-f4",
+      "page": 20,
+      "caption": "Auto Weld Settings screen with labeled callouts",
+      "description": "LCD screen displaying wire feed speed (121 in/min, 0 A) on left and voltage (13.8 V, 0.0 V) on right, with bottom status bar showing Process, Gas Type, Run-In WFS, Inductance, Wire Diameter, Material Thickness, and Spot Timer, each labeled with callout lines.",
+      "bbox": [
+        345.1831970214844,
+        484.3642578125,
+        558.1448364257812,
+        582.3973388671875
+      ]
+    }
+  ],
+  "key_facts": [
+    "Power cord must be plugged into a properly grounded, GFCI protected 120VAC (20 amp rated) or 240VAC receptacle matching the plug.",
+    "Circuit must be equipped with delayed action-type circuit breaker or fuses.",
+    "MIG Gun should be set down on a nonconductive, nonflammable surface away from grounded objects before powering on.",
+    "Gas flow should be set to SCFH between 20-30.",
+    "Control panel has three knobs: Left Knob, Main Control Knob, and Right Knob, plus Home and Back buttons.",
+    "Left Knob sets wire diameter (and adjusts Wire Feed Speed/Amperage in Auto Weld Settings).",
+    "Right Knob sets material thickness (and adjusts Voltage in Auto Weld Settings).",
+    "Example settings shown: MIG Stainless Steel process, .025\" wire diameter, 24Ga material thickness.",
+    "Example Auto Weld Settings screen shows 121 in/min wire feed speed, 0 A, 13.8 V, 0.0 V, MIG Steel process, C25 gas, Run-In WFS 25%, Inductance 5, Wire Diameter .030\", Material Thickness 24Ga, Spot Timer 0.0 S.",
+    "If Wire Feed Speed or Voltage are adjusted manually, a white mark on the display line indicates the recommended setting for the selected wire/electrode diameter and workpiece thickness."
+  ],
+  "topics": [
+    "control-panel",
+    "settings",
+    "power-up",
+    "polarity",
+    "gas-settings",
+    "wire-feed",
+    "voltage",
+    "safety",
+    "lcd-display"
+  ]
+}

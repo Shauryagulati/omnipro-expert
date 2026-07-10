@@ -1,0 +1,57 @@
+{
+  "doc": "owner-manual",
+  "page": 41,
+  "summary": "Maintenance page covering general safety warnings for servicing the welder, a routine maintenance checklist (before-use inspection, periodic dust removal, post-use storage), a detailed step-by-step procedure for inspecting and cleaning the MIG Gun Nozzle and Contact Tip, and a procedure for replacing the LCD Screen Cover on the display.",
+  "text": "Maintenance\nWARNING\nTO PREVENT SERIOUS INJURY, FIRE AND BURNS:\nUnplug the Welder, rest the tool on a heat-proof, electrically non-conductive surface, and allow all parts of the Welder to cool thoroughly before service.\n\n1. BEFORE EACH USE, inspect the general condition of the Welder. Check for:\n• loose hardware\n• misalignment or binding of moving parts\n• damaged cord/electrical wiring\n• frayed or damaged cables\n• cracked or broken parts\n• any other condition that may affect its safe operation.\n2. PERIODICALLY, have a qualified technician remove the Rear Panel and use compressed air to blow out all dust from the interior.\n3. AFTER EVERY USE, store in a clean and dry location.\n4. For optimal MIG/Flux-Cored wire weld quality, clean and inspect the MIG Gun Contact Tip and Nozzle before each use, as explained below.\n\nMIG Gun Nozzle and Contact Tip Inspection and Cleaning\n1. Make sure that the entire MIG Gun is completely cool and that the Power Cord is unplugged from the electrical outlet before proceeding.\n2. Pull the Nozzle to remove it.\n3. Scrub the interior of the Nozzle clean with a wire brush.\n4. Examine the end of the Nozzle. The end should be flat and even. If the end is uneven, chipped, melted, cracked, or otherwise damaged, the Nozzle will adversely effect the weld and should be replaced.\n5. Unscrew the Contact Tip counterclockwise and slide it off the welding wire to remove.\n6. Scrub the outside of the Tip clean with a wire brush. Clean out the inside of the tip with a tip cleaner (sold separately). Check that the Tip is the proper type for the wire size used.\n7. Examine the shape of the hole at the end of the Contact Tip. It should be an even circle; it should not be oblong or have any bulges in it.\n8. If any problems are noted, replace the Contact Tip. Select a new Tip of the correct size for the welding wire used.\n9. Reinstall the Tip and securely reinstall the Nozzle as well.\n\nReplacing the LCD Screen Cover\n1. Carefully pry frame off of Display (22) by inserting flathead screwdriver (sold separately) into one of the side slots.\n2. Insert a new Screen Cover (17) into Screen Frame (18) with the gap facing downward.\n3. Insert frame back into slot on Display with the top end being placed in first.\n\nItem 57812 | For technical questions, please call 1-800-444-3353. | Page 41",
+  "tables": [],
+  "figures": [
+    {
+      "figure_id": "owner-manual-p41-f2",
+      "page": 41,
+      "caption": "Nozzle / Contact Tip",
+      "description": "Diagram of the MIG Gun front end showing the Nozzle and Contact Tip callouts, illustrating the components discussed in the nozzle/contact tip inspection and cleaning procedure.",
+      "bbox": [
+        321.13165283203125,
+        394.3330078125,
+        595.2760009765625,
+        520.3289794921875
+      ]
+    },
+    {
+      "figure_id": "owner-manual-p41-f3",
+      "page": 41,
+      "caption": "Display",
+      "description": "Diagram of the LCD display panel with a callout pointing to 'Display' (item 22), showing a flathead screwdriver being inserted into a side slot to pry off the frame, with an inset close-up circle detail of the slot area.",
+      "bbox": [
+        92.85469055175781,
+        626.5819091796875,
+        225.67459106445312,
+        756.8538818359375
+      ]
+    }
+  ],
+  "key_facts": [
+    "Always unplug the welder and let it cool on a heat-proof, electrically non-conductive surface before servicing.",
+    "Before each use, inspect the welder for loose hardware, misaligned/binding parts, damaged cord/wiring, frayed cables, cracked/broken parts, and any other unsafe condition.",
+    "Periodically, a qualified technician should remove the rear panel and use compressed air to blow dust out of the interior.",
+    "After every use, store the welder in a clean and dry location.",
+    "For optimal MIG/Flux-Cored weld quality, clean and inspect the MIG Gun Contact Tip and Nozzle before each use.",
+    "To clean the nozzle: ensure the MIG gun is cool and power cord unplugged, pull off the nozzle, scrub interior with a wire brush, and inspect the end for flatness; replace if uneven, chipped, melted, or cracked.",
+    "To clean the contact tip: unscrew it counterclockwise, slide off the wire, scrub outside with a wire brush, clean inside with a tip cleaner (sold separately), and verify correct tip size for the wire used.",
+    "The contact tip hole should be an even circle; replace the tip if it is oblong or has bulges.",
+    "Select a replacement contact tip of the correct size for the welding wire used, then reinstall the tip and nozzle securely.",
+    "To replace the LCD screen cover: pry the frame off the Display (item 22) using a flathead screwdriver (sold separately) inserted into a side slot.",
+    "Insert a new Screen Cover (item 17) into the Screen Frame (item 18) with the gap facing downward.",
+    "Reinsert the frame into the Display slot with the top end placed in first."
+  ],
+  "topics": [
+    "maintenance",
+    "mig-gun",
+    "contact-tip",
+    "nozzle-cleaning",
+    "lcd-display",
+    "screen-cover-replacement",
+    "safety-warning",
+    "inspection"
+  ]
+}

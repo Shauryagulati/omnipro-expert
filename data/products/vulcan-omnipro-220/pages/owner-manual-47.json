@@ -1,0 +1,34 @@
+{
+  "doc": "owner-manual",
+  "page": 47,
+  "summary": "This page presents an exploded assembly diagram (parts breakdown) of the welding machine, item 57812, showing numbered callouts 1 through 61 for every major and minor component—from the outer cabinet panels, handle, and side covers to the internal wire drive assembly, fan, transformer/reactor core, control board, heat sinks, power cord, torch/gun assembly, and mounting hardware. Each numbered balloon corresponds to a specific part that would be referenced in a companion parts list (not shown on this page) for ordering replacement components.",
+  "text": "Assembly Diagram\\n\\nItem 57812\\nFor technical questions, please call 1-800-444-3353.\\nPage 47\\n\\n[Exploded diagram with numbered callouts 1-61, no accompanying parts list text on this page]",
+  "tables": [],
+  "figures": [
+    {
+      "figure_id": "owner-manual-p47-f1",
+      "page": 47,
+      "caption": "Assembly Diagram",
+      "description": "A full-page exploded-view technical illustration of the welding machine showing every component separated and numbered from 1 to 61. Visible sub-assemblies include: top handle and latch hardware (callouts 1-7), main outer case/cabinet panel (1-2), side access panel, wire feed drive assembly with spool hub, drive rollers, and gearbox (8-15), MIG torch/gun with liner, cable, and trigger assembly plus a shoulder strap (16-25), front control panel with digital display and knobs (26-32), a polarity/output cable or stinger lead (33-36), internal chassis rail and mounting bracket (36-40), main transformer/choke core (8-9 area), circuit board and heat sink assemblies (44-52), cooling fan and fan shroud (56-59), rear panel with power cord inlet, on/off switch, and gas fitting (57-61), and the AC power cord with plug (61). Each part is connected by a leader line to a circled number identifying its position in a corresponding parts list.",
+      "bbox": [
+        40.51129913330078,
+        121.831787109375,
+        529.2863159179688,
+        545.8068237304688
+      ]
+    }
+  ],
+  "key_facts": [
+    "This exploded assembly diagram is for welding machine item 57812.",
+    "The diagram numbers components 1 through 61 for parts identification/ordering purposes.",
+    "For technical questions about parts, the manufacturer support line is 1-800-444-3353."
+  ],
+  "topics": [
+    "assembly-diagram",
+    "parts-list",
+    "exploded-view",
+    "maintenance",
+    "wire-feed",
+    "torch-assembly"
+  ]
+}

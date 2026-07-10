@@ -1,0 +1,225 @@
+{
+  "doc": "owner-manual",
+  "page": 27,
+  "summary": "This page covers Stick welding setup for the Vulcan OMNIPRO 220, detailing how to connect the ground clamp and electrode holder cables to the machine's negative and positive sockets, and how to connect the power cord (120VAC or 240VAC) to the Power Input socket.",
+  "text": "Stick Setup\\n\\nConnect Cables\\n\\n1. Plug Ground Clamp Cable into Negative Socket. Twist clockwise all the way to lock in place.\\n2. Plug Electrode Holder Cable into Positive Socket. Twist clockwise all the way to lock in place.\\n\\nConnect Power Cord\\n\\nPlug either 120 VAC or 240 VAC Power Cord into Power Input Socket.\\n\\nNote: Plug will only fit one way.\\n\\nWARNING! TO PREVENT SERIOUS INJURY FROM ACCIDENTAL OPERATION: Do not plug cord into wall outlet at this time.",
+  "tables": [
+    {
+      "title": "Rated Output - U1=240V (Process settings shown left column groups)",
+      "headers": [
+        "Duty Cycle %",
+        "I2 (Output Current)",
+        "U2 (Output Voltage)"
+      ],
+      "rows": [
+        [
+          "25%",
+          "200A",
+          "24V"
+        ],
+        [
+          "60%",
+          "130A",
+          "20.5V"
+        ],
+        [
+          "100%",
+          "115A",
+          "19.75V"
+        ]
+      ]
+    },
+    {
+      "title": "Rated Output - U1=240V (Second range, 10A/20.4V to 175A/27V)",
+      "headers": [
+        "Duty Cycle %",
+        "I2 (Output Current)",
+        "U2 (Output Voltage)"
+      ],
+      "rows": [
+        [
+          "25%",
+          "175A",
+          "27V"
+        ],
+        [
+          "60%",
+          "115A",
+          "24.6V"
+        ],
+        [
+          "100%",
+          "100A",
+          "24V"
+        ]
+      ]
+    },
+    {
+      "title": "Rated Output - U1=240V (Third range, 10A/10.4V to 175A/17V)",
+      "headers": [
+        "Duty Cycle %",
+        "I2 (Output Current)",
+        "U2 (Output Voltage)"
+      ],
+      "rows": [
+        [
+          "30%",
+          "175A",
+          "17V"
+        ],
+        [
+          "60%",
+          "125A",
+          "15V"
+        ],
+        [
+          "100%",
+          "105A",
+          "14.2V"
+        ]
+      ]
+    },
+    {
+      "title": "Rated Output - U1=120V (30A/15.5V to 140A/21V)",
+      "headers": [
+        "Duty Cycle %",
+        "I2 (Output Current)",
+        "U2 (Output Voltage)"
+      ],
+      "rows": [
+        [
+          "40%",
+          "100A",
+          "19V"
+        ],
+        [
+          "60%",
+          "85A",
+          "18.25V"
+        ],
+        [
+          "100%",
+          "75A",
+          "17.75V"
+        ]
+      ]
+    },
+    {
+      "title": "Rated Output - U1=120V (10A/20.4V to 80A/23.2V)",
+      "headers": [
+        "Duty Cycle %",
+        "I2 (Output Current)",
+        "U2 (Output Voltage)"
+      ],
+      "rows": [
+        [
+          "40%",
+          "80A",
+          "23.2V"
+        ],
+        [
+          "60%",
+          "70A",
+          "22.8V"
+        ],
+        [
+          "100%",
+          "60A",
+          "22.4V"
+        ]
+      ]
+    },
+    {
+      "title": "Rated Output - U1=120V (10A/10.4V to 125A/15V)",
+      "headers": [
+        "Duty Cycle %",
+        "I2 (Output Current)",
+        "U2 (Output Voltage)"
+      ],
+      "rows": [
+        [
+          "40%",
+          "125A",
+          "15V"
+        ],
+        [
+          "60%",
+          "105A",
+          "14.2V"
+        ],
+        [
+          "100%",
+          "90A",
+          "13.6V"
+        ]
+      ]
+    },
+    {
+      "title": "Input Current Ratings",
+      "headers": [
+        "Parameter",
+        "U1=240V Values",
+        "U1=120V Values"
+      ],
+      "rows": [
+        [
+          "I1max",
+          "25.5A / 23.7A / 15.6A",
+          "20.8A / 19.5A / 20.6A"
+        ],
+        [
+          "I1eff",
+          "12.8A / 11.9A / 8.5A",
+          "13.1A / 12.3A / 13A"
+        ]
+      ]
+    }
+  ],
+  "figures": [
+    {
+      "figure_id": "owner-manual-p27-f1",
+      "page": 27,
+      "caption": "Connect Cables diagram",
+      "description": "Illustration of the Vulcan OMNIPRO 220 welder with the ground clamp and electrode holder cables plugged into the front sockets. Callouts label 'Ground Clamp Cable in Negative Socket' pointing to the cable connector at the negative socket, 'Ground Clamp' pointing to the clamp tool at the end of the cable, 'Electrode Holder Cable in Positive Socket' pointing to the connector at the positive socket, and 'Electrode Holder' pointing to the stick electrode holder tool at the end of its cable.",
+      "bbox": [
+        102.27579498291016,
+        92.28048706054688,
+        483.019775390625,
+        406.8185119628906
+      ]
+    },
+    {
+      "figure_id": "owner-manual-p27-f2",
+      "page": 27,
+      "caption": "Connect Power Cord diagram",
+      "description": "Rear/side view of the Vulcan OMNIPRO 220 welder showing the Power Input socket, Gas Inlet, and Reset button along with a rating label plate. A callout labeled 'Power Input' points to the round power input socket used for connecting the 120VAC or 240VAC power cord. The rating plate lists duty cycle, voltage, and amperage specifications for the machine under various input voltages and processes.",
+      "bbox": [
+        307.81988525390625,
+        542.6513671875,
+        504.1611022949219,
+        754.4754028320312
+      ]
+    }
+  ],
+  "key_facts": [
+    "Ground Clamp Cable must be plugged into the Negative Socket and twisted clockwise to lock in place.",
+    "Electrode Holder Cable must be plugged into the Positive Socket and twisted clockwise to lock in place.",
+    "The power cord can be either 120VAC or 240VAC and plugs into the Power Input Socket; the plug will only fit one way.",
+    "Warning: Do not plug the power cord into the wall outlet during setup to prevent serious injury from accidental operation.",
+    "Machine model shown is Vulcan OMNIPRO 220, Item 57812.",
+    "Rated output at U1=240V: 30A/15.5V to 220A/25V range; at 100% duty cycle 115A/19.75V; at 60% duty cycle 130A/20.5V; at 25% duty cycle 200A/24V.",
+    "Rated output at U1=120V: 30A/15.5V to 140A/21V range; at 100% duty cycle 75A/17.75V; at 60% duty cycle 85A/18.25V; at 40% duty cycle 100A/19V.",
+    "Open circuit voltage U0 = 86V across all rated tables.",
+    "Machine has IP21S ingress protection rating.",
+    "Conforms to ANSI/IEC Std. 60974-1."
+  ],
+  "topics": [
+    "stick-welding",
+    "setup",
+    "cable-connection",
+    "polarity",
+    "power-cord",
+    "duty-cycle",
+    "safety-warning"
+  ]
+}

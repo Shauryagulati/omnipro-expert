@@ -1,0 +1,116 @@
+{
+  "doc": "owner-manual",
+  "page": 23,
+  "summary": "This page covers thermal shutdown/warning screen behavior, finishing a test weld and following duty cycle guidelines, and the shutdown/storage procedure (steps 7-12) for turning off the welder, cooling down, disconnecting equipment, respooling wire, and securing the gas cylinder. It includes a diagram of the LCD Display/Warning Screen with fault table, duty cycle charts for 120VAC and 240VAC operation, and diagrams showing proper placement of the MIG gun and power switch location, plus shutdown steps for the power cord and gas cylinder.",
+  "text": "Note: If Welder is used too long, a warning screen appears in the LCD Display window and the unit automatically shuts down. The Welder automatically returns to service after cooling off. Should this occur, rest the MIG Gun on an electrically non-conductive, heat-proof surface, such as a concrete slab, away from the ground clamp.\nAllow the Welder to cool with the Power Switch on, so that the internal Fan will help cool the Welder.\nWhen normal operation resumes, use shorter welding periods and longer rest periods to help prevent needless wear.\n\n7. After welding the test weld on a piece of scrap for a few seconds, stop, and check your progress. Clean, then compare your weld's appearance with the diagrams and descriptions in the Welding Tips section starting on the next page. After making any necessary adjustments, continue to weld while carefully following the DUTY CYCLE guidelines as explained on page 19.\n\nCAUTION! Weld will be hot, do not touch.\n\nAfter practice welding for a few seconds, STOP and examine your weld using the guidelines starting on the next page.\n\nFOLLOW DUTY CYCLE!\n120 VAC: 40% Use at 100 A For 10 Continuous Minutes — 4 Minutes Welding / 6 Minutes Resting; 100% Continuous Use at 75 A\n240 VAC: 25% Use at 200 A For 10 Continuous Minutes — 2-1/2 Minutes Welding / 7-1/2 Minutes Resting; 100% Continuous Use at 115 A\n\n8. When welding is complete, set the MIG Gun down on a heat-proof, electrically non-conductive surface. Turn the Power Switch OFF.\n\n9. Allow Welder to cool down, then unplug the Power Cord.\n\n10. Remove Ground Clamp from workpiece or table and disconnect MIG Gun.\n\n11. Respool wire by clipping wire, removing gas nozzle/contact tip on MIG gun, releasing Idler Arm on Wire Feed mechanism, and rotating the Wire Spool counterclockwise. Be sure to securely hold wire as it is being respooled because the end of wire has a tendency to quickly unravel once it clears the wire feeder.\n\n12. MIG ONLY: Close shielding gas cylinder valve securely. Remove Regulator and replace cap. Disconnect Gas Hose from Welder. Store and secure gas cylinder.",
+  "tables": [
+    {
+      "title": "Warning Screen Fault Table",
+      "headers": [
+        "Problem",
+        "Remedy"
+      ],
+      "rows": [
+        [
+          "Duty Cycle Exceeded",
+          "The machine has thermally tripped. Allow the machine to cool."
+        ],
+        [
+          "Low Voltage Input",
+          "The voltage input is below the specified limit. Inspect input voltage and ensure it is within machine limits."
+        ],
+        [
+          "High Voltage Input",
+          "The voltage input is higher than the specified limit. Inspect input voltage and ensure it is within machine limits."
+        ]
+      ]
+    },
+    {
+      "title": "Duty Cycle Chart",
+      "headers": [
+        "Voltage",
+        "Duty Cycle Spec",
+        "Welding Time",
+        "Resting Time",
+        "Continuous Use"
+      ],
+      "rows": [
+        [
+          "120 VAC",
+          "40% Use at 100 A For 10 Continuous Minutes",
+          "4 Minutes Welding",
+          "6 Minutes Resting",
+          "100% Continuous Use at 75 A"
+        ],
+        [
+          "240 VAC",
+          "25% Use at 200 A For 10 Continuous Minutes",
+          "2-1/2 Minutes Welding",
+          "7-1/2 Minutes Resting",
+          "100% Continuous Use at 115 A"
+        ]
+      ]
+    }
+  ],
+  "figures": [
+    {
+      "figure_id": "owner-manual-p23-f2",
+      "page": 23,
+      "caption": "LCD Display / Warning Screen",
+      "description": "Diagram of the welder's control panel showing the LCD Display and Power Switch, with a callout to an enlarged Warning Screen showing the fault table listing Duty Cycle Exceeded, Low Voltage Input, and High Voltage Input problems and remedies, plus a note that the machine resumes normal operation once the issue is remedied and there is no circuit breaker to reset.",
+      "bbox": [
+        387.00830078125,
+        74.59280395507812,
+        550.2755126953125,
+        167.127197265625
+      ]
+    },
+    {
+      "figure_id": "owner-manual-p23-f3",
+      "page": 23,
+      "caption": "Follow Duty Cycle! - 120VAC and 240VAC dial charts",
+      "description": "Two dial/clock-style charts illustrating duty cycle timing. Left dial: 120 VAC, 40% use at 100A for 10 continuous minutes, showing 4 minutes welding and 6 minutes resting, with 100% continuous use at 75A. Right dial: 240 VAC, 25% use at 200A for 10 continuous minutes, showing 2-1/2 minutes welding and 7-1/2 minutes resting, with 100% continuous use at 115A.",
+      "bbox": [
+        272.1453857421875,
+        301.88201904296875,
+        543.0545043945312,
+        603.808349609375
+      ]
+    },
+    {
+      "figure_id": "owner-manual-p23-f4",
+      "page": 23,
+      "caption": "MIG Gun placement and shutdown steps diagram",
+      "description": "Illustration showing the MIG Gun resting on a concrete slab (or other heat-proof, non-conductive surface) with an arrow pointing to the welder's Power Switch location. Below, additional illustrations show unplugging the power cord from an outlet and disconnecting/closing the gas regulator and cylinder valve, corresponding to steps 8-12 of the shutdown procedure.",
+      "bbox": [
+        277.4710998535156,
+        623.0809936523438,
+        396.08001708984375,
+        705.5546264648438
+      ]
+    }
+  ],
+  "key_facts": [
+    "If the welder overheats, a warning screen appears on the LCD Display and the unit automatically shuts down, resuming service after cooling off.",
+    "During thermal shutdown, keep the Power Switch ON so the internal fan can cool the welder.",
+    "Warning screen faults: Duty Cycle Exceeded - machine thermally tripped, allow to cool; Low Voltage Input - voltage below specified limit, inspect input voltage; High Voltage Input - voltage higher than specified limit, inspect input voltage.",
+    "The machine resumes normal operation automatically once the fault condition is remedied; there is no circuit breaker to reset.",
+    "120 VAC duty cycle: 40% use at 100A for 10 continuous minutes (4 minutes welding, 6 minutes resting); 100% continuous use at 75A.",
+    "240 VAC duty cycle: 25% use at 200A for 10 continuous minutes (2-1/2 minutes welding, 7-1/2 minutes resting); 100% continuous use at 115A.",
+    "After a test weld, stop and inspect the weld, comparing to the Welding Tips section before continuing.",
+    "Weld will be hot after welding - do not touch (caution).",
+    "Shutdown procedure: set MIG gun on heat-proof non-conductive surface, turn Power Switch OFF, allow welder to cool, unplug power cord, remove ground clamp, disconnect MIG gun.",
+    "To respool wire: clip wire, remove gas nozzle/contact tip from MIG gun, release Idler Arm on Wire Feed mechanism, rotate Wire Spool counterclockwise while securely holding the wire.",
+    "For MIG only at shutdown: close shielding gas cylinder valve securely, remove regulator and replace cap, disconnect gas hose from welder, store and secure gas cylinder."
+  ],
+  "topics": [
+    "duty-cycle",
+    "thermal-overload",
+    "troubleshooting",
+    "shutdown-procedure",
+    "wire-feed",
+    "mig-welding",
+    "gas-cylinder-safety",
+    "lcd-display"
+  ]
+}

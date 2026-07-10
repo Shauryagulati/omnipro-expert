@@ -1,0 +1,69 @@
+{
+  "doc": "owner-manual",
+  "page": 36,
+  "summary": "This troubleshooting page covers wire weld penetration issues (excess/burn-through, proper, and inadequate penetration), plus additional weld defects: bend at joint, coat of slag over weld, and weld not adhering properly. Each defect is illustrated with profile or top view diagrams and accompanied by numbered lists of possible causes and solutions.",
+  "text": "Wire Weld Penetration (Workpiece Heat Control)\n\nEXCESS PENETRATION OR BURN-THROUGH: Weld droops on top and underneath, or falls through entirely, making a hole.\nPROPER PENETRATION: Weld is visible underneath and bulges slightly on top.\nINADEQUATE PENETRATION: Weld does not penetrate the joint fully, just on the surface.\n(PROFILE VIEWS shown for all three penetration diagrams)\n\nPOSSIBLE CAUSES AND SOLUTIONS (Excess Penetration / Burn-Through)\n1. Workpiece overheating: Reduce wire feed speed. Decrease weld current.\n2. Travel speed too slow: Increase travel speed and ensure that travel speed is kept steady.\n3. Excessive material at weld: Reduce wire feed speed.\n\nPOSSIBLE CAUSES AND SOLUTIONS (Inadequate Penetration)\n4. Incorrect welding technique: Maintain 1/2\" or less CTWD. Keep arc on leading edge of weld puddle. Hold MIG Gun at proper angles.\n5. Insufficient weld heat: Reduce travel speed. Increase weld current.\n6. Workpieces too thick/close: Bevel thick workpieces, allow slight gap, and weld in several passes.\n7. Insufficient weld material: Increase wire feed speed.\n\nBend at Joint\n(PROFILE VIEW diagram showing weld joint bent)\nPOSSIBLE CAUSES AND SOLUTIONS\n1. Improper clamping: Clamp workpieces securely. Make tack welds to hold workpieces.\n2. Excessive heat: Weld a small portion and allow to cool before proceeding. Increase travel speed. Reduce wire feed speed.\n\nCoat of Slag Over Weld\n(TOP VIEW diagram, PARTIALLY CHIPPED AWAY TO SHOW WELD)\nSlag is a necessary part of a flux-cored wire weld. It shields the weld from impurities. Clean off the slag with a Chipping Hammer and Wire Brush after welding.\nGas-shielded MIG welds are protected by the shielding gas and do not need slag to protect them.\n\nWeld Not Adhering Properly\nGaps present between weld and previous bead or between weld and workpiece. See areas below.\n(PROFILE VIEW diagram with dashed circles indicating gap locations)\nPOSSIBLE CAUSES AND SOLUTIONS\n1. Incorrect welding technique: Place stringer bead at correct place in joint. Adjust workpiece position or weld angle to permit proper welding to bottom of piece. Pause briefly at sides during weave bead. Keep arc on leading edge of weld puddle. Hold MIG Gun at proper angles.\n2. Insufficient weld heat: Increase current. Increase wire feed speed.\n3. Dirty workpiece: Clean workpiece down to bare metal.\n4. Insufficient weld material: Increase wire feed speed.\n5. Workpiece gap too narrow: Widen groove or increase bevel.\n\nPage 36\nFor technical questions, please call 1-800-444-3353.\nItem 57812",
+  "tables": [],
+  "figures": [
+    {
+      "figure_id": "owner-manual-p36-f1",
+      "page": 36,
+      "caption": "EXCESS PENETRATION OR BURN-THROUGH - PROFILE VIEW",
+      "description": "Profile view diagram showing a weld that droops on top and underneath the joint, or falls through entirely creating a hole, illustrating excess penetration/burn-through defect.",
+      "bbox": [
+        66.27456665039062,
+        130.52899169921875,
+        549.7415771484375,
+        232.18101501464844
+      ]
+    },
+    {
+      "figure_id": "owner-manual-p36-f2",
+      "page": 36,
+      "caption": "Bend at Joint - PROFILE VIEW",
+      "description": "Profile view diagram illustrating a weld joint that has bent/deformed, showing the weld bead distorting the alignment of the two workpieces.",
+      "bbox": [
+        45.0,
+        379.6216125488281,
+        288.8760070800781,
+        442.355712890625
+      ]
+    },
+    {
+      "figure_id": "owner-manual-p36-f3",
+      "page": 36,
+      "caption": "Coat of Slag Over Weld - TOP VIEW, PARTIALLY CHIPPED AWAY TO SHOW WELD",
+      "description": "Top view diagram of a weld bead covered in slag, with part of the slag coating chipped away to reveal the underlying weld bead.",
+      "bbox": [
+        45.0,
+        484.1082458496094,
+        520.9011840820312,
+        662.0650024414062
+      ]
+    }
+  ],
+  "key_facts": [
+    "Excess penetration/burn-through occurs when weld droops on top and underneath, or falls through entirely, making a hole.",
+    "Proper penetration is visible underneath the weld and bulges slightly on top.",
+    "Inadequate penetration means the weld does not penetrate the joint fully, staying just on the surface.",
+    "Excess penetration causes/solutions: workpiece overheating (reduce wire feed speed, decrease weld current); travel speed too slow (increase and steady travel speed); excessive material at weld (reduce wire feed speed).",
+    "Inadequate penetration causes/solutions: incorrect welding technique (maintain 1/2 inch or less CTWD, keep arc on leading edge of weld puddle, hold MIG gun at proper angles); insufficient weld heat (reduce travel speed, increase weld current); workpieces too thick/close (bevel thick workpieces, allow slight gap, weld in several passes); insufficient weld material (increase wire feed speed).",
+    "CTWD (Contact Tip to Work Distance) should be maintained at 1/2 inch or less for proper welding technique.",
+    "Bend at joint can be caused by improper clamping (clamp securely, make tack welds) or excessive heat (weld small portions and let cool, increase travel speed, reduce wire feed speed).",
+    "Slag is a necessary part of flux-cored wire welding and shields the weld from impurities; it should be cleaned off with a Chipping Hammer and Wire Brush after welding.",
+    "Gas-shielded MIG welds are protected by shielding gas and do not need slag protection.",
+    "Weld not adhering properly (gaps between weld and previous bead or workpiece) can result from incorrect welding technique, insufficient weld heat, dirty workpiece, insufficient weld material, or workpiece gap too narrow.",
+    "Weld not adhering solutions include: place stringer bead correctly, adjust workpiece position/weld angle, pause briefly at sides during weave bead, keep arc on leading edge of puddle, hold MIG gun at proper angles, increase current/wire feed speed, clean workpiece to bare metal, widen groove or increase bevel."
+  ],
+  "topics": [
+    "troubleshooting",
+    "wire-feed",
+    "weld-penetration",
+    "duty-cycle",
+    "mig-welding",
+    "flux-cored-welding",
+    "joint-preparation",
+    "weld-defects",
+    "polarity"
+  ]
+}

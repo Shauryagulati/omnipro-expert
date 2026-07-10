@@ -1,0 +1,127 @@
+{
+  "doc": "owner-manual",
+  "page": 6,
+  "summary": "This page covers grounding safety warnings, extension/replacement cord rules, and a symbology legend explaining icons and abbreviations used throughout the manual (e.g., wire feed, ground cable, torch cable, overheat indicator, VAC, A, OCV, KVA, IPM, AWG, and hazard icons for electric shock, inhalation, fire, arc rays, and pacemakers).",
+  "text": "Grounding\nWARNING\nTO PREVENT ELECTRIC SHOCK AND DEATH FROM INCORRECT GROUNDING WIRE CONNECTION:\nCheck with a qualified electrician if you are in doubt as to whether the outlet is properly grounded. Do not use the welder if the power cord or plug is damaged. If damaged, have it repaired by a service facility before use. If the plug will not fit the outlet, have a proper outlet installed by a qualified electrician, do not use adapter plugs.\n1. The green wire inside the cord is connected to the grounding system in the Welder. The green wire in the cord must be the only wire connected to the Welder's grounding system and must never be attached to an electrically \"live\" terminal. Never leave the grounding wire disconnected or modify either Power Cord Plug in any way.\n2. Make sure the tool is connected to an outlet having the same configuration as the plug. If the tool must be reconnected for use on a different type of electric circuit, the reconnection should be made by qualified service personnel; and after reconnection, the tool should comply with all local codes and ordinances.\n\nExtension Cords\nDo not use an extension cord on this welder.\n\nReplacement Cords\n1. Use only one of the supplied power cords for this welder or an identical replacement cord.\n2. Do not install a thinner or longer cord on this welder.\n3. Do not patch cords of any length together for this item, patches may allow moisture to penetrate the insulation, resulting in electric shock.\n\nSymbology\n(Left column icons/abbreviations and meanings)\n- Wire Feed (Speed) icon\n- Workpiece Ground Cable icon\n- Torch Cable icon\n- Overheat Shutdown Indicator icon\n- Cooling Fan icon\n- Housing Ground Point icon\n- VAC = Volts Alternating Current\n- A = Amperes\n- OCV = Open Circuit Voltage\n- KVA = Kilovolt Amperes (Volts / 1000 * Amperes)\n\n(Right column icons/abbreviations and meanings)\n- IPM = Inches Per Minute\n- AWG = American Wire Gauge\n- Electric Shock Hazard icon: Do not touch energized parts.\n- Inhalation Hazard icon: Keep head out of fumes and use proper ventilation.\n- Read manual icon: Read manual before setup and/or use.\n- Fire Hazard icon: Keep flammable materials away during welding. Spatter can cause accidental fires.\n- Arc Ray Hazard icon: Wear welding helmet with properly rated filter lens.\n- Pacemaker Hazard icon: Welding processes may interfere with pacemakers. Consult doctor before use.",
+  "tables": [
+    {
+      "title": "Symbology - Icons and Abbreviations",
+      "headers": [
+        "Symbol/Abbreviation",
+        "Meaning"
+      ],
+      "rows": [
+        [
+          "Wire Feed (Speed) icon",
+          "Wire Feed (Speed)"
+        ],
+        [
+          "Workpiece Ground Cable icon",
+          "Workpiece Ground Cable"
+        ],
+        [
+          "Torch Cable icon",
+          "Torch Cable"
+        ],
+        [
+          "Overheat Shutdown Indicator icon",
+          "Overheat Shutdown Indicator"
+        ],
+        [
+          "Cooling Fan icon",
+          "Cooling Fan"
+        ],
+        [
+          "Housing Ground Point icon",
+          "Housing Ground Point"
+        ],
+        [
+          "VAC",
+          "Volts Alternating Current"
+        ],
+        [
+          "A",
+          "Amperes"
+        ],
+        [
+          "OCV",
+          "Open Circuit Voltage"
+        ],
+        [
+          "KVA",
+          "Kilovolt Amperes (Volts / 1000 * Amperes)"
+        ],
+        [
+          "IPM",
+          "Inches Per Minute"
+        ],
+        [
+          "AWG",
+          "American Wire Gauge"
+        ],
+        [
+          "Electric Shock Hazard icon",
+          "Electric Shock Hazard. Do not touch energized parts."
+        ],
+        [
+          "Inhalation Hazard icon",
+          "Inhalation Hazard. Keep head out of fumes and use proper ventilation."
+        ],
+        [
+          "Read Manual icon",
+          "Read manual before setup and/or use."
+        ],
+        [
+          "Fire Hazard icon",
+          "Fire Hazard. Keep flammable materials away during welding. Spatter can cause accidental fires."
+        ],
+        [
+          "Arc Ray Hazard icon",
+          "Arc Ray Hazard. Wear welding helmet with properly rated filter lens."
+        ],
+        [
+          "Pacemaker Hazard icon",
+          "Pacemaker Hazard. Welding processes may interfere with pacemakers. Consult doctor before use."
+        ]
+      ]
+    }
+  ],
+  "figures": [
+    {
+      "figure_id": "owner-manual-p06-f3",
+      "page": 6,
+      "caption": "Symbology",
+      "description": "A two-column legend of icons/abbreviations used on the welder and in the manual. Left column: wire feed speed icon (spool with arrow), workpiece ground cable icon (clamp), torch cable icon (torch/gun), overheat shutdown indicator icon (thermometer with cutoff symbol), cooling fan icon (fan with lines), housing ground point icon (ground symbol in circle), and text abbreviations VAC, A, OCV, KVA with their definitions. Right column: text abbreviations IPM and AWG, plus hazard pictograms: electric shock hazard (person being shocked from cord), inhalation hazard (person with fumes/skull), read-manual hazard (person reading book), fire hazard (flame with sparks), arc ray hazard (welder head with rays), and pacemaker hazard (heart with prohibition symbol).",
+      "bbox": [
+        77.9175033569336,
+        435.8758239746094,
+        556.3897094726562,
+        789.3644409179688
+      ]
+    }
+  ],
+  "key_facts": [
+    "Do not use an extension cord on this welder.",
+    "Use only the supplied power cord or an identical replacement cord; do not install a thinner or longer cord.",
+    "Do not patch cords together, as patches may allow moisture to penetrate insulation and cause electric shock.",
+    "The green wire inside the cord must be the only wire connected to the welder's grounding system and must never be attached to a live terminal.",
+    "If the plug does not fit the outlet, have a proper outlet installed by a qualified electrician; do not use adapter plugs.",
+    "VAC = Volts Alternating Current; A = Amperes; OCV = Open Circuit Voltage; KVA = Kilovolt Amperes (Volts / 1000 * Amperes).",
+    "IPM = Inches Per Minute; AWG = American Wire Gauge.",
+    "Pacemaker hazard: welding processes may interfere with pacemakers; consult a doctor before use.",
+    "Arc ray hazard requires a welding helmet with properly rated filter lens.",
+    "Inhalation hazard requires keeping head out of fumes and using proper ventilation."
+  ],
+  "topics": [
+    "grounding",
+    "electric-shock-hazard",
+    "extension-cords",
+    "replacement-cords",
+    "symbology",
+    "safety-warnings",
+    "pacemaker-hazard",
+    "arc-ray-hazard",
+    "fire-hazard",
+    "inhalation-hazard"
+  ]
+}

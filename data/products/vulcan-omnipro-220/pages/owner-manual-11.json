@@ -1,0 +1,64 @@
+{
+  "doc": "owner-manual",
+  "page": 11,
+  "summary": "Instructions (steps 6-11) for installing a 10-12 lb wire spool onto the welder, including spool adapter placement, securing with wingnut/spacer, spool knob installation, and adjusting the feed tensioner and idler arm to release wire feed tension.",
+  "text": "6. 10-12 Pound Wire Spool Installation: Remove the Wingnut and Spacer. If replacing a Spool, remove the old Spool and all remaining wire from the liners.\n7. Place the Spool Adapter over the Spool Spindle and against the Spool Brake Pad as illustrated.\n8. Place the new Wire Spool over the Adapter and line up pin on Adapter with hole in Spool. To prevent wire feed problems, set the Spool so that it will unwind clockwise.\n9. Replace the Spacer over the Spool Spindle and secure Spool in place with the Wingnut.\nNotice: If Wire Spool can spin freely, Wingnut is too loose. This will cause the welding wire to unravel and unspool which can cause tangling and feeding problems.\n10. Screw the Spool Knob into the Spool Adapter.\n11. Turn the Feed Tensioner knob counterclockwise to loosen it enough to pull it down to remove tension. The spring-loaded Idler Arm will move up as shown.",
+  "tables": [],
+  "figures": [
+    {
+      "figure_id": "owner-manual-p11-f1",
+      "page": 11,
+      "caption": "Spool Knob, Wingnut, and Spacer components",
+      "description": "Exploded view showing three separate small components used to secure a wire spool: the Spool Knob (a knurled cap with threaded post), the Wingnut, and the Spacer (a small cylindrical spacer).",
+      "bbox": [
+        290.1510009765625,
+        161.14622497558594,
+        547.15234375,
+        312.84002685546875
+      ]
+    },
+    {
+      "figure_id": "owner-manual-p11-f2",
+      "page": 11,
+      "caption": "Rear view of welder showing wire unwind direction",
+      "description": "Rear/side view of the welder unit showing the mounted spool knob and an arrow indicating the direction the wire must unwind (clockwise) around the spool knob assembly. Also shows connector ports at bottom right of the unit.",
+      "bbox": [
+        287.88580322265625,
+        377.2436218261719,
+        540.7155151367188,
+        541.99560546875
+      ]
+    },
+    {
+      "figure_id": "owner-manual-p11-f3",
+      "page": 11,
+      "caption": "Feed Tensioner and Idler Arm mechanism",
+      "description": "Two side-by-side diagrams of the wire feed drive mechanism. Left diagram shows the Feed Tensioner knob being turned counterclockwise (arrow indicates direction) with the Idler Arm in lowered/tensioned position. Right diagram shows the Idler Arm moved up after tension is released, with an arrow indicating the idler arm's upward movement.",
+      "bbox": [
+        296.5696716308594,
+        622.4454345703125,
+        544.1525268554688,
+        723.0671997070312
+      ]
+    }
+  ],
+  "key_facts": [
+    "Item 57812 - For technical questions, please call 1-800-444-3353.",
+    "For 10-12 lb wire spool installation, remove the Wingnut and Spacer first; if replacing a spool, remove old spool and all remaining wire from the liners.",
+    "The Spool Adapter must be placed over the Spool Spindle and against the Spool Brake Pad.",
+    "The new wire spool must be placed over the adapter with the adapter pin aligned to the hole in the spool.",
+    "To prevent wire feed problems, the 10-12 lb spool must be set so it unwinds clockwise.",
+    "After placing the spool, replace the Spacer over the Spool Spindle and secure with the Wingnut.",
+    "Notice: If the wire spool can spin freely, the Wingnut is too loose, which causes wire to unravel/unspool leading to tangling and feeding problems.",
+    "The Spool Knob screws into the Spool Adapter as the final assembly step.",
+    "To release wire feed tension, turn the Feed Tensioner knob counterclockwise; this allows it to be pulled down and the spring-loaded Idler Arm will move up."
+  ],
+  "topics": [
+    "wire-feed",
+    "spool-installation",
+    "wire-spool",
+    "maintenance",
+    "tensioner",
+    "idler-arm"
+  ]
+}
