@@ -2,12 +2,14 @@ import { createSdkMcpServer, tool } from "@anthropic-ai/claude-agent-sdk";
 import { z } from "zod";
 import { figureUrl, getNode, loadGraph, neighbors, pageUrl, searchGraph } from "@/lib/graph";
 import type { EdgeType, GraphNode } from "@/lib/types";
+import { widgetSchemas, type WidgetType } from "./widget-schemas";
 
 // UI events pushed from inside tool handlers (figures, pages) so the client
 // can render real payloads without parsing model text.
 export type UiEvent =
   | { type: "figure"; figureId: string; caption: string; url: string; doc: string; page: number }
   | { type: "page"; doc: string; page: number; url: string; summary: string }
+  | { type: "widget"; widget: string; props: unknown }
   | { type: "graph_activity"; nodeIds: string[] };
 
 export type UiEmit = (event: UiEvent) => void;
@@ -109,6 +111,27 @@ export function buildToolServer(emit: UiEmit) {
         },
       ),
       tool(
+        "show_widget",
+        "Render an interactive widget to the user. Types: duty_cycle_calculator (slider over documented duty points), polarity_diagram (front-panel cable hookup drawing), troubleshooting_tree (interactive checklist), settings_configurator (filterable settings table), process_selector (guided process chooser). Props MUST contain only values retrieved from the graph — never invented numbers. On validation error, fix the props and call again.",
+        {
+          widget: z.enum(["duty_cycle_calculator", "polarity_diagram", "troubleshooting_tree", "settings_configurator", "process_selector"]),
+          props: z.record(z.string(), z.unknown()).describe("props matching the widget's schema"),
+        },
+        async ({ widget, props }) => {
+          const schema = widgetSchemas[widget as WidgetType];
+          const parsed = schema.safeParse(props);
+          if (!parsed.success) {
+            return text({
+              error: `props invalid for ${widget}: ${parsed.error.issues
+                .map((i) => `${i.path.join(".")}: ${i.message}`)
+                .join("; ")}. Fix and call show_widget again.`,
+            });
+          }
+          emit({ type: "widget", widget, props: parsed.data });
+          return text({ shown_to_user: true, widget });
+        },
+      ),
+      tool(
         "graph_stats",
         "Basic stats about the knowledge graph (for meta questions about how you work).",
         {},
@@ -126,5 +149,6 @@ export const ALLOWED_TOOLS = [
   "mcp__omnipro__traverse",
   "mcp__omnipro__get_figure",
   "mcp__omnipro__get_page",
+  "mcp__omnipro__show_widget",
   "mcp__omnipro__graph_stats",
 ];

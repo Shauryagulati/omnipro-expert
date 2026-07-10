@@ -1,7 +1,9 @@
 "use client";
 
 import ReactMarkdown from "react-markdown";
+import type { WidgetType } from "@/agent/widget-schemas";
 import type { PageRef } from "./PageModal";
+import WidgetRenderer from "./widgets";
 
 export interface MediaItem {
   kind: "figure" | "page";
@@ -11,10 +13,16 @@ export interface MediaItem {
   page: number;
 }
 
+export interface WidgetItem {
+  widget: string;
+  props: unknown;
+}
+
 export interface ChatMsg {
   role: "user" | "assistant";
   content: string;
   media: MediaItem[];
+  widgets: WidgetItem[];
   toolActivity: string[];
 }
 
@@ -83,6 +91,13 @@ export default function Message({
           {linkifyCitations(msg.content)}
         </ReactMarkdown>
       </div>
+      {msg.widgets.length > 0 && (
+        <div className="flex flex-wrap gap-3">
+          {msg.widgets.map((w, i) => (
+            <WidgetRenderer key={i} widget={w.widget as WidgetType} props={w.props} onOpenPage={onOpenPage} />
+          ))}
+        </div>
+      )}
       {msg.media.length > 0 && (
         <div className="flex flex-wrap gap-3">
           {msg.media.map((m, i) => (
