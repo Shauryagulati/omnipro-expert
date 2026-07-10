@@ -12,10 +12,32 @@ pipeline either gets schema-valid data or fails loudly.
 
 import json
 import os
+import time
 from pathlib import Path
 
 from dotenv import load_dotenv
 from pydantic import BaseModel, ValidationError
+
+
+def _with_connection_retries(fn, attempts: int = 4):
+    """Retry transient connection failures with exponential backoff."""
+    for i in range(attempts):
+        try:
+            return fn()
+        except Exception as e:  # noqa: BLE001 — provider SDKs raise different types
+            transient = type(e).__name__ in (
+                "APIConnectionError",
+                "APITimeoutError",
+                "InternalServerError",
+                "RateLimitError",
+                "OverloadedError",
+            )
+            if not transient or i == attempts - 1:
+                raise
+            wait = 2**i * 5
+            print(f"  transient {type(e).__name__}, retrying in {wait}s", flush=True)
+            time.sleep(wait)
+    raise RuntimeError("unreachable")
 
 load_dotenv(Path(__file__).resolve().parents[2] / ".env")
 
@@ -53,13 +75,15 @@ def _via_anthropic(system, user_blocks, schema_model, max_retries):
     }
     messages = [{"role": "user", "content": user_blocks}]
     for attempt in range(max_retries + 1):
-        resp = client.messages.create(
-            model=ANTHROPIC_MODEL,
-            max_tokens=8192,
-            system=system,
-            messages=messages,
-            tools=[tool],
-            tool_choice={"type": "tool", "name": "emit"},
+        resp = _with_connection_retries(
+            lambda: client.messages.create(
+                model=ANTHROPIC_MODEL,
+                max_tokens=8192,
+                system=system,
+                messages=messages,
+                tools=[tool],
+                tool_choice={"type": "tool", "name": "emit"},
+            )
         )
         block = next(b for b in resp.content if b.type == "tool_use")
         try:
@@ -120,12 +144,14 @@ def _via_openrouter(system, user_blocks, schema_model, max_retries):
         {"role": "user", "content": _to_openai_content(user_blocks)},
     ]
     for attempt in range(max_retries + 1):
-        resp = client.chat.completions.create(
-            model=OPENROUTER_MODEL,
-            max_tokens=8192,
-            messages=messages,
-            tools=[tool],
-            tool_choice={"type": "function", "function": {"name": "emit"}},
+        resp = _with_connection_retries(
+            lambda: client.chat.completions.create(
+                model=OPENROUTER_MODEL,
+                max_tokens=8192,
+                messages=messages,
+                tools=[tool],
+                tool_choice={"type": "function", "function": {"name": "emit"}},
+            )
         )
         msg = resp.choices[0].message
         if not msg.tool_calls:

@@ -74,10 +74,14 @@ def main() -> None:
     ap.add_argument("--doc", choices=list(DOCS))
     ap.add_argument("--pages", help="e.g. 7-9 or 7")
     ap.add_argument("--all", action="store_true")
+    ap.add_argument("--missing", action="store_true", help="skip pages already extracted")
     args = ap.parse_args()
-    if args.all:
+    if args.all or args.missing:
         counts = {"owner-manual": 48, "quick-start-guide": 2, "selection-chart": 1}
         jobs = [(d, p) for d, n in counts.items() for p in range(1, n + 1)]
+        if args.missing:
+            jobs = [(d, p) for d, p in jobs if not (DATA_DIR / f"{d}-{p:02d}.json").exists()]
+        print(f"{len(jobs)} pages to extract", flush=True)
     else:
         lo, _, hi = (args.pages or "1").partition("-")
         jobs = [(args.doc, p) for p in range(int(lo), int(hi or lo) + 1)]
