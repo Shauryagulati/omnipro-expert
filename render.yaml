@@ -1,0 +1,15 @@
+# One-click deploy blueprint for Render (render.com).
+# The Agent SDK spawns a long-lived subprocess, so this must be a Web Service
+# (persistent Node process), not a serverless/edge deployment.
+services:
+  - type: web
+    name: omnipro-expert
+    runtime: node
+    plan: starter
+    buildCommand: npm install && npm run build
+    startCommand: npm run start
+    envVars:
+      - key: ANTHROPIC_API_KEY
+        sync: false # set in the Render dashboard
+      - key: NODE_VERSION
+        value: "22"
