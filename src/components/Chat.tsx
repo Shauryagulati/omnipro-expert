@@ -163,7 +163,7 @@ export default function Chat() {
 
   return (
     <div className="flex h-dvh">
-    <div className="mx-auto flex min-w-0 max-w-3xl flex-1 flex-col px-4">
+    <div className="mx-auto flex min-w-0 max-w-5xl flex-1 flex-col px-6">
       <header className="flex items-center gap-3 border-b border-zinc-800 py-3">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src="/product.webp" alt="Vulcan OmniPro 220" className="h-10 w-10 rounded object-cover" />
@@ -183,7 +183,7 @@ export default function Chat() {
         </button>
       </header>
 
-      <div className="flex-1 space-y-6 overflow-y-auto py-6">
+      <div className="flex-1 space-y-6 overflow-y-auto py-6 pr-4">
         {messages.length === 0 && (
           <div className="flex h-full flex-col items-center justify-center gap-6">
             <p className="max-w-md text-center text-sm text-zinc-400">
@@ -206,10 +206,16 @@ export default function Chat() {
         {messages.map((m, i) => (
           <Message key={i} msg={m} onOpenPage={setModal} />
         ))}
-        {busy && messages[messages.length - 1]?.content === "" && (
+        {busy && (
           <div className="flex items-center gap-2 text-sm text-zinc-500">
-            <span className="h-2 w-2 animate-pulse rounded-full bg-amber-500" />
-            consulting the knowledge graph…
+            <span className="flex gap-1">
+              <span className="h-1.5 w-1.5 animate-bounce rounded-full bg-amber-500" />
+              <span className="h-1.5 w-1.5 animate-bounce rounded-full bg-amber-500 [animation-delay:150ms]" />
+              <span className="h-1.5 w-1.5 animate-bounce rounded-full bg-amber-500 [animation-delay:300ms]" />
+            </span>
+            {messages[messages.length - 1]?.content === ""
+              ? "consulting the knowledge graph…"
+              : "still working…"}
           </div>
         )}
         <div ref={bottomRef} />
