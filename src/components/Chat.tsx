@@ -92,6 +92,10 @@ export default function Chat() {
           messages: history.map((m) => ({ role: m.role, content: m.content })),
         }),
       });
+      if (res.status === 429) {
+        const body = await res.json().catch(() => null);
+        throw new Error(body?.error ?? "Rate limit reached on the hosted demo — run it locally with your own key (2-minute setup, see README).");
+      }
       if (!res.ok || !res.body) throw new Error(`request failed (${res.status})`);
 
       const reader = res.body.getReader();
