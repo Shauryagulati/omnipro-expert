@@ -61,30 +61,49 @@ export default function Chat() {
   };
 
   // Persist the conversation across refreshes (evaluators refresh mid-session).
+  // Versioned key + field normalization: stale/partial saved shapes must never
+  // crash the app — worst case is an empty chat, never a white screen.
+  const STORE_KEY = "omnipro-chat-v2";
   useEffect(() => {
     try {
-      const saved = localStorage.getItem("omnipro-chat");
-      if (saved) setMessages(JSON.parse(saved));
+      const saved = localStorage.getItem(STORE_KEY);
+      if (!saved) return;
+      const parsed = JSON.parse(saved);
+      if (!Array.isArray(parsed)) return;
+      setMessages(
+        parsed
+          .filter((m) => m && (m.role === "user" || m.role === "assistant"))
+          .map((m) => ({
+            role: m.role,
+            content: typeof m.content === "string" ? m.content : "",
+            media: Array.isArray(m.media) ? m.media : [],
+            widgets: Array.isArray(m.widgets) ? m.widgets : [],
+            artifacts: Array.isArray(m.artifacts) ? m.artifacts : [],
+            toolActivity: Array.isArray(m.toolActivity) ? m.toolActivity : [],
+          })),
+      );
     } catch {
-      /* fresh start */
+      localStorage.removeItem(STORE_KEY);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
     bottomRef.current?.scrollIntoView({ behavior: "smooth" });
     if (!busy) {
       try {
-        localStorage.setItem("omnipro-chat", JSON.stringify(messages.slice(-30)));
+        localStorage.setItem(STORE_KEY, JSON.stringify(messages.slice(-30)));
       } catch {
         /* storage full/blocked — persistence is best-effort */
       }
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [messages, busy]);
 
   const clearChat = () => {
     setMessages([]);
     setActiveNodes([]);
-    localStorage.removeItem("omnipro-chat");
+    localStorage.removeItem(STORE_KEY);
   };
 
   async function send(text: string) {
