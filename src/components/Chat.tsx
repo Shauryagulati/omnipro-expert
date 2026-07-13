@@ -9,6 +9,7 @@ import {
   stopSpeaking,
 } from "@/lib/speech";
 import GraphView from "./GraphView";
+import ManualBrowser from "./ManualBrowser";
 import Message, { type ChatMsg } from "./Message";
 import PageModal, { type PageRef } from "./PageModal";
 
@@ -32,6 +33,7 @@ export default function Chat() {
   const [input, setInput] = useState("");
   const [busy, setBusy] = useState(false);
   const [modal, setModal] = useState<PageRef | null>(null);
+  const [browserOpen, setBrowserOpen] = useState(false);
   const [graphOpen, setGraphOpen] = useState(false);
   const [activeNodes, setActiveNodes] = useState<string[]>([]);
   const [voiceOn, setVoiceOn] = useState(false);
@@ -58,9 +60,32 @@ export default function Chat() {
     if (!next) stopSpeaking();
   };
 
+  // Persist the conversation across refreshes (evaluators refresh mid-session).
+  useEffect(() => {
+    try {
+      const saved = localStorage.getItem("omnipro-chat");
+      if (saved) setMessages(JSON.parse(saved));
+    } catch {
+      /* fresh start */
+    }
+  }, []);
+
   useEffect(() => {
     bottomRef.current?.scrollIntoView({ behavior: "smooth" });
-  }, [messages]);
+    if (!busy) {
+      try {
+        localStorage.setItem("omnipro-chat", JSON.stringify(messages.slice(-30)));
+      } catch {
+        /* storage full/blocked — persistence is best-effort */
+      }
+    }
+  }, [messages, busy]);
+
+  const clearChat = () => {
+    setMessages([]);
+    setActiveNodes([]);
+    localStorage.removeItem("omnipro-chat");
+  };
 
   async function send(text: string) {
     if (!text.trim() || busy) return;
@@ -179,6 +204,21 @@ export default function Chat() {
             Vulcan OmniPro 220 · knowledge-graph-grounded · every answer cited
           </p>
         </div>
+        {messages.length > 0 && (
+          <button
+            onClick={clearChat}
+            title="clear conversation"
+            className="rounded-lg border border-zinc-800 px-3 py-1.5 font-mono text-[11px] text-zinc-500 transition hover:border-zinc-600 hover:text-zinc-300"
+          >
+            ⌫ clear
+          </button>
+        )}
+        <button
+          onClick={() => setBrowserOpen(true)}
+          className="rounded-lg border border-zinc-800 px-3 py-1.5 font-mono text-[11px] text-zinc-400 transition hover:border-zinc-600"
+        >
+          ⧉ manuals
+        </button>
         <button
           onClick={() => setGraphOpen(!graphOpen)}
           className={`rounded-lg border px-3 py-1.5 font-mono text-[11px] transition ${graphOpen ? "border-amber-600 bg-amber-950/40 text-amber-300" : "border-zinc-800 text-zinc-400 hover:border-zinc-600"}`}
@@ -270,6 +310,15 @@ export default function Chat() {
         </button>
       </form>
 
+      {browserOpen && (
+        <ManualBrowser
+          onOpenPage={(p) => {
+            setBrowserOpen(false);
+            setModal(p);
+          }}
+          onClose={() => setBrowserOpen(false)}
+        />
+      )}
       {modal && <PageModal pageRef={modal} onClose={() => setModal(null)} onNavigate={setModal} />}
     </div>
 
