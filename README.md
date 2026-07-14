@@ -4,7 +4,9 @@
 
 Ask it anything a new owner would ask. It answers like a competent friend in your garage — grounded in the actual documentation, **cited to the page**, showing you the **real manual diagrams**, rendering **interactive widgets** when numbers or decisions are involved, and speaking out loud if you want it to. And you can watch it think: an **interactive knowledge-graph view** shows exactly which nodes light up as it reasons.
 
-<img src="product.webp" alt="Vulcan OmniPro 220" width="380" /> <img src="product-inside.webp" alt="inside panel" width="380" />
+<img src="Screenshots/Widgets-in-Chat.png" alt="TIG polarity answer: cited text, drawn cable-hookup diagram, and the real manual panel figure" width="800" />
+
+<img src="Screenshots/Knowledge-graph.png" alt="Interactive knowledge graph — 576 nodes, filterable, reasoning glow" width="393" /> <img src="Screenshots/Chat-Session.png" alt="Chat session with citations and widgets" width="393" />
 
 ## Run it in under 2 minutes
 

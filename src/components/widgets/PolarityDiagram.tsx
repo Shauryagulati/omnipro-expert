@@ -56,7 +56,7 @@ export default function PolarityDiagram({
             </g>
           );
         })}
-        {/* cables */}
+        {/* cables — labels start at x=8 (anchor start) so long names never clip */}
         {connections.map((c, i) => {
           const s = SOCKETS[c.socket];
           const y0 = 150 + i * 22;
@@ -64,14 +64,14 @@ export default function PolarityDiagram({
           return (
             <g key={i}>
               <path
-                d={`M 60 ${y0} C 140 ${y0}, ${s.x} ${y0 - 20}, ${s.x} 82`}
+                d={`M 105 ${y0} C 170 ${y0}, ${s.x} ${y0 - 20}, ${s.x} 84`}
                 fill="none"
                 stroke={color}
                 strokeWidth="3"
                 strokeLinecap="round"
               />
-              <circle cx={s.x} cy={80} r={4} fill={color} />
-              <text x="56" y={y0 + 4} textAnchor="end" fill={color} fontSize="10" fontFamily="monospace">
+              <circle cx={s.x} cy={82} r={3.5} fill={color} />
+              <text x="8" y={y0 + 4} textAnchor="start" fill={color} fontSize="10" fontFamily="monospace">
                 {c.cable}
               </text>
             </g>
