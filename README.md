@@ -9,7 +9,7 @@ Ask it anything a new owner would ask. It answers like a competent friend in you
 ## Run it in under 2 minutes
 
 ```bash
-git clone <this-fork> && cd omnipro-expert
+git clone https://github.com/Shauryagulati/omnipro-expert.git && cd omnipro-expert
 cp .env.example .env      # paste your ANTHROPIC_API_KEY
 npm install               # one runtime, ~1 min
 npm run dev               # → http://localhost:3000
