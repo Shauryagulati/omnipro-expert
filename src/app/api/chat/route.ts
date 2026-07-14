@@ -5,6 +5,17 @@ export const runtime = "nodejs"; // Agent SDK spawns a subprocess — no edge
 export const maxDuration = 300;
 
 export async function POST(req: Request) {
+  // Optional access gate for the hosted demo: when ACCESS_CODE is set, only
+  // holders of the code (provided in the challenge submission) can spend the
+  // author's API key. Local runs never set it.
+  const required = process.env.ACCESS_CODE;
+  if (required && req.headers.get("x-access-code") !== required) {
+    return Response.json(
+      { error: "access_code_required", message: "This hosted demo needs an access code (provided with the submission). Or run locally with your own key — 2-minute setup, see README." },
+      { status: 401 },
+    );
+  }
+
   const ip = req.headers.get("x-forwarded-for")?.split(",")[0]?.trim() || "local";
   const rate = checkRateLimit(ip);
   if (!rate.allowed) {

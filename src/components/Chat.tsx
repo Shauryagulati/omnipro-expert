@@ -38,6 +38,8 @@ export default function Chat() {
   const [activeNodes, setActiveNodes] = useState<string[]>([]);
   const [voiceOn, setVoiceOn] = useState(false);
   const [listening, setListening] = useState(false);
+  const [needsCode, setNeedsCode] = useState(false);
+  const [codeInput, setCodeInput] = useState("");
   const voiceOnRef = useRef(false);
   const bottomRef = useRef<HTMLDivElement>(null);
   const support = speechSupported();
@@ -131,11 +133,20 @@ export default function Chat() {
     try {
       const res = await fetch("/api/chat", {
         method: "POST",
-        headers: { "content-type": "application/json" },
+        headers: {
+          "content-type": "application/json",
+          "x-access-code": localStorage.getItem("omnipro-access") ?? "",
+        },
         body: JSON.stringify({
           messages: history.map((m) => ({ role: m.role, content: m.content })),
         }),
       });
+      if (res.status === 401) {
+        setNeedsCode(true);
+        setMessages([...messages]); // drop the pending exchange; re-sent after unlock
+        setInput(text);
+        return;
+      }
       if (res.status === 429) {
         const body = await res.json().catch(() => null);
         throw new Error(body?.error ?? "Rate limit reached on the hosted demo — run it locally with your own key (2-minute setup, see README).");
@@ -211,7 +222,7 @@ export default function Chat() {
 
   return (
     <div className="flex h-dvh">
-    <div className="mx-auto flex min-w-0 max-w-5xl flex-1 flex-col px-6">
+    <div className="flex min-w-0 flex-1 flex-col px-6 lg:px-10">
       <header className="flex items-center gap-3 border-b border-zinc-800 py-3">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src="/product.webp" alt="Vulcan OmniPro 220" className="h-10 w-10 rounded object-cover" />
@@ -246,7 +257,8 @@ export default function Chat() {
         </button>
       </header>
 
-      <div className="flex-1 space-y-6 overflow-y-auto py-6 pr-4">
+      <div className="flex-1 overflow-y-auto py-6 pr-2">
+      <div className="mx-auto max-w-4xl space-y-6">
         {messages.length === 0 && (
           <div className="flex h-full flex-col items-center justify-center gap-6">
             <p className="max-w-md text-center text-sm text-zinc-400">
@@ -283,9 +295,10 @@ export default function Chat() {
         )}
         <div ref={bottomRef} />
       </div>
+      </div>
 
       <form
-        className="flex gap-2 border-t border-zinc-800 py-3"
+        className="mx-auto flex w-full max-w-4xl gap-2 border-t border-zinc-800 py-3"
         onSubmit={(e) => {
           e.preventDefault();
           send(input);
@@ -329,6 +342,38 @@ export default function Chat() {
         </button>
       </form>
 
+      {needsCode && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/85 p-6">
+          <form
+            className="w-full max-w-sm rounded-lg border border-zinc-700 bg-zinc-900 p-5"
+            onSubmit={(e) => {
+              e.preventDefault();
+              localStorage.setItem("omnipro-access", codeInput.trim());
+              setNeedsCode(false);
+            }}
+          >
+            <h2 className="text-sm font-semibold text-zinc-100">Access code</h2>
+            <p className="mt-1 text-[12px] leading-relaxed text-zinc-400">
+              This hosted demo runs on the author&apos;s API key, so it&apos;s gated. The code is
+              included with the challenge submission. No code? Clone the repo and run it locally
+              with your own key — the setup takes under 2 minutes.
+            </p>
+            <input
+              autoFocus
+              value={codeInput}
+              onChange={(e) => setCodeInput(e.target.value)}
+              placeholder="access code"
+              className="mt-3 w-full rounded-lg border border-zinc-700 bg-zinc-950 px-3 py-2 font-mono text-sm text-zinc-100 outline-none focus:border-amber-700"
+            />
+            <button
+              type="submit"
+              className="mt-3 w-full rounded-lg bg-amber-600 py-2 text-sm font-semibold text-zinc-950 hover:bg-amber-500"
+            >
+              Unlock
+            </button>
+          </form>
+        </div>
+      )}
       {browserOpen && (
         <ManualBrowser
           onOpenPage={(p) => {

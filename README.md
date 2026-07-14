@@ -95,6 +95,10 @@ The one miss, for honesty: asked how to set wire-feed tension, the agent gave th
 
 Everything above sits on the offline pipeline in [`pipeline/`](pipeline/README.md) — page rendering with vector-drawing figure detection (this manual's diagrams are line art, not raster images), cell-exact vision extraction, chunked+cached graph construction, and the 12-landmark verification gate. You never need to run it; its outputs are committed. `pipeline/README.md` has the full design.
 
+## Hosted demo access
+
+The hosted instance runs on the author's API key, so it's protected two ways: an **access code** (included with the challenge submission — enter it once when prompted) and a per-visitor rate limit. No code, or want unlimited questions? The local setup above takes under 2 minutes with your own key.
+
 ## Cost notes
 
 The agent defaults to `claude-sonnet-5` (override with `CLAUDE_MODEL` in `.env`). The system prompt + node catalog is a stable prefix, so the Agent SDK's prompt caching makes follow-up questions in a session substantially cheaper and faster than the first. Typical question: a few cents.

@@ -11,5 +11,7 @@ services:
     envVars:
       - key: ANTHROPIC_API_KEY
         sync: false # set in the Render dashboard
+      - key: ACCESS_CODE
+        sync: false # gate for the hosted demo; share the code in the submission only
       - key: NODE_VERSION
         value: "22"
