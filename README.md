@@ -8,7 +8,7 @@ Ask it anything a new owner would ask. It answers like a competent friend in you
 
 <img src="Screenshots/Knowledge-graph.png" alt="Interactive knowledge graph — 576 nodes, filterable, reasoning glow" width="393" /> <img src="Screenshots/Chat-Session.png" alt="Chat session with citations and widgets" width="393" />
 
-**Live demo:** [omnipro-expert-6b9s.onrender.com](https://omnipro-expert-6b9s.onrender.com) — access code included with the submission (free-tier host: first load after idle may take ~60s).
+**Live demo:** [omnipro-expert-6b9s.onrender.com](https://omnipro-expert-6b9s.onrender.com) · access code `prox-omni` · **[Video walkthrough](https://tinyurl.com/mf56jz6m)** _(free-tier host: first load after idle may take ~60s)_
 
 ## Run it in under 2 minutes
 
@@ -99,7 +99,7 @@ Everything above sits on the offline pipeline in [`pipeline/`](pipeline/README.m
 
 ## Hosted demo access
 
-The hosted instance runs on the author's API key, so it's protected two ways: an **access code** (included with the challenge submission — enter it once when prompted) and a per-visitor rate limit. No code, or want unlimited questions? The local setup above takes under 2 minutes with your own key.
+The hosted instance runs on the author's API key. It's protected in depth: a light **access code** (`prox-omni`) to keep out drive-by bots, a per-visitor **rate limit**, and a hard monthly spend cap on the key itself. Enter the code once when you send the first question. Want unlimited questions? The local setup above takes under 2 minutes with your own key.
 
 ## Cost notes
 
