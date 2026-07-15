@@ -42,7 +42,12 @@ export default function Chat() {
   const [codeInput, setCodeInput] = useState("");
   const voiceOnRef = useRef(false);
   const bottomRef = useRef<HTMLDivElement>(null);
-  const support = speechSupported();
+  // Detected after mount: the server can't know the browser's speech support,
+  // and branching on `window` during render causes hydration mismatches.
+  const [support, setSupport] = useState({ stt: false, tts: false });
+  useEffect(() => {
+    setSupport(speechSupported());
+  }, []);
 
   const startListening = () => {
     if (!support.stt || listening || busy) return;
