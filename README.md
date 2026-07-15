@@ -8,7 +8,7 @@ Ask it anything a new owner would ask. It answers like a competent friend in you
 
 <img src="Screenshots/Knowledge-graph.png" alt="Interactive knowledge graph — 576 nodes, filterable, reasoning glow" width="393" /> <img src="Screenshots/Chat-Session.png" alt="Chat session with citations and widgets" width="393" />
 
-**Live demo:** [omnipro-expert-6b9s.onrender.com](https://omnipro-expert-6b9s.onrender.com) · access code `prox-omni` · **[Video walkthrough](https://tinyurl.com/mf56jz6m)** _(free-tier host: first load after idle may take ~60s)_
+**Live demo:** [omnipro-expert-6b9s.onrender.com](https://omnipro-expert-6b9s.onrender.com) · access code `prox-omni` · **[Video walkthrough](https://drive.google.com/drive/folders/1TuwmisEuiUls5ylZfBIcIqoXXM8wNbTO?usp=sharing)** _(free-tier host: first load after idle may take ~60s)_
 
 ## Run it in under 2 minutes
 
